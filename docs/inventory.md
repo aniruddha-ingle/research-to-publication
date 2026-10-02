@@ -172,8 +172,9 @@ prior, ears).
 **Evidence.** mir-triage `claude-plans/22-taste-descriptors.md`, `docs/cafe-beats/00-05`,
 `src/mir_triage/core/taste.py`, `tests/test_taste.py` (34 test functions on synthesised audio: BS.1770
 and EBU 3341/3342 tables, wow at 0.5 Hz, disc rotation, vibrato not wow); merge `e63cc4f`.
-Calibration with added hiss and wow on four real tracks; the liked record shows a 0.555 Hz line
-21.5 dB out (33 1/3 rpm), hf slope -15.8 vs -2.8 to -7.2 dB/oct on others. Limits measured: a
+Calibration with added hiss and wow on four real tracks; the liked record shows a clear wow line
+at the 33 1/3 rpm rotation rate and a much steeper hf slope than the others (figures measured on
+licensed audio: withheld here until mir-triage says they may be quoted). Limits measured: a
 3-5 cent wow floor on dense mixes; hiss is a lower bound when the band never goes quiet.
 
 **Missing.** More than one liked record; any listener data; public test material
@@ -190,7 +191,7 @@ antialiased down to phone width; a p90 ink-luminance contrast at 360 px catches 
 
 **Evidence.** copy-in-product-picture `docs/contracts/variant.md` (legibility rule, 390 → 360 px),
 `.claude/agent-memory/composer-dev/project_phone_legibility_bar.md` (evaluator FAIL: 28 px
-sublines at weight 300-500 measured 2.6-3.9:1); merges `35c948d`, `fbd7bed`. Measured once.
+sublines at weight 300-500 failed the bar; figures measured on a Haki ad, withheld); merges `35c948d`, `fbd7bed`. Measured once.
 
 **Missing.** A systematic sweep (fonts × weights × sizes × backgrounds), a human legibility
 check, comparison with APCA. All doable on OFL fonts and synthetic backgrounds.
