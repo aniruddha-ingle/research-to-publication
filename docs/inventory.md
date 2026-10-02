@@ -255,3 +255,40 @@ synthetic tests), design-manufacture-interface (plan only, no results yet).
    fonts and synthetic backgrounds (no Haki pixels) for a short note?
 4. **The user (via the lead):** which of #1 / #2 becomes paper 1; whether the user's quoted
    directives may appear verbatim in #1; authorship.
+
+## Answers from department leads (2026-10-02)
+
+**mir-triage** (mir-triage-lead-2, answering for lead-1 too):
+- (a) **Keep withholding Tracklib numbers; re-measure on public data** (Slakh2100, MUSDB18).
+  Quoting measurements of licensed "Clearance Required" material is the user's call and has
+  not been asked; their docs also name tracks. Tracklib figures only with the user's explicit
+  yes, and then aggregated and anonymised. mir-triage passed the question to gateway-1.
+- (b) **No by-ear verdicts exist.** The listening checks for phrase cuts, pickup windows,
+  pickup joins and chops are all still open. Those results are *measured, unchecked by ear*
+  and may not be stated as heard or verified.
+- (c) Pin mir-triage `main` **`c2c9a68`** for stemsets + coverage (includes the MP3 stem-set
+  notes `2927bd2`; WAV grouping unchanged). If the paper covers no-master or submix
+  downloads, pin the commit after their plan 24 (fix-no-master-submix) merges; lead-1 will
+  give the SHA.
+
+**studio** (lead-9):
+- (a) `graph.yaml` history (320 commits, all branches) has node **states** only. Claims,
+  number reservations, locks and PASS markers (78) live in studio's gitignored
+  `.worktrees/.state/`; claims are deleted on release, so who-held-what history is gone except
+  in integrate commit messages and the In-flight table in studio's `claude-plans/01-review-app.md`.
+- (b) **No token or wall-clock cost per lead session is recorded.** Transcripts (not in git)
+  may hold usage, unverified.
+- (c) Deploy history: an uncommitted live-history log (116 lines) and an autodeploy log on
+  this Mac; `live.json` is current state only.
+- (d) ui-reviewer reports are not committed; findings are in transcripts, In-flight rows and
+  plan 01's backlog, evidence in uncommitted state dirs.
+- (e) Plan 06 is the only recorded *trial*. 2026-09-30 to 10-02 ran up to five studio leads at
+  once in production (lead-1 … lead-13): observational data, incidents in the lead-playbook
+  lessons.
+
+**Consequences for candidate #1.** The paper rests on committed history (board states, merge
+and integrate commits, plans, lessons) and is framed as an observational case study plus one
+small trial, not a controlled experiment. Cost/speed-up claims are out unless measured anew.
+Studio's uncommitted state (PASS markers, deploy logs) needs studio's agreement to read as
+evidence. Session transcripts and reviewer shots may hold Haki details or licensed track
+names, so they need the user's yes first.
