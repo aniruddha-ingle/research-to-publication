@@ -281,7 +281,12 @@ Recommendation stands from the inventory: **#1 first** (largest non-private evid
   against real ad performance.
 - **Evidence today.** **Very thin: one 8 s clip and one reaction** (the COO "loves it"; the
   user reads it as appreciating "the psychology of it"). product-in-video's research note
-  `docs/research/ad-video-psychology.md` is coming, not yet committed. Nothing measured.
+  `docs/research/ad-video-psychology.md` is now merged (product-in-video `283cba8`): a
+  literature review across nine areas (hook, motion on stills, reveal/curiosity gap, detail
+  crops, muted-feed text, colour, end frame/loop, and others) and a **pre-registration of nine
+  predictions, P1–P9, each tied to one template parameter** (hook delay, entrance style, line-2
+  timing, recipe, hero scale, pop order, duration, hook line, and accent colour as a negative
+  control). That covers point (4) below. Still nothing measured: no votes, no ad data.
 - **What would make it strong.** (1) Variant axes recorded per item in the swipe contract
   (the same ask as idea 19), so verdicts can be analysed per axis without exposing the items.
   (2) Enough verdicts for per-axis effects with uncertainty: hundreds, not tens. (3) A/B or
