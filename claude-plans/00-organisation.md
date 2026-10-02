@@ -36,3 +36,12 @@ to the user as questions with recommendations; autonomy per the org directive.
    yes; ISMIR for music-analysis work.
 3. Authorship and acknowledgements: Rec: the user decides; Claude's contribution acknowledged
    per the venue's policy on AI assistance.
+
+## The user's answers (2026-10-02, relayed by gateway-1, verbatim picks)
+1. First paper: "#1 An org of one" (plan 03).
+2. Venue: "Preprint draft, then workshop": an arXiv-style preprint draft first, then an
+   agents or software-engineering workshop. Nothing is submitted without the user's yes.
+2b. Quotes: "Yes, scrubbed": the user's directives may be quoted verbatim; Devin, Steph, the
+   CEO/COO and Haki anonymised.
+3. Authorship: "You as sole author": the user is the sole author; Claude disclosed in an
+   AI-assistance statement; acknowledgements are the user's call.
