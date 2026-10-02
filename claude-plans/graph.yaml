@@ -41,7 +41,7 @@
   touches: ["papers/**"]
   agents: [reproducer, paper-writer, peer-reviewer]
   checkpoint: true
-  state: review
+  state: ready
   branch: paper-1
   gate: full
   blocked: null
