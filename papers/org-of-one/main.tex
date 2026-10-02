@@ -56,8 +56,8 @@ tasks~\citep{hong2023metagpt,qian2024chatdev,he2024llmmas} or controlled runs of
 teams~\citep{destefanis2026coordinate}. Less is written down about one person running
 such a system for real, for days, on real products, on one machine.
 
-This report describes one such system. The author is a C++ engineer by day and a music
-producer. Over five and a half days (26 September to 2 October 2026) he steered a small % ev: scale.json org.first_commit, org.last_commit; derived.json org_span_hours
+This report describes one such system. The author is a software engineer with a day job.
+Over five and a half days (26 September to 2 October 2026) he steered a small % ev: scale.json org.first_commit, org.last_commit; derived.json org_span_hours
 organisation whose staff were Claude sessions: a review app for an audio-analysis engine,
 the engine itself, three advertising and design departments working for one client, a
 department that turns the organisation's research into papers (this is its first), and
@@ -92,8 +92,8 @@ second human, and the system changed while it ran.
 Table~\ref{tab:depts} lists the eight departments. Two existed before the last day: the % ev: scale.json org.department_first_commit
 audio-analysis engine (first commit 26 September) and the studio, a review app the human % ev: scale.json repos.mir-triage.first_commit
 uses on his phone (28 September). The coordination design was built and tried in the % ev: scale.json repos.studio.first_commit
-studio. The other six repositories made their first commit on 2 October, most from a kit % ev: derived.json repos_first_commit_on_2026_10_02
-a studio lead wrote. The organisation's goal, in the human's words (scrubbed): % source: gateway steering.md @a9a58bd, "org goal"
+studio. The other six repositories made their first commit on 2 October, most set up % ev: derived.json repos_first_commit_on_2026_10_02
+from a kit a studio lead wrote. % source: studio claude-plans/handoffs (dmi, pip, piv kits) @af5aaf2; research-to-publication CLAUDE.md ("Set up by studio's lead-9") The organisation's goal, in the human's words (scrubbed): % source: gateway steering.md @a9a58bd, "org goal"
 ``everything goes into [the client's] swipe [app] for now. the over arching org goal is
 to build a swipe app for the [two executives] to vote on ideas created by all departments
 combined.''
@@ -141,7 +141,7 @@ no GPU. Nothing is paid for: open-source tools and GitHub's free tier only.
 % ---------------------------------------------------------------------------------------
 \section{Design}\label{sec:design}
 
-The design was planned and built in the studio in about a day (plan 06, ADR 0024; the % source: studio claude-plans/06-multi-lead.md, docs/decisions/0024-multi-lead-orchestration-and-rare-ci.md @af5aaf2
+The design was planned and built in the studio on 29--30 September (plan 06, ADR 0024; the % source: studio claude-plans/06-multi-lead.md, docs/decisions/0024-multi-lead-orchestration-and-rare-ci.md @af5aaf2
 graph landed in \code{16042df}, claims with race tests in \code{df511e9}). The ADR names % source: studio 16042df (2026-09-29 18:20), df511e9 (18:24)
 the problem: without a shared record, leads ``collide: two leads pick the same feature,
 edit the same files, take the same migration number, or merge into \code{main} at the
@@ -209,8 +209,9 @@ The gateway's committed rules state the split: ``Relay is not permission. The ga
 carries direction (goals, priorities, deadlines, cross-department calls). It never relays
 approval for spend, deletes, exposing anything outside the tailnet, the people gate (what
 [the executives or the client's owner] see) or a permission prompt.'' Those go to the
-human, who answers in the lead's own session. Every department's rules file repeats this, % source: research-to-publication CLAUDE.md "Direction" (same rule); org-wide rules file
-and the gateway adds: ``never ask a lead to do something this session couldn't do itself
+human, who answers in the lead's own session. The organisation-wide rules file that every % source: org-root CLAUDE.md (not under version control); research-to-publication CLAUDE.md "Direction" @887dd2c
+session loads states the same split (it is not under version control), as do this
+department's committed rules. The gateway adds: ``never ask a lead to do something this session couldn't do itself
 (no permission laundering).''
 
 % ---------------------------------------------------------------------------------------
@@ -281,7 +282,7 @@ organisation at least 22 lead sessions were named. Under the span assumption at 
 studio leads were active at once (on 1 October), and at most four committed within one % ev: leads.json repos.studio.concurrency_from_spans.max_overlap = 5; max_distinct_leads_committing_in_one_hour = 4
 clock hour (Figure~\ref{fig:timeline}b). Starting sessions at their number's
 reservation\obs{} gives the same five. Spans range from 1.2 to 34 hours; the longest is % ev: studio_state.json concurrency_reserved_to_last_commit.max_overlap; leads.json session_spans_from_attributed_commits (lead-8 1.163 h, lead-9 34.151 h)
-the session holding the operations duty.
+the session holding the operations duty. % source: gateway CLAUDE.md @a9a58bd ("Studio's ops duty is lead-9")
 
 \subsection{Node lifecycles}
 
@@ -367,13 +368,13 @@ without a baseline we cannot say how many it prevented.
 \subsection{The three-lead trial}\label{sec:trial}
 
 The studio recorded one deliberate trial, on the evening of 29 September US Eastern. The % source: studio 6b04ffe, claude-plans/06-multi-lead.md "Trial record"
-record says three leads ran at once ``for about two hours'', ten nodes merged ``in
-parallel, no file, number or deploy collisions'', three coordination conflicts were each
-settled by the claim table or an agreed rule, and the trial used 0 CI minutes.
+record says ``Three leads ran at once for about two hours'' and ``Nodes finished in
+parallel, no file, number or deploy collisions'', lists three coordination conflicts each
+settled by the claim table or an agreed rule, and reports 0 CI minutes used.
 
 We re-counted it from history. The window, from the first lead's recorded start to the % ev: integrations.json repos.studio.trial_2026_09_30.window_hours (1.262)
 merge just after the record, is 1.26 hours. It holds 111 commits and 29 merges, of which % ev: trial_2026_09_30.commits (111), merges (29)
-10 are branch-to-trunk (the ten the record lists), and 9 board nodes reached % ev: trial_2026_09_30.branch_into_trunk_merges (10), nodes_reaching_merged (9)
+10 are branch-to-trunk, and 9 board nodes reached % ev: trial_2026_09_30.branch_into_trunk_merges (10), nodes_reaching_merged (9)
 \code{merged}. Two merges needed a hand resolution, one on \code{graph.yaml} and one on a % ev: trial_2026_09_30.merges_needing_hand_resolution (2)
 shared plan. One board update was lost and set again (\code{05ffd0f}, \code{94f8d2d}). % ev: trial_2026_09_30.graph_state_reset_after_overwrite_commits; incidents.json hist-1
 Eight files other than shared indexes were changed by two or more merged branches, and % ev: trial_2026_09_30.files_changed_by_more_than_one_merged_branch_excl_shared_indexes (8)
@@ -400,7 +401,7 @@ waits for a quiet machine. Its one untimestamped line is a shell syntax error in
 deployer itself, which corroborates lesson studio-15 (\S\ref{sec:incidents}).
 
 \subsection{Kits}
-Of the four departments started from a kit on the last day that have a board, three % ev: derived.json hours_first_commit_to_first_merged_node
+Of the four departments created on the last day that have a board, three % ev: derived.json hours_first_commit_to_first_merged_node
 merged a first node within an hour of their first commit (0.21, 0.64 and 0.11 hours); % ev: derived.json ...copy 0.21, piv 0.64, research 0.11
 the fourth had merged none by the pin. This shows the machinery is usable at once, not
 how fast a department becomes productive: first nodes were often the department's own
@@ -418,7 +419,8 @@ Appendix~\ref{app:incidents} lists every incident.
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.8\linewidth]{incidents.pdf}
-  \caption{All 61 dated lessons by cause class: distinct incidents, distinct practices
+  \caption{All 61 dated lessons by cause class: % ev: incidents.json counts.dated_lessons
+    distinct incidents, distinct practices
     and directives, and copies (counted under the original's class). Hand-coded from the
     committed playbooks.}
   \label{fig:incidents}
@@ -427,7 +429,8 @@ Appendix~\ref{app:incidents} lists every incident.
 \begin{table}[t]
 \centering
 \small
-\caption{Cause classes of the 33 distinct incidents, one scrubbed example each, and the
+\caption{Cause classes of the 33 distinct incidents, % ev: incidents.json counts.distinct_by_kind.incident
+ one scrubbed example each, and the
 rule written back. Lesson ids refer to Appendix~\ref{app:incidents}.}
 \label{tab:taxonomy}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.2\linewidth}rYY@{}}
@@ -461,7 +464,7 @@ failures a single session on its own machine rarely meets. The most-copied lesso
 of them: a default-parallel test run starved the laptop while the live app ran on it, and
 a regex filter matched the worktree's own name and ran the whole suite (studio-22). It was
 copied into five other repositories. Later three departments at once drove the load to % ev: incidents.json counts.times_each_original_was_copied["studio-22"] = 5; mir-8 (load as written)
-29--44 (mir-8), and the organisation adopted a cap: about six busy threads per
+29--44 (mir-8), and the organisation adopted a cap: about six busy threads per % ev: incidents.json mir-8 fix ("6 busy threads per department, nothing heavy above load 15")
 department, nothing heavy above a one-minute load of 15, long jobs under a shared lock.
 
 \paragraph{Sessions die and leave state behind.}
@@ -480,8 +483,8 @@ with the kits and with the organisation-wide rules file every session loads.
 
 \paragraph{What held.}
 Several leads shared one repository for days. None of the 53 merges made by the % ev: integrations.json repos.studio.trunk_into_branch_by_integrate_script (53)
-integration script needed a hand resolution, and neither the history nor the lessons show
-a number or deploy collision. Every coded incident ends in a rule written back. None of
+integration script needed a hand resolution; the trial had no number or deploy collision,
+and none of the coded lessons describes one. Every coded incident ends in a rule written back. None of
 this shows the design is better than an alternative; it shows it held together under
 real use.
 
