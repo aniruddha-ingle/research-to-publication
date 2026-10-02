@@ -45,3 +45,9 @@ to the user as questions with recommendations; autonomy per the org directive.
    CEO/COO and Haki anonymised.
 3. Authorship: "You as sole author": the user is the sole author; Claude disclosed in an
    AI-assistance statement; acknowledgements are the user's call.
+4. Tracklib numbers (2026-10-02, relayed by gateway-1): asked whether a paper may quote
+   numbers measured on the Tracklib library or must re-measure on public datasets (Slakh2100,
+   MUSDB18), with public-only recommended, the user said: "yes for paper#2". The gateway's
+   reading, applied here: **every number in paper #2 is re-measured on public datasets; no
+   Tracklib figures appear in any paper.** The words could also be read as permission to quote;
+   we take the stricter reading until the user says otherwise in this session.
