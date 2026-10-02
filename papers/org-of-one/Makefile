@@ -10,8 +10,11 @@ PY_PIN    := 3.11
 BUILD     := build
 FIG_SRC   := $(wildcard figures/*.py)
 FIG_PDF   := $(patsubst figures/%.py,$(BUILD)/figures/%.pdf,$(FIG_SRC))
+TAB_SRC   := $(wildcard tables/*.py)
+TAB_TEX   := $(patsubst tables/%.py,$(BUILD)/tables/%.tex,$(TAB_SRC))
+EVIDENCE  := $(wildcard evidence/*.json)
 
-.PHONY: all figures check clean
+.PHONY: all figures tables check clean
 all: $(BUILD)/main.pdf
 
 check:
@@ -21,11 +24,17 @@ check:
 figures: $(FIG_PDF)
 
 # Each figure script is a uv script (PEP 723 deps, wheels only) that writes the path it is given.
-$(BUILD)/figures/%.pdf: figures/%.py | check
+$(BUILD)/figures/%.pdf: figures/%.py $(EVIDENCE) | check
 	@mkdir -p $(dir $@)
 	UV_NO_BUILD=1 uv run --quiet --python $(PY_PIN) --script $< $@
 
-$(BUILD)/main.pdf: main.tex refs.bib $(FIG_PDF) | check
+# Tables generated from evidence (stdlib-only uv scripts), \input by main.tex.
+tables: $(TAB_TEX)
+$(BUILD)/tables/%.tex: tables/%.py $(EVIDENCE) | check
+	@mkdir -p $(dir $@)
+	UV_NO_BUILD=1 uv run --quiet --python $(PY_PIN) --script $< $@
+
+$(BUILD)/main.pdf: main.tex refs.bib $(FIG_PDF) $(TAB_TEX) | check
 	latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=$(BUILD) main.tex
 
 clean:

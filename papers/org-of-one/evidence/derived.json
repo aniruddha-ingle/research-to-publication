@@ -1,0 +1,75 @@
+{
+ "_inputs": {
+  "hours_first_commit_to_first_merged_node": "scale.org.department_first_commit; lifecycle.repos.*.per_node[].reached.merged",
+  "lessons_copied_share": "incidents.counts.copied_or_same_event / dated_lessons",
+  "max_repos_committing_in_one_hour": "scale.repos.*.commits_per_hour",
+  "org_coauthor_share": "scale.org.commits_with_claude_coauthor / scale.org.commits",
+  "org_commits_on_2026_10_02_share": "scale.org.commits_per_day['2026-10-02'] / scale.org.commits",
+  "org_span_hours": "scale.org.first_commit, scale.org.last_commit",
+  "repos_first_commit_on_2026_10_02": "scale.org.department_first_commit",
+  "studio_attributed_span_hours_median": "leads.repos.studio.session_spans_from_attributed_commits[].hours (upper median of 12)",
+  "studio_coauthor_share": "scale.repos.studio.commits_with_claude_coauthor / .commits",
+  "studio_hand_resolved_graph_share": "integrations.repos.studio.hand_resolved_merges_touching_class['graph.yaml (board)'] / merges_needing_hand_resolution_remerge_diff",
+  "studio_hand_resolved_only_graph": "integrations.repos.studio.hand_resolved_merges[].classes == ['graph.yaml (board)']",
+  "studio_hand_resolved_share": "integrations.repos.studio.merges_needing_hand_resolution_remerge_diff / .merges",
+  "studio_hand_resolved_share_of_hand_trunk_merges": "integrations...merges_needing_hand_resolution_by_kind['trunk into branch (by hand)'] / merge_kinds['trunk into branch (by hand)']",
+  "studio_nodes_merged_or_deployed_at_pin": "lifecycle.repos.studio.final_state_counts merged + deployed",
+  "studio_pass_markers_for_board_nodes": "studio_state.pass_markers.markers_for_board_nodes (OBSERVATIONAL)",
+  "studio_span_hours": "scale.repos.studio.first_commit, .last_commit"
+ },
+ "_note": "derived by derived.py from the evidence JSON beside it; arithmetic only",
+ "hours_first_commit_to_first_merged_node": {
+  "copy-in-product-picture": {
+   "first_commit": "2026-10-02T01:27:37-04:00",
+   "first_node_merged": "2026-10-02T01:40:17-04:00",
+   "hours": 0.21
+  },
+  "mir-triage": {
+   "first_commit": "2026-09-26T17:34:11-04:00",
+   "first_node_merged": "2026-10-01T22:17:11-04:00",
+   "hours": 124.72
+  },
+  "product-in-video": {
+   "first_commit": "2026-10-02T04:54:24-04:00",
+   "first_node_merged": "2026-10-02T05:32:50-04:00",
+   "hours": 0.64
+  },
+  "research-to-publication": {
+   "first_commit": "2026-10-02T06:16:09-04:00",
+   "first_node_merged": "2026-10-02T06:23:00-04:00",
+   "hours": 0.11
+  },
+  "studio": {
+   "first_commit": "2026-09-28T18:25:11-04:00",
+   "first_node_merged": "2026-09-29T18:20:14-04:00",
+   "hours": 23.92
+  }
+ },
+ "lessons_copied_share": 0.246,
+ "max_repos_committing_in_one_hour": {
+  "hours": [
+   "2026-10-02T05"
+  ],
+  "repos": 7
+ },
+ "org_coauthor_share": 0.934,
+ "org_commits_on_2026_10_02_share": 0.197,
+ "org_span_hours": 133.1,
+ "repos_first_commit_on_2026_10_02": [
+  "copy-in-product-picture",
+  "design-manufacture-interface",
+  "gateway",
+  "product-in-picture",
+  "product-in-video",
+  "research-to-publication"
+ ],
+ "studio_attributed_span_hours_median": 7.393,
+ "studio_coauthor_share": 0.928,
+ "studio_hand_resolved_graph_share": 0.647,
+ "studio_hand_resolved_only_graph": 30,
+ "studio_hand_resolved_share": 0.145,
+ "studio_hand_resolved_share_of_hand_trunk_merges": 0.303,
+ "studio_nodes_merged_or_deployed_at_pin": 104,
+ "studio_pass_markers_for_board_nodes": 78,
+ "studio_span_hours": 83.96
+}
