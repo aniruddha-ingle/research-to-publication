@@ -1,0 +1,1 @@
+- [First inventory outcome](project_first_inventory.md) — 2026-10-02 ranking (agentic org #1, stem sets #2) and the Tracklib/Haki privacy traps
