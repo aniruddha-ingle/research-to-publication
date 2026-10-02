@@ -37,8 +37,7 @@ reviewer agents that never edit, and a gateway session that carries the human's 
 but never his approval. The committed history holds 1,750 commits and 425 merges, 93\% of % ev: scale.json org.commits, org.merges; derived.json org_coauthor_share (0.934)
 the commits with a Claude co-author line. Up to five studio leads were active at once, if % ev: leads.json repos.studio.concurrency_from_spans.max_overlap
 a session is taken to span its first to last attributed commit. Of the studio's 351 % ev: integrations.json repos.studio.merges
-merges, 51 needed a hand resolution, 33 of them on the board file and none inside the % ev: integrations.json repos.studio.merges_needing_hand_resolution_remerge_diff; hand_resolved_merges_touching_class
-integration script. We code all 61 dated lessons in the eight lead playbooks into 46 % ev: incidents.json counts.dated_lessons, distinct_events_or_rules
+merges, 51 needed a hand resolution, 33 of them on the board file. We code % ev: integrations.json repos.studio.merges_needing_hand_resolution_remerge_diff; hand_resolved_merges_touching_class all 61 dated lessons in the eight lead playbooks into 46 % ev: incidents.json counts.dated_lessons, distinct_events_or_rules
 distinct events, 33 of them incidents in ten cause classes, each of which produced a rule % ev: incidents.json counts.distinct_by_kind.incident; distinct_incidents_by_cause_class (10 keys)
 written back into a repository. This is an observational case study plus one small
 trial, not a controlled experiment. Nothing was recorded that could support a claim
@@ -332,12 +331,23 @@ rounds); the studio has one deliberate reopen, the others none. % ev: lifecycle.
 
 \subsection{Integration and merge conflicts}
 
-The studio made 130 branch-to-trunk merges and 208 merges of trunk into a branch, 53 by % ev: integrations.json repos.studio.merge_kinds; trunk_into_branch_merges; trunk_into_branch_by_integrate_script
-the integration script and 155 by hand. Of its 351 merges, 51 (15\%) needed a hand % ev: integrations.json repos.studio.merges_needing_hand_resolution_remerge_diff; derived.json studio_hand_resolved_share
-resolution (Table~\ref{tab:merges}). Thirty-three of those touched the board file and 30 % ev: integrations.json hand_resolved_merges_touching_class["graph.yaml (board)"]; derived.json studio_hand_resolved_only_graph
-touched nothing else. None was made by the integration script, which stops on a conflict
-by design; 47 were hand merges of trunk into a branch, the step a lead takes after the % ev: integrations.json merges_needing_hand_resolution_by_kind["trunk into branch (by hand)"]
-script stops, and 30\% of those 155 hand merges needed one. % ev: derived.json studio_hand_resolved_share_of_hand_trunk_merges (0.303)
+The integration script reached the studio's trunk on 29 September at 20:30 (commit % ev: integrate_split.json integrate_sh_reached_trunk (0416e3d4e, 2026-09-29T20:30:37-04:00)
+\code{0416e3d}). It makes two merges per node: trunk into the branch, with a subject that
+names the script (53 such merges), and then the branch into trunk with \code{--no-ff}. % ev: integrations.json repos.studio.trunk_into_branch_by_integrate_script (53)
+The studio made 130 branch-to-trunk merges, 108 of them after the script existed; 93 of % ev: integrate_split.json branch_into_trunk (total 130, after 108, after_with_script_subject_form 93)
+those have the script's subject form, which a lead could also type by hand, so 93 is an
+upper bound on the script's merges into trunk. A further 155 merges of trunk into a branch % ev: integrations.json merge_kinds["trunk into branch (by hand)"] (155); integrate_split.json trunk_into_branch_by_hand (before 8, after 147)
+were made by hand (147 after the script existed).
+
+Of all 351 studio merges, 51 (15\%) needed a hand resolution (Table~\ref{tab:merges}). % ev: integrations.json repos.studio.merges_needing_hand_resolution_remerge_diff; derived.json studio_hand_resolved_share
+Thirty-three touched the board file and 30 touched nothing else. By kind, 47 were hand % ev: integrations.json hand_resolved_merges_touching_class["graph.yaml (board)"]; derived.json studio_hand_resolved_only_graph
+merges of trunk into a branch (30\% of the 155 such merges), 3 were other merges off % ev: integrations.json merges_needing_hand_resolution_by_kind; derived.json studio_hand_resolved_share_of_hand_trunk_merges (0.303)
+trunk, and 1 was a branch-to-trunk merge (\code{206446e}). That one, and one of the % ev: integrate_split.json hand_resolved_not_trunk_into_branch
+three others (\code{c538151}, both on 28 September), predate the script; the other two
+(\code{7fc71d4}, \code{a115f44}) came after it. That none of the hand resolutions is
+inside the script holds by construction: it aborts a conflicting merge and leaves the
+resolution to the node's owner. We cannot tell from history how many of the 155 hand
+merges followed such an abort; leads also merge trunk into their branches unprompted.
 
 \begin{table}[t]
 \centering
@@ -482,9 +492,9 @@ with the kits and with the organisation-wide rules file every session loads.
 \section{Discussion}\label{sec:discussion}
 
 \paragraph{What held.}
-Several leads shared one repository for days. None of the 53 merges made by the % ev: integrations.json repos.studio.trunk_into_branch_by_integrate_script (53)
-integration script needed a hand resolution; the trial had no number or deploy collision,
-and none of the coded lessons describes one. Every coded incident ends in a rule written back. None of
+Several leads shared one repository for days. Conflicts concentrated on the board file
+rather than on code; the trial had no number or deploy collision, and none of the coded
+lessons describes one. Every coded incident ends in a rule written back. None of
 this shows the design is better than an alternative; it shows it held together under
 real use.
 
@@ -605,7 +615,7 @@ and stating what could not be measured reduce this risk; they do not remove it.
 One engineer ran eight departments of concurrent Claude lead sessions on one laptop for
 five and a half days, coordinated through git and a handful of files. The history shows
 real concurrency in the studio (up to five leads under our span assumption), a board file
-that absorbed most of the conflicts, an integration gate that never resolved one, and a
+that absorbed most of the conflicts, a single locked gate into trunk, and a
 steady stream of concrete incidents, each turned into a rule the next session reads. The
 most useful rules were about the shared machine, dying sessions and where coordination
 state lives, not about the agents' code. Whether the design is faster or cheaper than the

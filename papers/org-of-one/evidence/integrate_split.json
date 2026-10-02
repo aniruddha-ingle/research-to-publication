@@ -1,0 +1,46 @@
+{
+ "_note": "git-only, read-only, studio at the pin in sources.json; see the docstring",
+ "branch_into_trunk": {
+  "after": 108,
+  "after_with_script_subject_form": 93,
+  "before": 22,
+  "total": 130
+ },
+ "hand_resolved_not_trunk_into_branch": [
+  {
+   "date": "2026-09-28T23:15:38-04:00",
+   "kind": "other merge off trunk",
+   "relative_to_script": "before",
+   "sha": "c53815193"
+  },
+  {
+   "date": "2026-09-28T23:52:03-04:00",
+   "kind": "branch into trunk",
+   "relative_to_script": "before",
+   "sha": "206446e55"
+  },
+  {
+   "date": "2026-09-29T22:46:52-04:00",
+   "kind": "other merge off trunk",
+   "relative_to_script": "after",
+   "sha": "7fc71d486"
+  },
+  {
+   "date": "2026-09-30T20:17:45-04:00",
+   "kind": "other merge off trunk",
+   "relative_to_script": "after",
+   "sha": "a115f446f"
+  }
+ ],
+ "integrate_sh_reached_trunk": {
+  "committer_date": "2026-09-29T20:30:37-04:00",
+  "sha": "0416e3d4e"
+ },
+ "studio_pin": "af5aaf24bb47f6e57db8c9d1d92683b0ff48dafc",
+ "trunk_into_branch_by_hand": {
+  "after": 147,
+  "before": 8,
+  "total": 155
+ },
+ "trunk_into_branch_by_integrate_script": 53
+}

@@ -192,3 +192,15 @@ studio runs, so they are a snapshot taken at `read_at` (06:50-04:00), not histor
 - Token or wall-clock cost per session: not recorded anywhere (studio's answer).
 - Review rounds per node for studio: reviews run inside `building` and leave no board state.
   Only PASS markers (one per node, last write) and commit messages ("review round N") exist.
+
+## Added by paper-writer (2026-10-02, draft and peer review)
+
+- `derived.py` → `derived.json`: arithmetic only over the JSON files here (shares, spans,
+  counts the text states that no single key holds). No git. Deterministic.
+- `integrate_split.py --repo <bare clone of studio>` → `integrate_split.json`: git-only,
+  read-only, at studio's pin. When integrate.sh reached trunk (`0416e3d`, 2026-09-29T20:30
+  -04:00); branch→trunk merges before/after it (22 / 108) and after it with the script's
+  subject form (93, an upper bound: the form can be typed by hand); hand merges of trunk into
+  a branch before/after (8 / 147); the 4 hand-resolved merges that are not hand trunk→branch
+  merges, each before or after the script. Totals reconcile with `integrations.json`
+  (130, 155, 53). Byte-identical on re-run.
