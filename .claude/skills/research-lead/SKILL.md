@@ -69,3 +69,7 @@ waits on them.
   purged from history. Private details never go in git, not even in notes about method.
 - 2026-10-01 (from studio) · Default-parallel test runs starved a live app on this Mac. Heavy
   work under the shared lock, niced; only the user can kill another session's process.
+- 2026-10-02 (the user, via gateway-1) · "we are on max the 200 dollar plan, so you should be
+  really token efficient": the weekly limit paused the whole org that day. One agent at a time
+  unless parallel work clearly pays; tight briefs; short reports; no polling; replies to the
+  gateway in 1-3 lines; agents commit WIP per section so a limit stop loses nothing.
