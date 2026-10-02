@@ -3,6 +3,7 @@
   "hours_first_commit_to_first_merged_node": "scale.org.department_first_commit; lifecycle.repos.*.per_node[].reached.merged",
   "lessons_copied_share": "incidents.counts.copied_or_same_event / dated_lessons",
   "max_repos_committing_in_one_hour": "scale.repos.*.commits_per_hour",
+  "named_lead_sessions_org": "leads.highest_number_by_department (sum); scale.repos keys minus those",
   "org_coauthor_share": "scale.org.commits_with_claude_coauthor / scale.org.commits",
   "org_commits_on_2026_10_02_share": "scale.org.commits_per_day['2026-10-02'] / scale.org.commits",
   "org_span_hours": "scale.org.first_commit, scale.org.last_commit",
@@ -13,6 +14,7 @@
   "studio_hand_resolved_only_graph": "integrations.repos.studio.hand_resolved_merges[].classes == ['graph.yaml (board)']",
   "studio_hand_resolved_share": "integrations.repos.studio.merges_needing_hand_resolution_remerge_diff / .merges",
   "studio_hand_resolved_share_of_hand_trunk_merges": "integrations...merges_needing_hand_resolution_by_kind['trunk into branch (by hand)'] / merge_kinds['trunk into branch (by hand)']",
+  "studio_nodes_deployed_without_merged_state": "lifecycle.repos.studio.per_node[] final_state in (merged, deployed), no reached.merged",
   "studio_nodes_merged_or_deployed_at_pin": "lifecycle.repos.studio.final_state_counts merged + deployed",
   "studio_pass_markers_for_board_nodes": "studio_state.pass_markers.markers_for_board_nodes (OBSERVATIONAL)",
   "studio_span_hours": "scale.repos.studio.first_commit, .last_commit"
@@ -52,6 +54,21 @@
   ],
   "repos": 7
  },
+ "named_lead_sessions_org": {
+  "by_department": {
+   "copy-in-product-picture": 1,
+   "gateway": 1,
+   "mir-triage": 2,
+   "product-in-picture": 2,
+   "product-in-video": 2,
+   "research-to-publication": 1,
+   "studio": 13
+  },
+  "departments_without_named_leads": [
+   "design-manufacture-interface"
+  ],
+  "total": 22
+ },
  "org_coauthor_share": 0.934,
  "org_commits_on_2026_10_02_share": 0.197,
  "org_span_hours": 133.1,
@@ -69,6 +86,15 @@
  "studio_hand_resolved_only_graph": 30,
  "studio_hand_resolved_share": 0.145,
  "studio_hand_resolved_share_of_hand_trunk_merges": 0.303,
+ "studio_nodes_deployed_without_merged_state": {
+  "count": 4,
+  "nodes": [
+   "studio-n002",
+   "studio-n003",
+   "studio-n006",
+   "studio-n034"
+  ]
+ },
  "studio_nodes_merged_or_deployed_at_pin": 104,
  "studio_pass_markers_for_board_nodes": 78,
  "studio_span_hours": 83.96

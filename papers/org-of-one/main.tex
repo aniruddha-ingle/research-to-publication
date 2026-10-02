@@ -28,14 +28,13 @@
 \maketitle
 
 \begin{abstract}
-One software engineer ran a small software organisation for five and a half days in which % ev: derived.json org_span_hours (133.1 h)
-almost all of the work was done by concurrent large language model (LLM) sessions on a
-single laptop. Each of eight departments is one git repository with one or more Claude % ev: scale.json org.repos
+One software engineer ran a small software organisation for five and a half days as % ev: derived.json org_span_hours (133.1 h)
+concurrent large language model (LLM) sessions on a single laptop; 93\% of its commits % ev: derived.json org_coauthor_share (0.934)
+carry a Claude co-author trailer. Each of eight departments is one git repository with one or more Claude % ev: scale.json org.repos
 ``lead'' sessions. The leads coordinate only through files: a plan-first feature graph in
 git with \code{touches} globs, atomic \code{mkdir} claims, one locked integration script,
 reviewer agents that never edit, and a gateway session that carries the human's direction
-but never his approval. The committed history holds 1,750 commits and 425 merges, 93\% of % ev: scale.json org.commits, org.merges; derived.json org_coauthor_share (0.934)
-the commits with a Claude co-author line. Up to five studio leads were active at once, if % ev: leads.json repos.studio.concurrency_from_spans.max_overlap
+but never his approval. The committed history holds 1,750 commits and 425 merges. % ev: scale.json org.commits, org.merges Up to five studio leads were active at once, if % ev: leads.json repos.studio.concurrency_from_spans.max_overlap
 a session is taken to span its first to last attributed commit. Of the studio's 351 % ev: integrations.json repos.studio.merges
 merges, 51 needed a hand resolution, 33 of them on the board file. We code % ev: integrations.json repos.studio.merges_needing_hand_resolution_remerge_diff; hand_resolved_merges_touching_class all 61 dated lessons in the eight lead playbooks into 46 % ev: incidents.json counts.dated_lessons, distinct_events_or_rules
 distinct events, 33 of them incidents in ten cause classes, each of which produced a rule % ev: incidents.json counts.distinct_by_kind.incident; distinct_incidents_by_cause_class (10 keys)
@@ -160,9 +159,10 @@ Figure~\ref{fig:arch} shows the parts.
 
 \paragraph{Plan first; a feature graph in git.}
 Work starts as a numbered plan and becomes nodes in \code{graph.yaml}, the board. A node
-has dependencies, a priority, the agents it needs, a gate size, a state (\code{todo},
-\code{claimed}, \code{building}, \code{review}, \code{ready}, \code{merged},
-\code{deployed}, \code{dropped}) and \code{touches}: globs for the files it will change.
+has dependencies, a priority, the agents it needs, a gate size, a state (\code{todo}, % source: studio plan 06 section 1 and lifecycle.json final_state_counts (built in studio; removed in product-in-video)
+\code{claimed}, \code{building}, \code{built}, \code{review}, \code{ready},
+\code{merged}, \code{deployed}, \code{dropped}; one department also uses
+\code{removed}) and \code{touches}: globs for the files it will change.
 \code{graph.py ready} offers only nodes whose dependencies are merged and whose
 \code{touches} do not overlap a running node, which is the scheduling idea of proactive
 conflict avoidance~\citep{kasi2013cassandra} done with globs. Ties are broken by a logged
@@ -182,8 +182,10 @@ conflict on the branch.
 
 \paragraph{Reviewers that never edit.}
 Each department has a reviewer agent that reads, runs and judges but never changes the
-code. Only Blocker and Major findings block. Small nodes take a light gate (the lead's own
-look at screenshots); larger ones need the reviewer's PASS.
+code. Only Blocker and Major findings block. A node's gate is \emph{light} or \emph{full}: a % source: studio plan 06 section 4 @af5aaf2
+light gate is the local tests plus the lead's own look at screenshots, with no reviewer
+agent and no PASS marker; a full gate (new screens, gestures, migrations) needs the
+reviewer's PASS.
 
 \paragraph{Deploy at built.}
 The human asked for ``the latest unstable running even though PRs might be waiting to be % source: studio plan 06 section 10 @af5aaf2 (the user, 2026-09-29)
@@ -212,7 +214,8 @@ approval for spend, deletes, exposing anything outside the tailnet, the people g
 human, who answers in the lead's own session. The organisation-wide rules file that every % source: org-root CLAUDE.md (not under version control); research-to-publication CLAUDE.md "Direction" @887dd2c
 session loads states the same split (it is not under version control), as do this
 department's committed rules. The gateway adds: ``never ask a lead to do something this session couldn't do itself
-(no permission laundering).''
+(no permission laundering).'' (The \emph{tailnet} is the human's private Tailscale
+network, through which his phone reaches the live app.)
 
 % ---------------------------------------------------------------------------------------
 \section{Data and method}\label{sec:method}
@@ -221,7 +224,7 @@ department's committed rules. The gateway adds: ``never ask a lead to do somethi
 A script makes bare clones of the eight repositories and reads their history at pinned
 commits (Appendix~\ref{app:repro}). It runs only git, runs none of the departments' code
 and writes nothing in their repositories; re-running it gives byte-identical output.
-Dates are committer dates in US Eastern time; author and committer dates differ in 17 of % ev: README.md "Environment and commands" (17 of 1,750)
+All times in this paper are US Eastern (EDT, UTC$-$4); dates are committer dates; author and committer dates differ in 17 of % ev: README.md "Environment and commands" (17 of 1,750)
 1,750 commits.
 
 \paragraph{Lifecycles and merges.}
@@ -263,7 +266,7 @@ the evidence files. People are described by role.
 \subsection{Scale and concurrency}
 
 Of the 1,750 commits, 1,635 (93\%) carry a Claude co-author line; in the studio 1,257 of % ev: scale.json org.commits_with_claude_coauthor; derived.json org_coauthor_share
-1,355 do, naming two models (744 and 513 commits). Studio commits peaked at 552 on % ev: scale.json repos.studio.commits_with_claude_coauthor, coauthor_commits_by_model; commits_per_day["2026-09-30"]
+1,355 do, naming two models (Claude Fable 5.1 on 744, Claude Opus 5.5 on 513). Studio commits peaked at 552 on % ev: scale.json repos.studio.commits_with_claude_coauthor, coauthor_commits_by_model; commits_per_day["2026-09-30"]
 30 September (Figure~\ref{fig:timeline}a). The last day holds 345 commits as six new % ev: scale.json org.commits_per_day["2026-10-02"]
 repositories started; in the hour from 05:00 that day seven of the eight repositories % ev: derived.json max_repos_committing_in_one_hour
 committed. That counts active repositories, not sessions.
@@ -278,15 +281,19 @@ committed. That counts active repositories, not sessions.
 \end{figure}
 
 Studio sessions were numbered up to lead-13, and 12 have attributed commits. Across the % ev: leads.json repos.studio (13 names; 12 with attributed commits)
-organisation at least 22 lead sessions were named. Under the span assumption at most five % ev: leads.json highest_number_by_department: 13+2+1+2+2+1+1 = 22
+organisation at least 22 lead sessions were named (the manufacturing department names % ev: derived.json named_lead_sessions_org (total 22; dmi has no entry)
+none). Under the span assumption at most five
 studio leads were active at once (on 1 October), and at most four committed within one % ev: leads.json repos.studio.concurrency_from_spans.max_overlap = 5; max_distinct_leads_committing_in_one_hour = 4
 clock hour (Figure~\ref{fig:timeline}b). Starting sessions at their number's
 reservation\obs{} gives the same five. Spans range from 1.2 to 34 hours; the longest is % ev: studio_state.json concurrency_reserved_to_last_commit.max_overlap; leads.json session_spans_from_attributed_commits (lead-8 1.163 h, lead-9 34.151 h)
-the session holding the operations duty. % source: gateway CLAUDE.md @a9a58bd ("Studio's ops duty is lead-9")
+the session holding the operations duty, a claimable role whose holder alone runs the % source: gateway CLAUDE.md @a9a58bd ("Studio's ops duty is lead-9"); studio lead-playbook @af5aaf2 ("Only the ops-duty holder deploys")
+health checks and deploys.
 
 \subsection{Node lifecycles}
 
-In the studio, 100 of 113 nodes reached \code{merged}. The median node took 3.5 hours % ev: lifecycle.json repos.studio.ever_merged, nodes
+In the studio, 100 of 113 nodes reached \code{merged} on the board; 104 were merged or % ev: lifecycle.json repos.studio.ever_merged; derived.json studio_nodes_merged_or_deployed_at_pin (104), studio_nodes_deployed_without_merged_state (4)
+deployed at the pin, because four went to \code{deployed} without the board ever showing
+them \code{merged} (two first appeared as \code{deployed}). The median node took 3.5 hours % ev: lifecycle.json repos.studio.ever_merged, nodes
 from \code{todo} to merged and half an hour from claimed to merged
 (Table~\ref{tab:lifecycle}, Figure~\ref{fig:lifecycle}). Twenty-two studio nodes were % ev: lifecycle.json repos.studio.first_state_counts.building = 22
 seeded already \code{building}, so they have no \code{todo} time. These are durations of
@@ -323,12 +330,13 @@ design-manufacture-interface & 6 & 0 & 0 & -- & -- \\ % ev: lifecycle.json repos
 \end{figure}
 
 Two intervals need care. Studio \code{review}/\code{ready} to merged has a median of 0.008 % ev: lifecycle.json repos.studio.lead_time_hours.review_to_merged_h (0.008, n 92)
-hours (about 30 seconds, $n=92$), but the studio sets \code{ready} just before running
+hours (about 30 seconds, $n=92$), but the studio sets \code{ready} just before running % source: studio scripts/lead/integrate.sh @af5aaf2 (refuses unless review|ready); lead-playbook lesson studio-14 ("a locked commit on main setting it ready before it runs")
 the integration script and reviews while a node is still \code{building}: this interval
 measures integration, not review. Merged to \code{deployed} has a median of 0.087 hours % ev: lifecycle.json repos.studio.lead_time_hours.merged_to_deployed_h (0.087, n 69)
 (about five minutes, $n=69$). Boards rarely move backwards: on the audio engine's trunk % ev: lifecycle.json repos.mir-triage.state_regressions_on_trunk = 4
-four nodes went from \code{review} back to \code{building} after an evaluator FAIL (rework
-rounds); the studio has one deliberate reopen, the others none. % ev: lifecycle.json repos.studio.state_regressions_on_trunk = 1
+four nodes went from \code{review} back to \code{building}; two of those commits record % source: mir-triage 77e89e1, 1d2e392 (subjects record "evaluator FAIL"); d981105, 4e5a217 give no reason
+an evaluator FAIL (\code{77e89e1}, \code{1d2e392}) and two give no reason. The studio
+has one deliberate reopen, the others none. % ev: lifecycle.json repos.studio.state_regressions_on_trunk = 1
 
 \subsection{Integration and merge conflicts}
 
@@ -404,11 +412,13 @@ each naming a commit reachable from the pinned trunk, each for a node then \code
 skipped reviews, because light-gate nodes write no marker, and studio review rounds per
 node cannot be recovered at all.
 
-The live-history log\obs{} lists 116 deploys from 30 September to 2 October; in 33 the % ev: studio_state.json live_history.deploy_lines (116), deployed_sha_differs_from_main_sha (33)
-deployed commit was not \code{main} because built branches were overlaid. The
-auto-deployer's log\obs{} records 116 attempts: 111 deployed and 5 failed (two health % ev: studio_state.json autodeploy_log.line_kinds; failed_deploys_by_reason
-checks, one database not at the migration head, two other), with 13 migrations and 8 % ev: studio_state.json autodeploy_log.line_kinds (migrated 13, deploy waits 8)
-waits for a quiet machine. Its one untimestamped line is a shell syntax error in the % ev: studio_state.json autodeploy_log.quoted_line
+The live-history log\obs{} lists 116 deploys from the evening of 29 September to 2 % ev: studio_state.json live_history.deploy_lines (116), first 2026-09-30T01:36Z, last 2026-10-02T05:31Z
+October; in 33 of them the deployed commit differs from \code{main}'s. The % ev: studio_state.json live_history.deployed_sha_differs_from_main_sha (33)
+auto-deployer's log\obs{} records 116 attempts: 111 deployed and 5 failed (two logged as % ev: studio_state.json autodeploy_log.line_kinds; failed_deploys_by_reason
+``doctor failed'', i.e.\ the post-deploy health check; one database not at the migration
+head; two other), 13 migrations, 8 waits for a quiet machine, and 34 deploys with built % ev: studio_state.json autodeploy_log (migrated 13, deploy waits 8, deploys_with_built_branches_overlaid 34, distinct_built_nodes_overlaid 15)
+branches overlaid (15 distinct nodes). The two logs are written by different scripts and
+we did not match them entry by entry, so we do not reconcile 33 with 34. Its one untimestamped line is a shell syntax error in the % ev: studio_state.json autodeploy_log.quoted_line
 deployer itself, which corroborates lesson studio-15 (\S\ref{sec:incidents}).
 
 \subsection{Kits}
@@ -605,20 +615,29 @@ part of this paper's claims.
 \paragraph{No speed, productivity or cost claims.}
 Nothing recorded the tokens, time or money each session used, and there is no baseline
 (one lead, or a human team, on comparable work). We claim nothing about speed-up,
-productivity or cost. Commit counts measure activity, not output.
+productivity or cost. Commit counts measure activity, not output. The co-author trailer
+is a convention the sessions follow, not proof of who did the work: every commit is
+authored under the human's name, and the trailer does not say how much of a commit a
+session wrote.
 
 \paragraph{Construct validity.}
 Board states are what sessions wrote, and the first commit showing a state stands in for
 when it was reached. ``Hand resolution'' also counts deliberate edits made during a merge.
 The review-to-merged interval measures integration, not review. Concurrency rests on the
 first-to-last-commit span, which counts idle time and misses leads that never named
-themselves; outside the studio it cannot be computed.
+themselves; outside the studio it cannot be computed. We mine only history reachable
+from the pins: rewritten history (history was purged once to remove client data, lesson % ev: incidents.json dmi-3 ("history purged")
+dmi-3), deleted branches and unpushed work are not seen.
 
 \paragraph{The lessons.}
 Lessons are self-reported by the sessions that had the incidents; an incident nobody
-wrote down is missing, and departments differ in how readily they write lessons. One
-coder, a Claude session, coded them, with no agreement measure, and the classes are ours.
-Lesson dates are as written (UTC), so some differ by a day from the commit adding them.
+wrote down is missing, and departments differ in how readily they write lessons. A single
+coder, a Claude session, coded them, with no second coder and no agreement measure, and
+the classes are ours. Second-coding a sample of about 15 lessons by the author, and
+reporting agreement, is future work; it has not been done.
+Lesson dates are the one exception to US Eastern time in this paper: they are dates as
+written in the playbooks, which follow UTC, so some differ by a day from the commit adding
+them.
 
 \paragraph{Observational data and the trial.}
 PASS markers, reservations and deploy logs\obs{} were read once from state the studio
@@ -629,7 +648,9 @@ the result until corrected. ``0 CI minutes'' is quoted, not reproduced.
 \paragraph{External validity and the observer.}
 One human, one laptop, one model family, under a week. The organisation changed as it
 ran: six of eight repositories are less than a day old at the pins, and rules were added % ev: derived.json repos_first_commit_on_2026_10_02
-as incidents happened. The author owns and steered the system, and Claude, which built and
+as incidents happened. The observing department is one of the eight repositories: its
+own commits, board and lessons are in the data, and its re-count caused the correction to
+the trial record that we report. The author owns and steered the system, and Claude, which built and
 runs most of it, helped mine and write up the evidence. Deriving every number with
 committed scripts at pinned commits, having the source department check its own record,
 and stating what could not be measured reduce this risk; they do not remove it.

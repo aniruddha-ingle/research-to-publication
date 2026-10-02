@@ -99,6 +99,20 @@ put("studio_nodes_merged_or_deployed_at_pin", fs["merged"] + fs["deployed"],
 put("studio_pass_markers_for_board_nodes", state["pass_markers"]["markers_for_board_nodes"],
     "studio_state.pass_markers.markers_for_board_nodes (OBSERVATIONAL)")
 
+# Studio nodes merged or deployed at the pin whose board history never shows `merged`
+# (first seen as deployed, or moved straight from building to deployed): 104 - 100.
+skipped = sorted(n["id"] for n in life["repos"]["studio"]["per_node"]
+                 if n["final_state"] in ("merged", "deployed") and "merged" not in n["reached"])
+put("studio_nodes_deployed_without_merged_state", {"count": len(skipped), "nodes": skipped},
+    "lifecycle.repos.studio.per_node[] final_state in (merged, deployed), no reached.merged")
+
+# Named lead sessions across the org: the highest number per department (lead-1..N).
+# design-manufacture-interface has no entry: no factory-lead-N appears anywhere.
+hi = leads["highest_number_by_department"]
+put("named_lead_sessions_org", {"total": sum(hi.values()), "by_department": hi,
+    "departments_without_named_leads": sorted(set(scale["repos"]) - set(hi))},
+    "leads.highest_number_by_department (sum); scale.repos keys minus those")
+
 # Incidents: distinct incidents whose lesson came from studio, and the share of copies.
 cnt = inc["counts"]
 put("lessons_copied_share", round(cnt["copied_or_same_event"] / cnt["dated_lessons"], 3),
