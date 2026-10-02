@@ -45,3 +45,4 @@
   branch: paper-1
   gate: full
   blocked: null
+  note: "peer-reviewer PASS at 73b66c2; checkpoint, waiting for the user to read the draft before merge"
