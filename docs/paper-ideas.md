@@ -265,6 +265,47 @@ Recommendation stands from the inventory: **#1 first** (largest non-private evid
 - **Venue.** RecSys/KDD workshop later. **Haki data.** heavy (items, votes; aggregate counts
   only with the user's and Devin's yes). **Effort.** L, after months of votes.
 
+### 19b. The psychology of programmatic silent product video (product-in-video, copy, org)
+*Added 2026-10-02 by research-lead-1 at the user's request (relayed by gateway-1).*
+- **Working title.** *The psychology of programmatic silent product video: from a designer's
+  template to thousands of variants, with hypotheses tested through swipe votes and later ad
+  data.*
+- **Problem.** A designer's layered template can be expanded into thousands of silent short
+  product ads. Which perceptual and psychological levers (first-frame hook, motion onset,
+  product reveal timing, text pacing for sound-off viewing, colour and contrast, loop
+  structure) make one variant work better than another? Can those levers be set on purpose
+  rather than found by luck?
+- **Contribution (proposed).** Map the psychology literature onto the template's parameters
+  as **explicit variant axes**. Generate variants that each differ on one axis or a few. Test the
+  hypotheses first against executive swipe verdicts (a cheap, early preference signal), then
+  against real ad performance.
+- **Evidence today.** **Very thin: one 8 s clip and one reaction** (the COO "loves it"; the
+  user reads it as appreciating "the psychology of it"). product-in-video's research note
+  `docs/research/ad-video-psychology.md` is coming, not yet committed. Nothing measured.
+- **What would make it strong.** (1) Variant axes recorded per item in the swipe contract
+  (the same ask as idea 19), so verdicts can be analysed per axis without exposing the items.
+  (2) Enough verdicts for per-axis effects with uncertainty: hundreds, not tens. (3) A/B or
+  holdout results from real ad delivery on a few pre-registered hypotheses. (4) The research
+  note's hypotheses written down *before* the votes come in, so the test isn't fitted after the
+  fact. (5) A public or synthetic product set to re-run the generation on, so the method can be
+  shown without the client's media.
+- **Closest prior work (to check; not yet read here).** Attention capture and transfer in print
+  ads (Pieters & Wedel, *J. Marketing* 2004); emotion-induced engagement in online video ads
+  (Teixeira, Wedel & Pieters, *JMR* 2012); processing fluency and aesthetic pleasure (Reber,
+  Schwarz & Winkielman, *PSPR* 2004); automated ad creative ranking and generation (see idea
+  19: arXiv 2008.07467, 2508.12628); conjoint analysis for attribute effects. Industry claims
+  about how often feed video is watched muted need a primary source before they are cited.
+- **Venue.** Later: a computational-advertising or HCI workshop (e.g. at KDD, RecSys or CHI),
+  or a marketing-science venue once there is ad data. Not before there are votes.
+- **Haki data.** **Heavy.** The clips, template, product, swipe items, the CEO/COO votes and
+  any ad results are all the client's private data, and votes are also people's data. A paper
+  needs the user's **and Devin's** yes, and even then only aggregate per-axis effects, with
+  figures re-rendered on synthetic products. Nothing from it enters this repo meanwhile.
+- **Effort.** L, gated on data that doesn't exist yet: months of votes plus ad results.
+- **Rank.** Same tier as 17 and 19 (no measured evidence yet). It does not displace paper #1.
+  Revisit when product-in-video's research note lands and the swipe contract records variant
+  axes.
+
 ### 20. Words for vocal chops on CPU (mir-triage)
 - **Evidence.** plan 19, research notes "What a vocal chop says" (`5b2dcce`): packing phrases
   into ≤ 28 s windows (4× fewer encoder calls), word-to-chop assignment by word end,
