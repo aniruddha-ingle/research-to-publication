@@ -292,3 +292,10 @@ small trial, not a controlled experiment. Cost/speed-up claims are out unless me
 Studio's uncommitted state (PASS markers, deploy logs) needs studio's agreement to read as
 evidence. Session transcripts and reviewer shots may hold Haki details or licensed track
 names, so they need the user's yes first.
+
+**studio's agreement** (lead-9, 2026-10-02): if the user picks #1, we may read studio's
+`.worktrees/.state/` (claims, resources, locks, pass, live-history.log) and
+`~/.sample-staging/logs/autodeploy.log` **read-only** as evidence. They hold session names,
+node ids, SHAs, times and paths, and no client data. Rules: copy only aggregates or quoted
+lines into this repo; never the `shots/` folder; never create or delete anything in `locks/`
+(live mutexes). Transcripts and shots remain the user's call.
