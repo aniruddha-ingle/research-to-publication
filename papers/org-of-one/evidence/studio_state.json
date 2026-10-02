@@ -1,0 +1,837 @@
+{
+ "_note": "OBSERVATIONAL: studio's uncommitted state dir and deploy log, read-only by studio's agreement, aggregates only. Not git history; files are rewritten while studio runs (a PASS marker's mtime is its LAST write). shots/ never opened; locks/ only counted.",
+ "autodeploy_log": {
+  "deploys_with_built_branches_overlaid": 34,
+  "distinct_built_nodes_overlaid": 15,
+  "failed_deploys_by_reason": {
+   "database not at migration head": 1,
+   "doctor failed": 2,
+   "other": 2
+  },
+  "first": "2026-09-30T02:26:54Z",
+  "last": "2026-10-02T05:58:45Z",
+  "line_kinds": {
+   "deploy FAILED": 5,
+   "deploy waits:": 8,
+   "deployed": 111,
+   "deploying": 116,
+   "migrated": 13,
+   "migrating": 13,
+   "paused by": 5,
+   "resumed by": 4,
+   "untimestamped (shell error)": 1
+  },
+  "lines": 276,
+  "quoted_line": "deploy/bin/autodeploy.sh: line 244: syntax error near unexpected token `fi'  (the one untimestamped line; path shortened)"
+ },
+ "claims_live": 1,
+ "concurrency_reserved_to_last_commit": {
+  "max_overlap": 5,
+  "max_per_day": {
+   "2026-09-29": 3,
+   "2026-09-30": 4,
+   "2026-10-01": 5,
+   "2026-10-02": 4
+  },
+  "per_hour": {
+   "2026-09-29T20": 1,
+   "2026-09-29T21": 2,
+   "2026-09-29T22": 3,
+   "2026-09-29T23": 3,
+   "2026-09-30T00": 3,
+   "2026-09-30T01": 3,
+   "2026-09-30T02": 3,
+   "2026-09-30T03": 3,
+   "2026-09-30T04": 2,
+   "2026-09-30T05": 0,
+   "2026-09-30T06": 0,
+   "2026-09-30T07": 0,
+   "2026-09-30T08": 0,
+   "2026-09-30T09": 0,
+   "2026-09-30T10": 3,
+   "2026-09-30T11": 3,
+   "2026-09-30T12": 3,
+   "2026-09-30T13": 3,
+   "2026-09-30T14": 4,
+   "2026-09-30T15": 4,
+   "2026-09-30T16": 4,
+   "2026-09-30T17": 4,
+   "2026-09-30T18": 4,
+   "2026-09-30T19": 2,
+   "2026-09-30T20": 2,
+   "2026-09-30T21": 4,
+   "2026-09-30T22": 4,
+   "2026-09-30T23": 4,
+   "2026-10-01T00": 4,
+   "2026-10-01T01": 4,
+   "2026-10-01T02": 4,
+   "2026-10-01T03": 4,
+   "2026-10-01T04": 4,
+   "2026-10-01T05": 4,
+   "2026-10-01T06": 4,
+   "2026-10-01T07": 4,
+   "2026-10-01T08": 4,
+   "2026-10-01T09": 4,
+   "2026-10-01T10": 4,
+   "2026-10-01T11": 4,
+   "2026-10-01T12": 4,
+   "2026-10-01T13": 5,
+   "2026-10-01T14": 5,
+   "2026-10-01T15": 5,
+   "2026-10-01T16": 5,
+   "2026-10-01T17": 5,
+   "2026-10-01T18": 5,
+   "2026-10-01T19": 5,
+   "2026-10-01T20": 5,
+   "2026-10-01T21": 5,
+   "2026-10-01T22": 4,
+   "2026-10-01T23": 4,
+   "2026-10-02T00": 4,
+   "2026-10-02T01": 3,
+   "2026-10-02T02": 3,
+   "2026-10-02T03": 1,
+   "2026-10-02T04": 1,
+   "2026-10-02T05": 1,
+   "2026-10-02T06": 1
+  }
+ },
+ "lead_number_reserved_at": {
+  "lead-1": "2026-09-29T20:37:31-04:00",
+  "lead-10": "2026-09-30T18:57:34-04:00",
+  "lead-11": "2026-09-30T21:06:06-04:00",
+  "lead-12": "2026-09-30T21:06:32-04:00",
+  "lead-13": "2026-10-01T13:21:39-04:00",
+  "lead-2": "2026-09-29T20:47:41-04:00",
+  "lead-3": "2026-09-29T21:39:47-04:00",
+  "lead-4": "2026-09-29T22:05:26-04:00",
+  "lead-5": "2026-09-30T10:25:13-04:00",
+  "lead-6": "2026-09-30T10:25:34-04:00",
+  "lead-7": "2026-09-30T10:25:43-04:00",
+  "lead-8": "2026-09-30T14:03:52-04:00",
+  "lead-9": "2026-09-30T18:57:02-04:00"
+ },
+ "lead_sessions_reserved_to_last_attributed_commit": {
+  "lead-1": {
+   "end": "2026-09-30T04:10:15-04:00",
+   "hours": 7.546,
+   "start": "2026-09-29T20:37:31-04:00"
+  },
+  "lead-10": {
+   "end": "2026-10-01T21:26:00-04:00",
+   "hours": 26.474,
+   "start": "2026-09-30T18:57:34-04:00"
+  },
+  "lead-11": {
+   "end": "2026-10-02T02:07:25-04:00",
+   "hours": 29.022,
+   "start": "2026-09-30T21:06:06-04:00"
+  },
+  "lead-12": {
+   "end": "2026-10-02T00:01:05-04:00",
+   "hours": 26.909,
+   "start": "2026-09-30T21:06:32-04:00"
+  },
+  "lead-13": {
+   "end": "2026-10-02T02:07:47-04:00",
+   "hours": 12.769,
+   "start": "2026-10-01T13:21:39-04:00"
+  },
+  "lead-3": {
+   "end": "2026-09-30T04:15:27-04:00",
+   "hours": 6.594,
+   "start": "2026-09-29T21:39:47-04:00"
+  },
+  "lead-4": {
+   "end": "2026-09-30T03:20:16-04:00",
+   "hours": 5.247,
+   "start": "2026-09-29T22:05:26-04:00"
+  },
+  "lead-5": {
+   "end": "2026-09-30T17:17:25-04:00",
+   "hours": 6.87,
+   "start": "2026-09-30T10:25:13-04:00"
+  },
+  "lead-6": {
+   "end": "2026-09-30T17:36:28-04:00",
+   "hours": 7.182,
+   "start": "2026-09-30T10:25:34-04:00"
+  },
+  "lead-7": {
+   "end": "2026-09-30T18:12:03-04:00",
+   "hours": 7.772,
+   "start": "2026-09-30T10:25:43-04:00"
+  },
+  "lead-8": {
+   "end": "2026-09-30T18:36:21-04:00",
+   "hours": 4.541,
+   "start": "2026-09-30T14:03:52-04:00"
+  },
+  "lead-9": {
+   "end": "2026-10-02T06:22:49-04:00",
+   "hours": 35.43,
+   "start": "2026-09-30T18:57:02-04:00"
+  }
+ },
+ "live_history": {
+  "deploy_lines": 116,
+  "deployed_sha_differs_from_main_sha": 33,
+  "deployed_sha_equals_main_sha": 83,
+  "first": "2026-09-30T01:36:58Z",
+  "last": "2026-10-02T05:31:12Z",
+  "lines": 116,
+  "per_utc_day": {
+   "2026-09-30": 62,
+   "2026-10-01": 30,
+   "2026-10-02": 24
+  }
+ },
+ "locks_entries_live": 1,
+ "pass_markers": {
+  "first": "2026-09-29T21:36-04:00",
+  "last": "2026-10-02T06:50-04:00",
+  "markers": 79,
+  "markers_for_board_nodes": 78,
+  "markers_written_by_pin_commit_time": 78,
+  "node_state_at_pin": {
+   "deployed": 56,
+   "merged": 22,
+   "not-on-board": 1
+  },
+  "per_day_by_mtime": {
+   "2026-09-29": 6,
+   "2026-09-30": 40,
+   "2026-10-01": 30,
+   "2026-10-02": 3
+  },
+  "per_node": [
+   {
+    "marker_written": "2026-09-29T21:36-04:00",
+    "node": "studio-n019",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-29T22:39-04:00",
+    "node": "studio-n029",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-29T23:12-04:00",
+    "node": "studio-n018",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-29T23:38-04:00",
+    "node": "studio-n033",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-29T23:44-04:00",
+    "node": "studio-n004",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-29T23:54-04:00",
+    "node": "studio-n009",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T00:28-04:00",
+    "node": "studio-n044",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T00:37-04:00",
+    "node": "studio-n040",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T00:39-04:00",
+    "node": "studio-n027",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T00:41-04:00",
+    "node": "studio-n045",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T01:29-04:00",
+    "node": "studio-n028",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T01:44-04:00",
+    "node": "studio-n041",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T02:32-04:00",
+    "node": "studio-n043",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T02:48-04:00",
+    "node": "studio-n030",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T02:53-04:00",
+    "node": "studio-n049",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T02:54-04:00",
+    "node": "studio-n042",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T02:59-04:00",
+    "node": "studio-n051",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T03:20-04:00",
+    "node": "studio-n047",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T04:01-04:00",
+    "node": "studio-n050",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T04:02-04:00",
+    "node": "studio-n031",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T04:08-04:00",
+    "node": "studio-n052",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T04:15-04:00",
+    "node": "studio-n048",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T10:44-04:00",
+    "node": "studio-n046",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T10:46-04:00",
+    "node": "studio-n053",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T11:04-04:00",
+    "node": "studio-n023",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T11:20-04:00",
+    "node": "studio-n022",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T12:17-04:00",
+    "node": "studio-n026",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T12:25-04:00",
+    "node": "studio-n055",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T12:44-04:00",
+    "node": "studio-n063",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T13:28-04:00",
+    "node": "studio-n064",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T13:50-04:00",
+    "node": "studio-n065",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T17:17-04:00",
+    "node": "studio-n071",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T17:25-04:00",
+    "node": "studio-n056",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T17:36-04:00",
+    "node": "studio-n057",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T18:02-04:00",
+    "node": "studio-n059",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T18:06-04:00",
+    "node": "studio-n058",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T18:12-04:00",
+    "node": "studio-n062",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T18:14-04:00",
+    "node": "studio-n060",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T21:01-04:00",
+    "node": "studio-n072",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T21:08-04:00",
+    "node": "studio-n077",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T21:23-04:00",
+    "node": "studio-n078",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T21:31-04:00",
+    "node": "studio-n061",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T21:38-04:00",
+    "node": "studio-n076",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T23:15-04:00",
+    "node": "studio-n074",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T23:29-04:00",
+    "node": "studio-n073",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-09-30T23:31-04:00",
+    "node": "studio-n075",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T10:07-04:00",
+    "node": "studio-n079",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T10:19-04:00",
+    "node": "studio-n080",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T11:44-04:00",
+    "node": "studio-n081",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T11:50-04:00",
+    "node": "studio-n082",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T11:54-04:00",
+    "node": "studio-n083",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T14:35-04:00",
+    "node": "studio-n084",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T19:35-04:00",
+    "node": "studio-n085",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T20:00-04:00",
+    "node": "studio-n086",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T20:29-04:00",
+    "node": "studio-n091",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T20:31-04:00",
+    "node": "studio-n089",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T20:32-04:00",
+    "node": "studio-n087",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T20:57-04:00",
+    "node": "studio-n093",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T21:14-04:00",
+    "node": "studio-n096",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T21:14-04:00",
+    "node": "studio-n098",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T21:20-04:00",
+    "node": "studio-n066",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T21:26-04:00",
+    "node": "studio-n099",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T21:30-04:00",
+    "node": "studio-n094",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T21:34-04:00",
+    "node": "studio-n100",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T21:35-04:00",
+    "node": "studio-n092",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T21:46-04:00",
+    "node": "studio-n088",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T21:58-04:00",
+    "node": "studio-n101",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T21:58-04:00",
+    "node": "studio-n097",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T22:20-04:00",
+    "node": "studio-n102",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T23:26-04:00",
+    "node": "studio-n103",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T23:27-04:00",
+    "node": "studio-n105",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T23:27-04:00",
+    "node": "studio-n104",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T23:41-04:00",
+    "node": "studio-n106",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T23:42-04:00",
+    "node": "studio-n107",
+    "node_state_at_pin": "deployed",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T23:49-04:00",
+    "node": "studio-n108",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-01T23:57-04:00",
+    "node": "studio-n090",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-02T01:07-04:00",
+    "node": "studio-n109",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-02T06:22-04:00",
+    "node": "studio-n112",
+    "node_state_at_pin": "merged",
+    "sha_is_a_commit_in_history": true,
+    "sha_reachable_from_main_pin": true
+   },
+   {
+    "marker_written": "2026-10-02T06:50-04:00",
+    "node": "not-on-board",
+    "node_state_at_pin": "not-on-board",
+    "sha_is_a_commit_in_history": false,
+    "sha_reachable_from_main_pin": false
+   }
+  ],
+  "pin_commit_time": "2026-10-02T06:22:52-04:00",
+  "sha_reachable_from_main_pin": 78
+ },
+ "read_at": "2026-10-02T06:50:51-04:00",
+ "resources_numbers_by_kind": {
+  "adr": [
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43
+  ],
+  "lead": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13
+  ],
+  "migration": [
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17
+  ],
+  "plan": [
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17
+  ]
+ },
+ "resources_reserved_by_kind": {
+  "adr": 19,
+  "lead": 13,
+  "migration": 13,
+  "plan": 10
+ },
+ "studio_main_pin": "af5aaf24bb47f6e57db8c9d1d92683b0ff48dafc"
+}
