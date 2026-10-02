@@ -1,0 +1,33 @@
+{
+  "git": "git version 2.50.1 (Apple Git-155)",
+  "mined_at": "2026-10-02T06:40:12-04:00",
+  "mined_with": "papers/org-of-one/evidence/mine.py",
+  "repos": {
+    "copy-in-product-picture": {
+      "main": "48f062f500ddbc111b1b33c70153faafb688352c"
+    },
+    "design-manufacture-interface": {
+      "main": "8cc1238de6b05c8a0b5f8d9f34e3fef8d47e82e4"
+    },
+    "gateway": {
+      "main": "a9a58bdc74ec6687c459cfb912b30841f69280f3"
+    },
+    "mir-triage": {
+      "board": "f0dacfb3e4ff20ef727e3568e0afa55993f6093f",
+      "main": "2599cebb6ab42a9e7e2a8dfbdd3d32c84c6c3da6"
+    },
+    "product-in-picture": {
+      "main": "c0b095dc9ab6b54fb1d0ce9225f249c122ba351c"
+    },
+    "product-in-video": {
+      "main": "8b6f38becc907850ab01e94d18fe0760dd11131a"
+    },
+    "research-to-publication": {
+      "main": "887dd2c431b22ac414be40f8eabc5d92951fb851"
+    },
+    "studio": {
+      "main": "af5aaf24bb47f6e57db8c9d1d92683b0ff48dafc"
+    }
+  },
+  "timezone": "America/New_York"
+}

@@ -1,0 +1,361 @@
+{
+ "_note": "committed history at the SHAs in sources.json; dates are committer dates in America/New_York; the user is the only git author",
+ "org": {
+  "commits": 1750,
+  "commits_per_day": {
+   "2026-09-26": 4,
+   "2026-09-27": 33,
+   "2026-09-28": 138,
+   "2026-09-29": 356,
+   "2026-09-30": 552,
+   "2026-10-01": 322,
+   "2026-10-02": 345
+  },
+  "commits_with_claude_coauthor": 1635,
+  "department_first_commit": {
+   "copy-in-product-picture": "2026-10-02T01:27:37-04:00",
+   "design-manufacture-interface": "2026-10-02T04:49:11-04:00",
+   "gateway": "2026-10-02T05:39:24-04:00",
+   "mir-triage": "2026-09-26T17:34:11-04:00",
+   "product-in-picture": "2026-10-02T00:31:59-04:00",
+   "product-in-video": "2026-10-02T04:54:24-04:00",
+   "research-to-publication": "2026-10-02T06:16:09-04:00",
+   "studio": "2026-09-28T18:25:11-04:00"
+  },
+  "first_commit": "2026-09-26T17:34:11-04:00",
+  "last_commit": "2026-10-02T06:40:06-04:00",
+  "merges": 425,
+  "repos": 8
+ },
+ "repos": {
+  "copy-in-product-picture": {
+   "active_days": 1,
+   "author_date_differs_from_committer_date": 7,
+   "coauthor_commits_by_model": {
+    "Claude Opus 5.5": 143
+   },
+   "commits": 144,
+   "commits_per_day": {
+    "2026-10-02": 144
+   },
+   "commits_per_hour": {
+    "2026-10-02T01": 16,
+    "2026-10-02T02": 29,
+    "2026-10-02T03": 30,
+    "2026-10-02T04": 33,
+    "2026-10-02T05": 28,
+    "2026-10-02T06": 8
+   },
+   "commits_with_claude_coauthor": 143,
+   "commits_with_graph_subject": 29,
+   "commits_without_claude_coauthor": 1,
+   "committer_utc_offsets": {
+    "-0400": 144
+   },
+   "distinct_authors": 1,
+   "first_commit": "2026-10-02T01:27:37-04:00",
+   "first_parent_commits_on_main": 88,
+   "first_parent_merges_on_main": 13,
+   "last_commit": "2026-10-02T06:12:47-04:00",
+   "merges": 23,
+   "non_merge_commits": 121
+  },
+  "design-manufacture-interface": {
+   "active_days": 1,
+   "author_date_differs_from_committer_date": 0,
+   "coauthor_commits_by_model": {
+    "Claude Opus 5.5": 5
+   },
+   "commits": 5,
+   "commits_per_day": {
+    "2026-10-02": 5
+   },
+   "commits_per_hour": {
+    "2026-10-02T04": 1,
+    "2026-10-02T05": 4
+   },
+   "commits_with_claude_coauthor": 5,
+   "commits_with_graph_subject": 1,
+   "commits_without_claude_coauthor": 0,
+   "committer_utc_offsets": {
+    "-0400": 5
+   },
+   "distinct_authors": 1,
+   "first_commit": "2026-10-02T04:49:11-04:00",
+   "first_parent_commits_on_main": 5,
+   "first_parent_merges_on_main": 0,
+   "last_commit": "2026-10-02T05:54:38-04:00",
+   "merges": 0,
+   "non_merge_commits": 5
+  },
+  "gateway": {
+   "active_days": 1,
+   "author_date_differs_from_committer_date": 0,
+   "coauthor_commits_by_model": {
+    "Claude Opus 5.5": 29
+   },
+   "commits": 29,
+   "commits_per_day": {
+    "2026-10-02": 29
+   },
+   "commits_per_hour": {
+    "2026-10-02T05": 16,
+    "2026-10-02T06": 13
+   },
+   "commits_with_claude_coauthor": 29,
+   "commits_with_graph_subject": 0,
+   "commits_without_claude_coauthor": 0,
+   "committer_utc_offsets": {
+    "-0400": 29
+   },
+   "distinct_authors": 1,
+   "first_commit": "2026-10-02T05:39:24-04:00",
+   "first_parent_commits_on_main": 29,
+   "first_parent_merges_on_main": 0,
+   "last_commit": "2026-10-02T06:39:36-04:00",
+   "merges": 0,
+   "non_merge_commits": 29
+  },
+  "mir-triage": {
+   "active_days": 5,
+   "author_date_differs_from_committer_date": 2,
+   "board_branch_commits_not_on_main": 91,
+   "coauthor_commits_by_model": {
+    "Claude Fable 5.1": 20,
+    "Claude Opus 5.5": 94
+   },
+   "commits": 130,
+   "commits_per_day": {
+    "2026-09-26": 4,
+    "2026-09-27": 33,
+    "2026-09-28": 31,
+    "2026-10-01": 17,
+    "2026-10-02": 45
+   },
+   "commits_per_hour": {
+    "2026-09-26T17": 1,
+    "2026-09-26T18": 1,
+    "2026-09-26T19": 1,
+    "2026-09-26T20": 1,
+    "2026-09-27T03": 3,
+    "2026-09-27T04": 4,
+    "2026-09-27T05": 2,
+    "2026-09-27T10": 2,
+    "2026-09-27T11": 1,
+    "2026-09-27T12": 3,
+    "2026-09-27T13": 4,
+    "2026-09-27T15": 4,
+    "2026-09-27T20": 3,
+    "2026-09-27T21": 1,
+    "2026-09-27T23": 6,
+    "2026-09-28T00": 6,
+    "2026-09-28T02": 1,
+    "2026-09-28T03": 5,
+    "2026-09-28T04": 3,
+    "2026-09-28T06": 7,
+    "2026-09-28T07": 5,
+    "2026-09-28T08": 2,
+    "2026-09-28T09": 1,
+    "2026-09-28T17": 1,
+    "2026-10-01T22": 5,
+    "2026-10-01T23": 12,
+    "2026-10-02T00": 20,
+    "2026-10-02T01": 6,
+    "2026-10-02T02": 9,
+    "2026-10-02T03": 4,
+    "2026-10-02T04": 2,
+    "2026-10-02T05": 4
+   },
+   "commits_with_claude_coauthor": 114,
+   "commits_with_graph_subject": 0,
+   "commits_without_claude_coauthor": 16,
+   "committer_utc_offsets": {
+    "-0400": 130
+   },
+   "distinct_authors": 1,
+   "first_commit": "2026-09-26T17:34:11-04:00",
+   "first_parent_commits_on_main": 63,
+   "first_parent_merges_on_main": 27,
+   "last_commit": "2026-10-02T05:56:51-04:00",
+   "merges": 37,
+   "non_merge_commits": 93
+  },
+  "product-in-picture": {
+   "active_days": 1,
+   "author_date_differs_from_committer_date": 0,
+   "coauthor_commits_by_model": {
+    "Claude Opus 5.5": 31
+   },
+   "commits": 31,
+   "commits_per_day": {
+    "2026-10-02": 31
+   },
+   "commits_per_hour": {
+    "2026-10-02T00": 1,
+    "2026-10-02T02": 1,
+    "2026-10-02T03": 9,
+    "2026-10-02T04": 7,
+    "2026-10-02T05": 12,
+    "2026-10-02T06": 1
+   },
+   "commits_with_claude_coauthor": 31,
+   "commits_with_graph_subject": 0,
+   "commits_without_claude_coauthor": 0,
+   "committer_utc_offsets": {
+    "-0400": 31
+   },
+   "distinct_authors": 1,
+   "first_commit": "2026-10-02T00:31:59-04:00",
+   "first_parent_commits_on_main": 24,
+   "first_parent_merges_on_main": 4,
+   "last_commit": "2026-10-02T06:06:35-04:00",
+   "merges": 4,
+   "non_merge_commits": 27
+  },
+  "product-in-video": {
+   "active_days": 1,
+   "author_date_differs_from_committer_date": 0,
+   "coauthor_commits_by_model": {
+    "Claude Opus 5.5": 33
+   },
+   "commits": 33,
+   "commits_per_day": {
+    "2026-10-02": 33
+   },
+   "commits_per_hour": {
+    "2026-10-02T04": 1,
+    "2026-10-02T05": 15,
+    "2026-10-02T06": 17
+   },
+   "commits_with_claude_coauthor": 33,
+   "commits_with_graph_subject": 15,
+   "commits_without_claude_coauthor": 0,
+   "committer_utc_offsets": {
+    "-0400": 33
+   },
+   "distinct_authors": 1,
+   "first_commit": "2026-10-02T04:54:24-04:00",
+   "first_parent_commits_on_main": 27,
+   "first_parent_merges_on_main": 3,
+   "last_commit": "2026-10-02T06:39:50-04:00",
+   "merges": 6,
+   "non_merge_commits": 27
+  },
+  "research-to-publication": {
+   "active_days": 1,
+   "author_date_differs_from_committer_date": 0,
+   "coauthor_commits_by_model": {
+    "Claude Opus 5.5": 23
+   },
+   "commits": 23,
+   "commits_per_day": {
+    "2026-10-02": 23
+   },
+   "commits_per_hour": {
+    "2026-10-02T06": 23
+   },
+   "commits_with_claude_coauthor": 23,
+   "commits_with_graph_subject": 8,
+   "commits_without_claude_coauthor": 0,
+   "committer_utc_offsets": {
+    "-0400": 23
+   },
+   "distinct_authors": 1,
+   "first_commit": "2026-10-02T06:16:09-04:00",
+   "first_parent_commits_on_main": 16,
+   "first_parent_merges_on_main": 2,
+   "last_commit": "2026-10-02T06:40:06-04:00",
+   "merges": 4,
+   "non_merge_commits": 19
+  },
+  "studio": {
+   "active_days": 5,
+   "author_date_differs_from_committer_date": 8,
+   "coauthor_commits_by_model": {
+    "Claude Fable 5.1": 744,
+    "Claude Opus 5.5": 513
+   },
+   "commits": 1355,
+   "commits_per_day": {
+    "2026-09-28": 107,
+    "2026-09-29": 356,
+    "2026-09-30": 552,
+    "2026-10-01": 305,
+    "2026-10-02": 35
+   },
+   "commits_per_hour": {
+    "2026-09-28T18": 13,
+    "2026-09-28T19": 37,
+    "2026-09-28T20": 12,
+    "2026-09-28T21": 10,
+    "2026-09-28T22": 26,
+    "2026-09-28T23": 9,
+    "2026-09-29T00": 11,
+    "2026-09-29T01": 2,
+    "2026-09-29T02": 8,
+    "2026-09-29T09": 1,
+    "2026-09-29T10": 3,
+    "2026-09-29T12": 1,
+    "2026-09-29T13": 4,
+    "2026-09-29T14": 3,
+    "2026-09-29T15": 25,
+    "2026-09-29T16": 7,
+    "2026-09-29T17": 13,
+    "2026-09-29T18": 13,
+    "2026-09-29T19": 9,
+    "2026-09-29T20": 51,
+    "2026-09-29T21": 102,
+    "2026-09-29T22": 45,
+    "2026-09-29T23": 58,
+    "2026-09-30T00": 63,
+    "2026-09-30T01": 44,
+    "2026-09-30T02": 73,
+    "2026-09-30T03": 15,
+    "2026-09-30T04": 41,
+    "2026-09-30T10": 33,
+    "2026-09-30T11": 18,
+    "2026-09-30T12": 33,
+    "2026-09-30T13": 15,
+    "2026-09-30T14": 12,
+    "2026-09-30T16": 3,
+    "2026-09-30T17": 44,
+    "2026-09-30T18": 44,
+    "2026-09-30T19": 1,
+    "2026-09-30T20": 8,
+    "2026-09-30T21": 59,
+    "2026-09-30T22": 13,
+    "2026-09-30T23": 33,
+    "2026-10-01T09": 2,
+    "2026-10-01T10": 14,
+    "2026-10-01T11": 27,
+    "2026-10-01T12": 1,
+    "2026-10-01T13": 3,
+    "2026-10-01T14": 13,
+    "2026-10-01T19": 18,
+    "2026-10-01T20": 76,
+    "2026-10-01T21": 77,
+    "2026-10-01T22": 34,
+    "2026-10-01T23": 40,
+    "2026-10-02T00": 3,
+    "2026-10-02T01": 12,
+    "2026-10-02T02": 4,
+    "2026-10-02T04": 8,
+    "2026-10-02T05": 3,
+    "2026-10-02T06": 5
+   },
+   "commits_with_claude_coauthor": 1257,
+   "commits_with_graph_subject": 343,
+   "commits_without_claude_coauthor": 98,
+   "committer_utc_offsets": {
+    "-0400": 1355
+   },
+   "distinct_authors": 1,
+   "first_commit": "2026-09-28T18:25:11-04:00",
+   "first_parent_commits_on_main": 616,
+   "first_parent_merges_on_main": 132,
+   "last_commit": "2026-10-02T06:22:52-04:00",
+   "merges": 351,
+   "non_merge_commits": 1004
+  }
+ }
+}

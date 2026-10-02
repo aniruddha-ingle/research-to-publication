@@ -1,0 +1,1045 @@
+{
+ "_note": "merge commits at the pin. hand resolution = git show --remerge-diff is non-empty (a clean re-merge would differ), run in a scratch clone.",
+ "repos": {
+  "copy-in-product-picture": {
+   "branch_into_trunk_per_day": {
+    "2026-10-02": 13
+   },
+   "hand_resolved_merges": [
+    {
+     "classes": [
+      "code and config",
+      "plans and docs"
+     ],
+     "date": "2026-10-02T04:07:02-04:00",
+     "files": 3,
+     "kind": "other merge off trunk",
+     "sha": "200cb0fc9"
+    },
+    {
+     "classes": [
+      "code and config",
+      "plans and docs"
+     ],
+     "date": "2026-10-02T03:00:24-04:00",
+     "files": 2,
+     "kind": "branch into trunk",
+     "sha": "e60e4d2f4"
+    },
+    {
+     "classes": [
+      "code and config"
+     ],
+     "date": "2026-10-02T01:54:23-04:00",
+     "files": 2,
+     "kind": "other merge off trunk",
+     "sha": "b1bc2a44b"
+    }
+   ],
+   "hand_resolved_merges_touching_class": {
+    "code and config": 3,
+    "plans and docs": 2
+   },
+   "merge_kinds": {
+    "branch into trunk": 13,
+    "other merge off trunk": 2,
+    "trunk into branch (by hand)": 1,
+    "trunk into branch (integrate script)": 7
+   },
+   "merges": 23,
+   "merges_needing_hand_resolution_by_kind": {
+    "branch into trunk": 1,
+    "other merge off trunk": 2
+   },
+   "merges_needing_hand_resolution_remerge_diff": 3,
+   "merges_whose_message_mentions_a_conflict": 3,
+   "merges_whose_message_mentions_a_conflict_list": [
+    {
+     "date": "2026-10-02T04:23:50-04:00",
+     "kind": "branch into trunk",
+     "sha": "b59a3a858"
+    },
+    {
+     "date": "2026-10-02T04:20:56-04:00",
+     "kind": "trunk into branch (integrate script)",
+     "sha": "01c57aee1"
+    },
+    {
+     "date": "2026-10-02T03:00:24-04:00",
+     "kind": "branch into trunk",
+     "sha": "e60e4d2f4"
+    }
+   ],
+   "non_merge_commits_mentioning_conflict": 0,
+   "trunk_into_branch_by_integrate_script": 7,
+   "trunk_into_branch_merges": 8
+  },
+  "design-manufacture-interface": {
+   "branch_into_trunk_per_day": {},
+   "hand_resolved_merges": [],
+   "hand_resolved_merges_touching_class": {},
+   "merge_kinds": {},
+   "merges": 0,
+   "merges_needing_hand_resolution_by_kind": {},
+   "merges_needing_hand_resolution_remerge_diff": 0,
+   "merges_whose_message_mentions_a_conflict": 0,
+   "merges_whose_message_mentions_a_conflict_list": [],
+   "non_merge_commits_mentioning_conflict": 0,
+   "trunk_into_branch_by_integrate_script": 0,
+   "trunk_into_branch_merges": 0
+  },
+  "gateway": {
+   "branch_into_trunk_per_day": {},
+   "hand_resolved_merges": [],
+   "hand_resolved_merges_touching_class": {},
+   "merge_kinds": {},
+   "merges": 0,
+   "merges_needing_hand_resolution_by_kind": {},
+   "merges_needing_hand_resolution_remerge_diff": 0,
+   "merges_whose_message_mentions_a_conflict": 0,
+   "merges_whose_message_mentions_a_conflict_list": [],
+   "non_merge_commits_mentioning_conflict": 0,
+   "trunk_into_branch_by_integrate_script": 0,
+   "trunk_into_branch_merges": 0
+  },
+  "mir-triage": {
+   "branch_into_trunk_per_day": {
+    "2026-10-01": 2,
+    "2026-10-02": 11
+   },
+   "hand_resolved_merges": [
+    {
+     "classes": [
+      "code and config",
+      "plans and docs"
+     ],
+     "date": "2026-09-28T08:44:36-04:00",
+     "files": 4,
+     "kind": "other merge on trunk",
+     "sha": "804b8b9a1"
+    },
+    {
+     "classes": [
+      "plans and docs"
+     ],
+     "date": "2026-09-28T07:47:22-04:00",
+     "files": 1,
+     "kind": "other merge off trunk",
+     "sha": "5027f3aa3"
+    },
+    {
+     "classes": [
+      "plans and docs"
+     ],
+     "date": "2026-09-28T06:37:51-04:00",
+     "files": 1,
+     "kind": "other merge on trunk",
+     "sha": "96f5ba18c"
+    },
+    {
+     "classes": [
+      "code and config",
+      "plans and docs"
+     ],
+     "date": "2026-09-28T06:06:46-04:00",
+     "files": 2,
+     "kind": "other merge on trunk",
+     "sha": "5fe44be45"
+    },
+    {
+     "classes": [
+      "code and config"
+     ],
+     "date": "2026-09-28T00:38:16-04:00",
+     "files": 1,
+     "kind": "other merge on trunk",
+     "sha": "5284e1028"
+    },
+    {
+     "classes": [
+      "code and config"
+     ],
+     "date": "2026-09-27T21:05:50-04:00",
+     "files": 5,
+     "kind": "other merge on trunk",
+     "sha": "17827f1a1"
+    },
+    {
+     "classes": [
+      "code and config"
+     ],
+     "date": "2026-09-27T20:52:11-04:00",
+     "files": 6,
+     "kind": "other merge on trunk",
+     "sha": "4ccab7465"
+    },
+    {
+     "classes": [
+      "code and config"
+     ],
+     "date": "2026-09-27T20:28:15-04:00",
+     "files": 6,
+     "kind": "other merge on trunk",
+     "sha": "d5774e854"
+    }
+   ],
+   "hand_resolved_merges_touching_class": {
+    "code and config": 6,
+    "plans and docs": 4
+   },
+   "merge_kinds": {
+    "branch into trunk": 13,
+    "other merge off trunk": 2,
+    "other merge on trunk": 14,
+    "trunk into branch (by hand)": 4,
+    "trunk into branch (integrate script)": 4
+   },
+   "merges": 37,
+   "merges_needing_hand_resolution_by_kind": {
+    "other merge off trunk": 1,
+    "other merge on trunk": 7
+   },
+   "merges_needing_hand_resolution_remerge_diff": 8,
+   "merges_whose_message_mentions_a_conflict": 4,
+   "merges_whose_message_mentions_a_conflict_list": [
+    {
+     "date": "2026-09-28T08:44:36-04:00",
+     "kind": "other merge on trunk",
+     "sha": "804b8b9a1"
+    },
+    {
+     "date": "2026-09-28T07:47:22-04:00",
+     "kind": "other merge off trunk",
+     "sha": "5027f3aa3"
+    },
+    {
+     "date": "2026-09-28T06:37:51-04:00",
+     "kind": "other merge on trunk",
+     "sha": "96f5ba18c"
+    },
+    {
+     "date": "2026-09-28T06:06:46-04:00",
+     "kind": "other merge on trunk",
+     "sha": "5fe44be45"
+    }
+   ],
+   "non_merge_commits_mentioning_conflict": 0,
+   "trunk_into_branch_by_integrate_script": 4,
+   "trunk_into_branch_merges": 8
+  },
+  "product-in-picture": {
+   "branch_into_trunk_per_day": {
+    "2026-10-02": 4
+   },
+   "hand_resolved_merges": [],
+   "hand_resolved_merges_touching_class": {},
+   "merge_kinds": {
+    "branch into trunk": 4
+   },
+   "merges": 4,
+   "merges_needing_hand_resolution_by_kind": {},
+   "merges_needing_hand_resolution_remerge_diff": 0,
+   "merges_whose_message_mentions_a_conflict": 0,
+   "merges_whose_message_mentions_a_conflict_list": [],
+   "non_merge_commits_mentioning_conflict": 0,
+   "trunk_into_branch_by_integrate_script": 0,
+   "trunk_into_branch_merges": 0
+  },
+  "product-in-video": {
+   "branch_into_trunk_per_day": {
+    "2026-10-02": 3
+   },
+   "hand_resolved_merges": [],
+   "hand_resolved_merges_touching_class": {},
+   "merge_kinds": {
+    "branch into trunk": 3,
+    "trunk into branch (integrate script)": 3
+   },
+   "merges": 6,
+   "merges_needing_hand_resolution_by_kind": {},
+   "merges_needing_hand_resolution_remerge_diff": 0,
+   "merges_whose_message_mentions_a_conflict": 0,
+   "merges_whose_message_mentions_a_conflict_list": [],
+   "non_merge_commits_mentioning_conflict": 0,
+   "trunk_into_branch_by_integrate_script": 3,
+   "trunk_into_branch_merges": 3
+  },
+  "research-to-publication": {
+   "branch_into_trunk_per_day": {
+    "2026-10-02": 2
+   },
+   "hand_resolved_merges": [],
+   "hand_resolved_merges_touching_class": {},
+   "merge_kinds": {
+    "branch into trunk": 2,
+    "trunk into branch (integrate script)": 2
+   },
+   "merges": 4,
+   "merges_needing_hand_resolution_by_kind": {},
+   "merges_needing_hand_resolution_remerge_diff": 0,
+   "merges_whose_message_mentions_a_conflict": 0,
+   "merges_whose_message_mentions_a_conflict_list": [],
+   "non_merge_commits_mentioning_conflict": 0,
+   "trunk_into_branch_by_integrate_script": 2,
+   "trunk_into_branch_merges": 2
+  },
+  "studio": {
+   "branch_into_trunk_per_day": {
+    "2026-09-28": 16,
+    "2026-09-29": 24,
+    "2026-09-30": 45,
+    "2026-10-01": 35,
+    "2026-10-02": 10
+   },
+   "hand_resolved_merges": [
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-10-01T23:57:18-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "fb9c6ea0f"
+    },
+    {
+     "classes": [
+      "agent memory"
+     ],
+     "date": "2026-10-01T21:46:54-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "313038cfd"
+    },
+    {
+     "classes": [
+      "code and config"
+     ],
+     "date": "2026-10-01T21:30:04-04:00",
+     "files": 3,
+     "kind": "trunk into branch (by hand)",
+     "sha": "9834dd8a5"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-10-01T21:24:55-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "8702843f4"
+    },
+    {
+     "classes": [
+      "code and config"
+     ],
+     "date": "2026-10-01T21:16:52-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "004aaa253"
+    },
+    {
+     "classes": [
+      "code and config",
+      "generated file",
+      "plans and docs"
+     ],
+     "date": "2026-10-01T21:15:20-04:00",
+     "files": 5,
+     "kind": "trunk into branch (by hand)",
+     "sha": "e69aaf3a2"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-10-01T20:29:49-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "af0ed4e8e"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-10-01T14:35:50-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "84d3baca0"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T22:15:48-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "c72faa91b"
+    },
+    {
+     "classes": [
+      "plans and docs"
+     ],
+     "date": "2026-09-30T21:48:31-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "b19343ff2"
+    },
+    {
+     "classes": [
+      "code and config",
+      "plans and docs"
+     ],
+     "date": "2026-09-30T21:41:12-04:00",
+     "files": 3,
+     "kind": "trunk into branch (by hand)",
+     "sha": "09364b5d1"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T21:31:34-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "a39be2a72"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T21:23:25-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "60a506a29"
+    },
+    {
+     "classes": [
+      "code and config",
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T21:17:08-04:00",
+     "files": 2,
+     "kind": "trunk into branch (by hand)",
+     "sha": "6cdc839a2"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T21:12:22-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "723473ae0"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T21:10:02-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "7d4e2401d"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T21:00:36-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "b75ba5e50"
+    },
+    {
+     "classes": [
+      "code and config"
+     ],
+     "date": "2026-09-30T20:17:45-04:00",
+     "files": 1,
+     "kind": "other merge off trunk",
+     "sha": "a115f446f"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T18:14:41-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "cf49bf94e"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T18:12:03-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "8b20f35ab"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T18:06:12-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "30094ffb1"
+    },
+    {
+     "classes": [
+      "code and config"
+     ],
+     "date": "2026-09-30T17:44:48-04:00",
+     "files": 3,
+     "kind": "trunk into branch (by hand)",
+     "sha": "9912be1de"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T10:48:34-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "2eb03bddc"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T04:15:28-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "10b0984a5"
+    },
+    {
+     "classes": [
+      "agent memory",
+      "code and config"
+     ],
+     "date": "2026-09-30T04:10:12-04:00",
+     "files": 4,
+     "kind": "trunk into branch (by hand)",
+     "sha": "d853aa1e4"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T04:02:51-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "e98ffc46d"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T04:01:49-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "39bce3e69"
+    },
+    {
+     "classes": [
+      "agent memory",
+      "code and config",
+      "generated file",
+      "plans and docs"
+     ],
+     "date": "2026-09-30T03:53:05-04:00",
+     "files": 17,
+     "kind": "trunk into branch (by hand)",
+     "sha": "51f37f8b5"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T03:20:16-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "d738e439b"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T02:59:12-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "6b38ac881"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T02:54:41-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "34d38c12e"
+    },
+    {
+     "classes": [
+      "code and config",
+      "generated file",
+      "plans and docs"
+     ],
+     "date": "2026-09-30T02:45:21-04:00",
+     "files": 17,
+     "kind": "trunk into branch (by hand)",
+     "sha": "09bcec7f6"
+    },
+    {
+     "classes": [
+      "agent memory",
+      "generated file",
+      "plans and docs"
+     ],
+     "date": "2026-09-30T02:37:37-04:00",
+     "files": 4,
+     "kind": "trunk into branch (by hand)",
+     "sha": "0b9316903"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T02:32:15-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "baf1a387a"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T01:42:53-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "20f24ae5b"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T00:40:41-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "0c203cb49"
+    },
+    {
+     "classes": [
+      "agent memory",
+      "generated file",
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T00:37:55-04:00",
+     "files": 4,
+     "kind": "trunk into branch (by hand)",
+     "sha": "f7b0cdf84"
+    },
+    {
+     "classes": [
+      "generated file"
+     ],
+     "date": "2026-09-30T00:33:35-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "fbf0dd680"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-30T00:28:52-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "b6c209b47"
+    },
+    {
+     "classes": [
+      "code and config",
+      "generated file"
+     ],
+     "date": "2026-09-30T00:00:37-04:00",
+     "files": 5,
+     "kind": "trunk into branch (by hand)",
+     "sha": "cfec40f0f"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-29T23:54:07-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "3d8001250"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-29T23:38:49-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "b4770cce7"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-29T23:12:05-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "1808871a0"
+    },
+    {
+     "classes": [
+      "agent memory",
+      "code and config",
+      "graph.yaml (board)",
+      "plans and docs"
+     ],
+     "date": "2026-09-29T22:50:03-04:00",
+     "files": 34,
+     "kind": "trunk into branch (by hand)",
+     "sha": "8dee2e887"
+    },
+    {
+     "classes": [
+      "code and config"
+     ],
+     "date": "2026-09-29T22:46:52-04:00",
+     "files": 1,
+     "kind": "other merge off trunk",
+     "sha": "7fc71d486"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-29T22:39:09-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "b04d5b36e"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-29T22:24:37-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "376cd5114"
+    },
+    {
+     "classes": [
+      "graph.yaml (board)"
+     ],
+     "date": "2026-09-29T21:50:48-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "4187dc7a0"
+    },
+    {
+     "classes": [
+      "plans and docs"
+     ],
+     "date": "2026-09-29T21:38:33-04:00",
+     "files": 1,
+     "kind": "trunk into branch (by hand)",
+     "sha": "973b84210"
+    },
+    {
+     "classes": [
+      "plans and docs"
+     ],
+     "date": "2026-09-28T23:52:03-04:00",
+     "files": 1,
+     "kind": "branch into trunk",
+     "sha": "206446e55"
+    },
+    {
+     "classes": [
+      "code and config"
+     ],
+     "date": "2026-09-28T23:15:38-04:00",
+     "files": 4,
+     "kind": "other merge off trunk",
+     "sha": "c53815193"
+    }
+   ],
+   "hand_resolved_merges_touching_class": {
+    "agent memory": 6,
+    "code and config": 14,
+    "generated file": 7,
+    "graph.yaml (board)": 33,
+    "plans and docs": 9
+   },
+   "merge_kinds": {
+    "branch into trunk": 130,
+    "other merge off trunk": 11,
+    "other merge on trunk": 2,
+    "trunk into branch (by hand)": 155,
+    "trunk into branch (integrate script)": 53
+   },
+   "merges": 351,
+   "merges_needing_hand_resolution_by_kind": {
+    "branch into trunk": 1,
+    "other merge off trunk": 3,
+    "trunk into branch (by hand)": 47
+   },
+   "merges_needing_hand_resolution_remerge_diff": 51,
+   "merges_whose_message_mentions_a_conflict": 43,
+   "merges_whose_message_mentions_a_conflict_list": [
+    {
+     "date": "2026-10-01T23:57:18-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "fb9c6ea0f"
+    },
+    {
+     "date": "2026-10-01T22:32:20-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "c369193d9"
+    },
+    {
+     "date": "2026-10-01T21:46:54-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "313038cfd"
+    },
+    {
+     "date": "2026-10-01T21:30:25-04:00",
+     "kind": "branch into trunk",
+     "sha": "154c4c34c"
+    },
+    {
+     "date": "2026-10-01T21:24:55-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "8702843f4"
+    },
+    {
+     "date": "2026-10-01T20:29:49-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "af0ed4e8e"
+    },
+    {
+     "date": "2026-10-01T14:35:50-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "84d3baca0"
+    },
+    {
+     "date": "2026-09-30T22:15:48-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "c72faa91b"
+    },
+    {
+     "date": "2026-09-30T21:41:12-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "09364b5d1"
+    },
+    {
+     "date": "2026-09-30T21:31:34-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "a39be2a72"
+    },
+    {
+     "date": "2026-09-30T21:23:25-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "60a506a29"
+    },
+    {
+     "date": "2026-09-30T21:17:08-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "6cdc839a2"
+    },
+    {
+     "date": "2026-09-30T21:12:22-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "723473ae0"
+    },
+    {
+     "date": "2026-09-30T21:10:02-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "7d4e2401d"
+    },
+    {
+     "date": "2026-09-30T21:00:36-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "b75ba5e50"
+    },
+    {
+     "date": "2026-09-30T20:17:45-04:00",
+     "kind": "other merge off trunk",
+     "sha": "a115f446f"
+    },
+    {
+     "date": "2026-09-30T18:14:41-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "cf49bf94e"
+    },
+    {
+     "date": "2026-09-30T18:12:03-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "8b20f35ab"
+    },
+    {
+     "date": "2026-09-30T18:06:12-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "30094ffb1"
+    },
+    {
+     "date": "2026-09-30T10:48:34-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "2eb03bddc"
+    },
+    {
+     "date": "2026-09-30T04:15:28-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "10b0984a5"
+    },
+    {
+     "date": "2026-09-30T04:02:51-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "e98ffc46d"
+    },
+    {
+     "date": "2026-09-30T04:01:49-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "39bce3e69"
+    },
+    {
+     "date": "2026-09-30T03:20:16-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "d738e439b"
+    },
+    {
+     "date": "2026-09-30T02:59:12-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "6b38ac881"
+    },
+    {
+     "date": "2026-09-30T02:54:41-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "34d38c12e"
+    },
+    {
+     "date": "2026-09-30T02:53:24-04:00",
+     "kind": "branch into trunk",
+     "sha": "a52535adc"
+    },
+    {
+     "date": "2026-09-30T02:48:20-04:00",
+     "kind": "branch into trunk",
+     "sha": "b885c64fb"
+    },
+    {
+     "date": "2026-09-30T02:48:07-04:00",
+     "kind": "trunk into branch (integrate script)",
+     "sha": "91e9957e4"
+    },
+    {
+     "date": "2026-09-30T02:32:15-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "baf1a387a"
+    },
+    {
+     "date": "2026-09-30T02:07:20-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "2db294ead"
+    },
+    {
+     "date": "2026-09-30T01:42:53-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "20f24ae5b"
+    },
+    {
+     "date": "2026-09-30T00:40:41-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "0c203cb49"
+    },
+    {
+     "date": "2026-09-30T00:37:55-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "f7b0cdf84"
+    },
+    {
+     "date": "2026-09-30T00:28:52-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "b6c209b47"
+    },
+    {
+     "date": "2026-09-29T23:54:07-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "3d8001250"
+    },
+    {
+     "date": "2026-09-29T23:38:49-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "b4770cce7"
+    },
+    {
+     "date": "2026-09-29T23:12:05-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "1808871a0"
+    },
+    {
+     "date": "2026-09-29T22:50:03-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "8dee2e887"
+    },
+    {
+     "date": "2026-09-29T22:46:52-04:00",
+     "kind": "other merge off trunk",
+     "sha": "7fc71d486"
+    },
+    {
+     "date": "2026-09-29T22:39:09-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "b04d5b36e"
+    },
+    {
+     "date": "2026-09-29T22:24:37-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "376cd5114"
+    },
+    {
+     "date": "2026-09-29T21:38:33-04:00",
+     "kind": "trunk into branch (by hand)",
+     "sha": "973b84210"
+    }
+   ],
+   "non_merge_commits_mentioning_conflict": 5,
+   "trial_2026_09_30": {
+    "branch_into_trunk_merges": 10,
+    "commits": 111,
+    "files_changed_by_more_than_one_merged_branch_excl_shared_indexes": 8,
+    "graph_state_reset_after_overwrite_commits": [
+     "94f8d2d96"
+    ],
+    "merges": 29,
+    "merges_needing_hand_resolution": 2,
+    "nodes_reaching_merged": 9,
+    "overlapping_file_classes": {
+     "code and config": 2,
+     "generated file": 2,
+     "plans and docs": 4
+    },
+    "record_commit": "6b04ffe3e",
+    "record_is_ancestor_of_pin": true,
+    "state_regressions_on_trunk": 0,
+    "strictly_attributed_commits_by_lead": {
+     "lead-1": 13,
+     "lead-3": 3
+    },
+    "window_hours": 1.262,
+    "window_utc": [
+     "2026-09-30T00:37:00+00:00",
+     "2026-09-30T01:52:43+00:00"
+    ]
+   },
+   "trunk_into_branch_by_integrate_script": 53,
+   "trunk_into_branch_merges": 208
+  }
+ }
+}

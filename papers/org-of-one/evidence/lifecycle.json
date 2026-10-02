@@ -1,0 +1,4365 @@
+{
+ "_note": "node state transitions from each board's git history (--full-history, each commit against its first parent); a node's time in a state is the FIRST commit that shows it there. Node ids are neutral (department + order of first appearance).",
+ "repos": {
+  "copy-in-product-picture": {
+   "board_commits_full_history": 60,
+   "board_ref_sha": "48f062f500ddbc111b1b33c70153faafb688352c",
+   "ever_dropped": 0,
+   "ever_merged": 13,
+   "final_state_counts": {
+    "building": 2,
+    "claimed": 1,
+    "merged": 13,
+    "review": 1,
+    "todo": 20
+   },
+   "first_state_counts": {
+    "building": 7,
+    "review": 1,
+    "todo": 29
+   },
+   "kind_counts": {
+    "perf": 5,
+    "plan": 32
+   },
+   "lead_time_hours": {
+    "claimed_to_merged_h": {
+     "max": 2.978,
+     "mean": 1.285,
+     "median": 1.051,
+     "min": 0.17,
+     "n": 9,
+     "p25": 0.591,
+     "p75": 2.049
+    },
+    "first_seen_to_merged_h": {
+     "max": 3.02,
+     "mean": 1.183,
+     "median": 1.315,
+     "min": 0.01,
+     "n": 13,
+     "p25": 0.478,
+     "p75": 1.506
+    },
+    "review_to_merged_h": {
+     "max": 1.793,
+     "mean": 0.381,
+     "median": 0.048,
+     "min": 0.01,
+     "n": 7,
+     "p25": 0.034,
+     "p75": 0.375
+    },
+    "todo_to_merged_h": {
+     "max": 3.02,
+     "mean": 1.625,
+     "median": 1.444,
+     "min": 0.478,
+     "n": 6,
+     "p25": 1.332,
+     "p75": 1.915
+    }
+   },
+   "lead_time_hours_values": {
+    "claimed_to_merged_h": [
+     0.17,
+     0.181,
+     0.591,
+     0.912,
+     1.051,
+     1.321,
+     2.049,
+     2.309,
+     2.978
+    ],
+    "first_seen_to_merged_h": [
+     0.01,
+     0.17,
+     0.181,
+     0.478,
+     0.591,
+     1.051,
+     1.315,
+     1.321,
+     1.382,
+     1.506,
+     2.051,
+     2.309,
+     3.02
+    ],
+    "review_to_merged_h": [
+     0.01,
+     0.03,
+     0.037,
+     0.048,
+     0.078,
+     0.672,
+     1.793
+    ],
+    "todo_to_merged_h": [
+     0.478,
+     1.315,
+     1.382,
+     1.506,
+     2.051,
+     3.02
+    ]
+   },
+   "merged_on_first_appearance": 0,
+   "nodes": 37,
+   "per_node": [
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T01:30:04-04:00",
+     "first_state": "building",
+     "id": "copy-n001",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.591,
+      "first_seen_to_merged_h": 0.591
+     },
+     "reached": {
+      "building": "2026-10-02T01:30:04-04:00",
+      "merged": "2026-10-02T02:05:32-04:00"
+     }
+    },
+    {
+     "final_state": "building",
+     "first_seen": "2026-10-02T01:30:04-04:00",
+     "first_state": "building",
+     "id": "copy-n002",
+     "kind": "plan",
+     "reached": {
+      "building": "2026-10-02T01:30:04-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T01:30:04-04:00",
+     "first_state": "building",
+     "id": "copy-n003",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.17,
+      "first_seen_to_merged_h": 0.17
+     },
+     "reached": {
+      "building": "2026-10-02T01:30:04-04:00",
+      "merged": "2026-10-02T01:40:17-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T01:30:04-04:00",
+     "first_state": "building",
+     "id": "copy-n004",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 1.321,
+      "first_seen_to_merged_h": 1.321
+     },
+     "reached": {
+      "building": "2026-10-02T01:30:04-04:00",
+      "merged": "2026-10-02T02:49:21-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T01:30:04-04:00",
+     "first_state": "building",
+     "id": "copy-n005",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 2.309,
+      "first_seen_to_merged_h": 2.309
+     },
+     "reached": {
+      "building": "2026-10-02T01:30:04-04:00",
+      "merged": "2026-10-02T03:48:36-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T01:30:04-04:00",
+     "first_state": "building",
+     "id": "copy-n006",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.181,
+      "first_seen_to_merged_h": 0.181
+     },
+     "reached": {
+      "building": "2026-10-02T01:30:04-04:00",
+      "merged": "2026-10-02T01:40:57-04:00"
+     }
+    },
+    {
+     "final_state": "claimed",
+     "first_seen": "2026-10-02T01:30:04-04:00",
+     "first_state": "todo",
+     "id": "copy-n007",
+     "kind": "plan",
+     "reached": {
+      "claimed": "2026-10-02T02:26:20-04:00",
+      "todo": "2026-10-02T01:30:04-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T01:30:04-04:00",
+     "first_state": "todo",
+     "id": "copy-n008",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.912,
+      "first_seen_to_merged_h": 1.506,
+      "todo_to_merged_h": 1.506
+     },
+     "reached": {
+      "building": "2026-10-02T02:05:43-04:00",
+      "merged": "2026-10-02T03:00:25-04:00",
+      "todo": "2026-10-02T01:30:04-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T01:30:04-04:00",
+     "first_state": "todo",
+     "id": "copy-n009",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T01:30:04-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T02:55:09-04:00",
+     "first_state": "review",
+     "id": "copy-n010",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.01,
+      "review_to_merged_h": 0.01
+     },
+     "reached": {
+      "merged": "2026-10-02T02:55:45-04:00",
+      "review": "2026-10-02T02:55:09-04:00"
+     }
+    },
+    {
+     "final_state": "review",
+     "first_seen": "2026-10-02T02:56:46-04:00",
+     "first_state": "todo",
+     "id": "copy-n011",
+     "kind": "plan",
+     "reached": {
+      "building": "2026-10-02T02:57:35-04:00",
+      "review": "2026-10-02T04:31:12-04:00",
+      "todo": "2026-10-02T02:56:46-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T03:00:56-04:00",
+     "first_state": "todo",
+     "id": "copy-n012",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 1.382,
+      "review_to_merged_h": 0.078,
+      "todo_to_merged_h": 1.382
+     },
+     "reached": {
+      "merged": "2026-10-02T04:23:50-04:00",
+      "review": "2026-10-02T04:19:08-04:00",
+      "todo": "2026-10-02T03:00:56-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T03:02:41-04:00",
+     "first_state": "building",
+     "id": "copy-n013",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 1.051,
+      "first_seen_to_merged_h": 1.051,
+      "review_to_merged_h": 0.672
+     },
+     "reached": {
+      "building": "2026-10-02T03:02:41-04:00",
+      "merged": "2026-10-02T04:05:46-04:00",
+      "review": "2026-10-02T03:25:26-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T03:11:10-04:00",
+     "first_state": "todo",
+     "id": "copy-n014",
+     "kind": "perf",
+     "lead_times": {
+      "claimed_to_merged_h": 2.978,
+      "first_seen_to_merged_h": 3.02,
+      "review_to_merged_h": 0.048,
+      "todo_to_merged_h": 3.02
+     },
+     "reached": {
+      "building": "2026-10-02T03:13:43-04:00",
+      "merged": "2026-10-02T06:12:23-04:00",
+      "review": "2026-10-02T06:09:31-04:00",
+      "todo": "2026-10-02T03:11:10-04:00"
+     }
+    },
+    {
+     "final_state": "building",
+     "first_seen": "2026-10-02T03:11:10-04:00",
+     "first_state": "todo",
+     "id": "copy-n015",
+     "kind": "perf",
+     "reached": {
+      "building": "2026-10-02T06:12:47-04:00",
+      "todo": "2026-10-02T03:11:10-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T03:11:10-04:00",
+     "first_state": "todo",
+     "id": "copy-n016",
+     "kind": "perf",
+     "reached": {
+      "todo": "2026-10-02T03:11:10-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T03:11:10-04:00",
+     "first_state": "todo",
+     "id": "copy-n017",
+     "kind": "perf",
+     "reached": {
+      "todo": "2026-10-02T03:11:10-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T03:11:10-04:00",
+     "first_state": "todo",
+     "id": "copy-n018",
+     "kind": "perf",
+     "reached": {
+      "todo": "2026-10-02T03:11:10-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T03:19:29-04:00",
+     "first_state": "todo",
+     "id": "copy-n019",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 2.049,
+      "first_seen_to_merged_h": 2.051,
+      "review_to_merged_h": 1.793,
+      "todo_to_merged_h": 2.051
+     },
+     "reached": {
+      "building": "2026-10-02T03:19:37-04:00",
+      "merged": "2026-10-02T05:22:32-04:00",
+      "review": "2026-10-02T03:34:56-04:00",
+      "todo": "2026-10-02T03:19:29-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T03:19:29-04:00",
+     "first_state": "todo",
+     "id": "copy-n020",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T03:19:29-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T04:06:00-04:00",
+     "first_state": "todo",
+     "id": "copy-n021",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 1.315,
+      "review_to_merged_h": 0.037,
+      "todo_to_merged_h": 1.315
+     },
+     "reached": {
+      "merged": "2026-10-02T05:24:53-04:00",
+      "review": "2026-10-02T05:22:41-04:00",
+      "todo": "2026-10-02T04:06:00-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:06:50-04:00",
+     "first_state": "todo",
+     "id": "copy-n022",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:06:50-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:07:27-04:00",
+     "first_state": "todo",
+     "id": "copy-n023",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:07:27-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:07:27-04:00",
+     "first_state": "todo",
+     "id": "copy-n024",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:07:27-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:07:27-04:00",
+     "first_state": "todo",
+     "id": "copy-n025",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:07:27-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:07:27-04:00",
+     "first_state": "todo",
+     "id": "copy-n026",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:07:27-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:07:27-04:00",
+     "first_state": "todo",
+     "id": "copy-n027",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:07:27-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:07:27-04:00",
+     "first_state": "todo",
+     "id": "copy-n028",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:07:27-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:07:27-04:00",
+     "first_state": "todo",
+     "id": "copy-n029",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:07:27-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:07:27-04:00",
+     "first_state": "todo",
+     "id": "copy-n030",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:07:27-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:12:07-04:00",
+     "first_state": "todo",
+     "id": "copy-n031",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:12:07-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:17:42-04:00",
+     "first_state": "todo",
+     "id": "copy-n032",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:17:42-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:27:09-04:00",
+     "first_state": "todo",
+     "id": "copy-n033",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:27:09-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:28:23-04:00",
+     "first_state": "todo",
+     "id": "copy-n034",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:28:23-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T04:40:10-04:00",
+     "first_state": "todo",
+     "id": "copy-n035",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T04:40:10-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T05:25:15-04:00",
+     "first_state": "todo",
+     "id": "copy-n036",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T05:25:15-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T05:25:25-04:00",
+     "first_state": "todo",
+     "id": "copy-n037",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.478,
+      "review_to_merged_h": 0.03,
+      "todo_to_merged_h": 0.478
+     },
+     "reached": {
+      "merged": "2026-10-02T05:54:05-04:00",
+      "review": "2026-10-02T05:52:18-04:00",
+      "todo": "2026-10-02T05:25:25-04:00"
+     }
+    }
+   ],
+   "state_regressions_on_trunk": 0,
+   "state_regressions_on_trunk_list": [],
+   "transition_events": 154
+  },
+  "design-manufacture-interface": {
+   "board_commits_full_history": 2,
+   "board_ref_sha": "8cc1238de6b05c8a0b5f8d9f34e3fef8d47e82e4",
+   "ever_dropped": 0,
+   "ever_merged": 0,
+   "final_state_counts": {
+    "building": 1,
+    "todo": 5
+   },
+   "first_state_counts": {
+    "todo": 6
+   },
+   "kind_counts": {
+    "other": 6
+   },
+   "lead_time_hours": {},
+   "lead_time_hours_values": {},
+   "merged_on_first_appearance": 0,
+   "nodes": 6,
+   "per_node": [
+    {
+     "final_state": "building",
+     "first_seen": "2026-10-02T05:48:58-04:00",
+     "first_state": "todo",
+     "id": "dmi-n001",
+     "kind": "other",
+     "reached": {
+      "building": "2026-10-02T05:54:38-04:00",
+      "todo": "2026-10-02T05:48:58-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T05:48:58-04:00",
+     "first_state": "todo",
+     "id": "dmi-n002",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T05:48:58-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T05:48:58-04:00",
+     "first_state": "todo",
+     "id": "dmi-n003",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T05:48:58-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T05:48:58-04:00",
+     "first_state": "todo",
+     "id": "dmi-n004",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T05:48:58-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T05:48:58-04:00",
+     "first_state": "todo",
+     "id": "dmi-n005",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T05:48:58-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T05:48:58-04:00",
+     "first_state": "todo",
+     "id": "dmi-n006",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T05:48:58-04:00"
+     }
+    }
+   ],
+   "state_regressions_on_trunk": 0,
+   "state_regressions_on_trunk_list": [],
+   "transition_events": 7
+  },
+  "mir-triage": {
+   "board_commits_full_history": 91,
+   "board_ref_sha": "f0dacfb3e4ff20ef727e3568e0afa55993f6093f",
+   "ever_dropped": 0,
+   "ever_merged": 13,
+   "final_state_counts": {
+    "building": 2,
+    "merged": 13,
+    "review": 3,
+    "todo": 23
+   },
+   "first_state_counts": {
+    "todo": 41
+   },
+   "kind_counts": {
+    "docs": 2,
+    "experiment": 1,
+    "fix": 5,
+    "org": 3,
+    "other": 22,
+    "request": 7,
+    "research": 1
+   },
+   "lead_time_hours": {
+    "built_to_merged_h": {
+     "max": 0.415,
+     "mean": 0.264,
+     "median": 0.359,
+     "min": 0.018,
+     "n": 3,
+     "p25": 0.189,
+     "p75": 0.387
+    },
+    "claimed_to_merged_h": {
+     "max": 4.103,
+     "mean": 1.053,
+     "median": 1.155,
+     "min": 0.003,
+     "n": 12,
+     "p25": 0.04,
+     "p75": 1.488
+    },
+    "first_seen_to_merged_h": {
+     "max": 4.126,
+     "mean": 1.524,
+     "median": 1.478,
+     "min": 0.004,
+     "n": 13,
+     "p25": 0.052,
+     "p75": 1.737
+    },
+    "review_to_merged_h": {
+     "max": 3.161,
+     "mean": 0.438,
+     "median": 0.038,
+     "min": 0.0,
+     "n": 12,
+     "p25": 0.001,
+     "p75": 0.38
+    },
+    "todo_to_merged_h": {
+     "max": 4.126,
+     "mean": 1.524,
+     "median": 1.478,
+     "min": 0.004,
+     "n": 13,
+     "p25": 0.052,
+     "p75": 1.737
+    }
+   },
+   "lead_time_hours_values": {
+    "built_to_merged_h": [
+     0.018,
+     0.359,
+     0.415
+    ],
+    "claimed_to_merged_h": [
+     0.003,
+     0.003,
+     0.007,
+     0.051,
+     0.077,
+     1.126,
+     1.184,
+     1.338,
+     1.431,
+     1.659,
+     1.659,
+     4.103
+    ],
+    "first_seen_to_merged_h": [
+     0.004,
+     0.007,
+     0.008,
+     0.052,
+     1.126,
+     1.397,
+     1.478,
+     1.66,
+     1.722,
+     1.737,
+     3.197,
+     3.296,
+     4.126
+    ],
+    "review_to_merged_h": [
+     0.0,
+     0.001,
+     0.001,
+     0.001,
+     0.011,
+     0.034,
+     0.041,
+     0.344,
+     0.358,
+     0.447,
+     0.859,
+     3.161
+    ],
+    "todo_to_merged_h": [
+     0.004,
+     0.007,
+     0.008,
+     0.052,
+     1.126,
+     1.397,
+     1.478,
+     1.66,
+     1.722,
+     1.737,
+     3.197,
+     3.296,
+     4.126
+    ]
+   },
+   "merged_on_first_appearance": 0,
+   "nodes": 41,
+   "per_node": [
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n001",
+     "kind": "org",
+     "lead_times": {
+      "first_seen_to_merged_h": 1.397,
+      "todo_to_merged_h": 1.397
+     },
+     "reached": {
+      "merged": "2026-10-01T22:17:11-04:00",
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n002",
+     "kind": "other",
+     "lead_times": {
+      "claimed_to_merged_h": 0.077,
+      "first_seen_to_merged_h": 1.478,
+      "review_to_merged_h": 0.041,
+      "todo_to_merged_h": 1.478
+     },
+     "reached": {
+      "building": "2026-10-01T22:17:24-04:00",
+      "merged": "2026-10-01T22:22:02-04:00",
+      "review": "2026-10-01T22:19:34-04:00",
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n003",
+     "kind": "request",
+     "reached": {
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n004",
+     "kind": "request",
+     "reached": {
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n005",
+     "kind": "request",
+     "reached": {
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n006",
+     "kind": "request",
+     "reached": {
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n007",
+     "kind": "other",
+     "lead_times": {
+      "built_to_merged_h": 0.415,
+      "claimed_to_merged_h": 1.338,
+      "first_seen_to_merged_h": 3.296,
+      "review_to_merged_h": 0.034,
+      "todo_to_merged_h": 3.296
+     },
+     "reached": {
+      "building": "2026-10-01T22:50:48-04:00",
+      "built": "2026-10-01T23:46:11-04:00",
+      "merged": "2026-10-02T00:11:05-04:00",
+      "ready": "2026-10-02T00:09:01-04:00",
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n008",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n009",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n010",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n011",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n012",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n013",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T20:53:20-04:00",
+     "first_state": "todo",
+     "id": "mir-n014",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-01T20:53:20-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T22:17:10-04:00",
+     "first_state": "todo",
+     "id": "mir-n015",
+     "kind": "request",
+     "lead_times": {
+      "claimed_to_merged_h": 1.431,
+      "first_seen_to_merged_h": 3.197,
+      "review_to_merged_h": 0.859,
+      "todo_to_merged_h": 3.197
+     },
+     "reached": {
+      "building": "2026-10-02T00:03:06-04:00",
+      "merged": "2026-10-02T01:28:59-04:00",
+      "ready": "2026-10-02T01:27:37-04:00",
+      "review": "2026-10-02T00:37:25-04:00",
+      "todo": "2026-10-01T22:17:10-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T22:19:12-04:00",
+     "first_state": "todo",
+     "id": "mir-n016",
+     "kind": "request",
+     "lead_times": {
+      "claimed_to_merged_h": 1.659,
+      "first_seen_to_merged_h": 1.722,
+      "review_to_merged_h": 0.358,
+      "todo_to_merged_h": 1.722
+     },
+     "reached": {
+      "building": "2026-10-01T22:23:00-04:00",
+      "merged": "2026-10-02T00:02:33-04:00",
+      "ready": "2026-10-02T00:01:19-04:00",
+      "review": "2026-10-01T23:41:03-04:00",
+      "todo": "2026-10-01T22:19:12-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T22:23:00-04:00",
+     "first_state": "todo",
+     "id": "mir-n017",
+     "kind": "experiment",
+     "lead_times": {
+      "built_to_merged_h": 0.359,
+      "claimed_to_merged_h": 1.659,
+      "first_seen_to_merged_h": 1.66,
+      "review_to_merged_h": 0.344,
+      "todo_to_merged_h": 1.66
+     },
+     "reached": {
+      "building": "2026-10-01T22:23:01-04:00",
+      "built": "2026-10-01T23:41:03-04:00",
+      "merged": "2026-10-02T00:02:35-04:00",
+      "ready": "2026-10-01T23:41:56-04:00",
+      "todo": "2026-10-01T22:23:00-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T22:55:42-04:00",
+     "first_state": "todo",
+     "id": "mir-n018",
+     "kind": "research",
+     "lead_times": {
+      "built_to_merged_h": 0.018,
+      "claimed_to_merged_h": 1.126,
+      "first_seen_to_merged_h": 1.126,
+      "review_to_merged_h": 0.011,
+      "todo_to_merged_h": 1.126
+     },
+     "reached": {
+      "building": "2026-10-01T22:55:42-04:00",
+      "built": "2026-10-02T00:02:12-04:00",
+      "merged": "2026-10-02T00:03:17-04:00",
+      "ready": "2026-10-02T00:02:39-04:00",
+      "todo": "2026-10-01T22:55:42-04:00"
+     }
+    },
+    {
+     "final_state": "review",
+     "first_seen": "2026-10-01T22:55:42-04:00",
+     "first_state": "todo",
+     "id": "mir-n019",
+     "kind": "fix",
+     "reached": {
+      "building": "2026-10-02T02:00:50-04:00",
+      "review": "2026-10-02T03:42:14-04:00",
+      "todo": "2026-10-01T22:55:42-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T22:55:42-04:00",
+     "first_state": "todo",
+     "id": "mir-n020",
+     "kind": "request",
+     "reached": {
+      "todo": "2026-10-01T22:55:42-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T22:55:42-04:00",
+     "first_state": "todo",
+     "id": "mir-n021",
+     "kind": "fix",
+     "reached": {
+      "todo": "2026-10-01T22:55:42-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T22:55:42-04:00",
+     "first_state": "todo",
+     "id": "mir-n022",
+     "kind": "fix",
+     "reached": {
+      "todo": "2026-10-01T22:55:42-04:00"
+     }
+    },
+    {
+     "final_state": "review",
+     "first_seen": "2026-10-01T22:55:42-04:00",
+     "first_state": "todo",
+     "id": "mir-n023",
+     "kind": "fix",
+     "reached": {
+      "building": "2026-10-02T05:38:52-04:00",
+      "review": "2026-10-02T06:31:54-04:00",
+      "todo": "2026-10-01T22:55:42-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T23:46:11-04:00",
+     "first_state": "todo",
+     "id": "mir-n024",
+     "kind": "fix",
+     "reached": {
+      "todo": "2026-10-01T23:46:11-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T23:46:11-04:00",
+     "first_state": "todo",
+     "id": "mir-n025",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-01T23:46:11-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T00:01:19-04:00",
+     "first_state": "todo",
+     "id": "mir-n026",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T00:01:19-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T00:02:12-04:00",
+     "first_state": "todo",
+     "id": "mir-n027",
+     "kind": "other",
+     "lead_times": {
+      "claimed_to_merged_h": 4.103,
+      "first_seen_to_merged_h": 4.126,
+      "review_to_merged_h": 3.161,
+      "todo_to_merged_h": 4.126
+     },
+     "reached": {
+      "building": "2026-10-02T00:03:35-04:00",
+      "merged": "2026-10-02T04:09:45-04:00",
+      "ready": "2026-10-02T04:07:57-04:00",
+      "review": "2026-10-02T01:00:06-04:00",
+      "todo": "2026-10-02T00:02:12-04:00"
+     }
+    },
+    {
+     "final_state": "building",
+     "first_seen": "2026-10-02T00:02:12-04:00",
+     "first_state": "todo",
+     "id": "mir-n028",
+     "kind": "other",
+     "reached": {
+      "building": "2026-10-02T05:39:20-04:00",
+      "todo": "2026-10-02T00:02:12-04:00"
+     }
+    },
+    {
+     "final_state": "building",
+     "first_seen": "2026-10-02T00:02:12-04:00",
+     "first_state": "todo",
+     "id": "mir-n029",
+     "kind": "other",
+     "reached": {
+      "building": "2026-10-02T05:48:16-04:00",
+      "todo": "2026-10-02T00:02:12-04:00"
+     }
+    },
+    {
+     "final_state": "review",
+     "first_seen": "2026-10-02T00:02:12-04:00",
+     "first_state": "todo",
+     "id": "mir-n030",
+     "kind": "other",
+     "reached": {
+      "building": "2026-10-02T01:29:26-04:00",
+      "review": "2026-10-02T02:07:18-04:00",
+      "todo": "2026-10-02T00:02:12-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T00:02:12-04:00",
+     "first_state": "todo",
+     "id": "mir-n031",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T00:02:12-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T00:02:12-04:00",
+     "first_state": "todo",
+     "id": "mir-n032",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T00:02:12-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T00:02:12-04:00",
+     "first_state": "todo",
+     "id": "mir-n033",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T00:02:12-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T00:02:12-04:00",
+     "first_state": "todo",
+     "id": "mir-n034",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T00:02:12-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T01:27:37-04:00",
+     "first_state": "todo",
+     "id": "mir-n035",
+     "kind": "other",
+     "lead_times": {
+      "claimed_to_merged_h": 1.184,
+      "first_seen_to_merged_h": 1.737,
+      "review_to_merged_h": 0.447,
+      "todo_to_merged_h": 1.737
+     },
+     "reached": {
+      "building": "2026-10-02T02:00:50-04:00",
+      "merged": "2026-10-02T03:11:51-04:00",
+      "ready": "2026-10-02T03:08:43-04:00",
+      "review": "2026-10-02T02:45:03-04:00",
+      "todo": "2026-10-02T01:27:37-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T02:12:40-04:00",
+     "first_state": "todo",
+     "id": "mir-n036",
+     "kind": "org",
+     "lead_times": {
+      "claimed_to_merged_h": 0.051,
+      "first_seen_to_merged_h": 0.052,
+      "review_to_merged_h": 0.001,
+      "todo_to_merged_h": 0.052
+     },
+     "reached": {
+      "building": "2026-10-02T02:12:41-04:00",
+      "merged": "2026-10-02T02:15:46-04:00",
+      "ready": "2026-10-02T02:15:41-04:00",
+      "todo": "2026-10-02T02:12:40-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T03:12:56-04:00",
+     "first_state": "todo",
+     "id": "mir-n037",
+     "kind": "docs",
+     "lead_times": {
+      "claimed_to_merged_h": 0.007,
+      "first_seen_to_merged_h": 0.007,
+      "review_to_merged_h": 0.001,
+      "todo_to_merged_h": 0.007
+     },
+     "reached": {
+      "building": "2026-10-02T03:12:58-04:00",
+      "merged": "2026-10-02T03:13:23-04:00",
+      "ready": "2026-10-02T03:13:21-04:00",
+      "todo": "2026-10-02T03:12:56-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T03:42:15-04:00",
+     "first_state": "todo",
+     "id": "mir-n038",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T03:42:15-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T03:42:15-04:00",
+     "first_state": "todo",
+     "id": "mir-n039",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T03:42:15-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T05:56:22-04:00",
+     "first_state": "todo",
+     "id": "mir-n040",
+     "kind": "docs",
+     "lead_times": {
+      "claimed_to_merged_h": 0.003,
+      "first_seen_to_merged_h": 0.008,
+      "review_to_merged_h": 0.0,
+      "todo_to_merged_h": 0.008
+     },
+     "reached": {
+      "building": "2026-10-02T05:56:40-04:00",
+      "merged": "2026-10-02T05:56:51-04:00",
+      "ready": "2026-10-02T05:56:50-04:00",
+      "todo": "2026-10-02T05:56:22-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T05:56:22-04:00",
+     "first_state": "todo",
+     "id": "mir-n041",
+     "kind": "org",
+     "lead_times": {
+      "claimed_to_merged_h": 0.003,
+      "first_seen_to_merged_h": 0.004,
+      "review_to_merged_h": 0.001,
+      "todo_to_merged_h": 0.004
+     },
+     "reached": {
+      "building": "2026-10-02T05:56:23-04:00",
+      "merged": "2026-10-02T05:56:35-04:00",
+      "ready": "2026-10-02T05:56:33-04:00",
+      "todo": "2026-10-02T05:56:22-04:00"
+     }
+    }
+   ],
+   "state_regressions_on_trunk": 4,
+   "state_regressions_on_trunk_list": [
+    {
+     "date": "2026-10-02T01:03:18-04:00",
+     "from": "review",
+     "node": "mir-n015",
+     "sha": "77e89e1e1",
+     "to": "building"
+    },
+    {
+     "date": "2026-10-02T01:28:47-04:00",
+     "from": "review",
+     "node": "mir-n027",
+     "sha": "d9811051c",
+     "to": "building"
+    },
+    {
+     "date": "2026-10-02T03:02:49-04:00",
+     "from": "review",
+     "node": "mir-n030",
+     "sha": "4e5a21790",
+     "to": "building"
+    },
+    {
+     "date": "2026-10-02T04:35:32-04:00",
+     "from": "review",
+     "node": "mir-n019",
+     "sha": "1d2e3923c",
+     "to": "building"
+    }
+   ],
+   "transition_events": 101
+  },
+  "product-in-video": {
+   "board_commits_full_history": 23,
+   "board_ref_sha": "8b6f38becc907850ab01e94d18fe0760dd11131a",
+   "ever_dropped": 0,
+   "ever_merged": 3,
+   "final_state_counts": {
+    "building": 2,
+    "built": 1,
+    "merged": 3,
+    "removed": 1,
+    "review": 1,
+    "todo": 3
+   },
+   "first_state_counts": {
+    "todo": 11
+   },
+   "kind_counts": {
+    "plan": 11
+   },
+   "lead_time_hours": {
+    "claimed_to_merged_h": {
+     "max": 0.184,
+     "mean": 0.097,
+     "median": 0.082,
+     "min": 0.026,
+     "n": 3,
+     "p25": 0.054,
+     "p75": 0.133
+    },
+    "first_seen_to_merged_h": {
+     "max": 1.213,
+     "mean": 0.56,
+     "median": 0.44,
+     "min": 0.028,
+     "n": 3,
+     "p25": 0.234,
+     "p75": 0.827
+    },
+    "review_to_merged_h": {
+     "max": 0.002,
+     "mean": 0.001,
+     "median": 0.001,
+     "min": 0.001,
+     "n": 3,
+     "p25": 0.001,
+     "p75": 0.002
+    },
+    "todo_to_merged_h": {
+     "max": 1.213,
+     "mean": 0.56,
+     "median": 0.44,
+     "min": 0.028,
+     "n": 3,
+     "p25": 0.234,
+     "p75": 0.827
+    }
+   },
+   "lead_time_hours_values": {
+    "claimed_to_merged_h": [
+     0.026,
+     0.082,
+     0.184
+    ],
+    "first_seen_to_merged_h": [
+     0.028,
+     0.44,
+     1.213
+    ],
+    "review_to_merged_h": [
+     0.001,
+     0.001,
+     0.002
+    ],
+    "todo_to_merged_h": [
+     0.028,
+     0.44,
+     1.213
+    ]
+   },
+   "merged_on_first_appearance": 0,
+   "nodes": 11,
+   "per_node": [
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T05:06:27-04:00",
+     "first_state": "todo",
+     "id": "piv-n001",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.082,
+      "first_seen_to_merged_h": 0.44,
+      "review_to_merged_h": 0.001,
+      "todo_to_merged_h": 0.44
+     },
+     "reached": {
+      "building": "2026-10-02T05:27:56-04:00",
+      "merged": "2026-10-02T05:32:50-04:00",
+      "review": "2026-10-02T05:32:48-04:00",
+      "todo": "2026-10-02T05:06:27-04:00"
+     }
+    },
+    {
+     "final_state": "review",
+     "first_seen": "2026-10-02T05:06:27-04:00",
+     "first_state": "todo",
+     "id": "piv-n002",
+     "kind": "plan",
+     "reached": {
+      "building": "2026-10-02T05:33:24-04:00",
+      "review": "2026-10-02T05:56:58-04:00",
+      "todo": "2026-10-02T05:06:27-04:00"
+     }
+    },
+    {
+     "final_state": "building",
+     "first_seen": "2026-10-02T05:06:27-04:00",
+     "first_state": "todo",
+     "id": "piv-n003",
+     "kind": "plan",
+     "reached": {
+      "building": "2026-10-02T05:33:24-04:00",
+      "todo": "2026-10-02T05:06:27-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T05:06:27-04:00",
+     "first_state": "todo",
+     "id": "piv-n004",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.184,
+      "first_seen_to_merged_h": 1.213,
+      "review_to_merged_h": 0.002,
+      "todo_to_merged_h": 1.213
+     },
+     "reached": {
+      "building": "2026-10-02T06:08:12-04:00",
+      "merged": "2026-10-02T06:19:14-04:00",
+      "review": "2026-10-02T06:19:06-04:00",
+      "todo": "2026-10-02T05:06:27-04:00"
+     }
+    },
+    {
+     "final_state": "removed",
+     "first_seen": "2026-10-02T05:06:27-04:00",
+     "first_state": "todo",
+     "id": "piv-n005",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T05:06:27-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T05:06:27-04:00",
+     "first_state": "todo",
+     "id": "piv-n006",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T05:06:27-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T05:23:14-04:00",
+     "first_state": "todo",
+     "id": "piv-n007",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T05:23:14-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T05:29:12-04:00",
+     "first_state": "todo",
+     "id": "piv-n008",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-02T05:29:12-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T06:20:30-04:00",
+     "first_state": "todo",
+     "id": "piv-n009",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.026,
+      "first_seen_to_merged_h": 0.028,
+      "review_to_merged_h": 0.001,
+      "todo_to_merged_h": 0.028
+     },
+     "reached": {
+      "building": "2026-10-02T06:20:36-04:00",
+      "merged": "2026-10-02T06:22:10-04:00",
+      "review": "2026-10-02T06:22:08-04:00",
+      "todo": "2026-10-02T06:20:30-04:00"
+     }
+    },
+    {
+     "final_state": "built",
+     "first_seen": "2026-10-02T06:20:30-04:00",
+     "first_state": "todo",
+     "id": "piv-n010",
+     "kind": "plan",
+     "reached": {
+      "building": "2026-10-02T06:20:37-04:00",
+      "built": "2026-10-02T06:26:00-04:00",
+      "todo": "2026-10-02T06:20:30-04:00"
+     }
+    },
+    {
+     "final_state": "building",
+     "first_seen": "2026-10-02T06:39:49-04:00",
+     "first_state": "todo",
+     "id": "piv-n011",
+     "kind": "plan",
+     "reached": {
+      "building": "2026-10-02T06:39:50-04:00",
+      "todo": "2026-10-02T06:39:49-04:00"
+     }
+    }
+   ],
+   "state_regressions_on_trunk": 0,
+   "state_regressions_on_trunk_list": [],
+   "transition_events": 30
+  },
+  "research-to-publication": {
+   "board_commits_full_history": 11,
+   "board_ref_sha": "887dd2c431b22ac414be40f8eabc5d92951fb851",
+   "ever_dropped": 0,
+   "ever_merged": 2,
+   "final_state_counts": {
+    "building": 1,
+    "merged": 2
+   },
+   "first_state_counts": {
+    "todo": 3
+   },
+   "kind_counts": {
+    "other": 3
+   },
+   "lead_time_hours": {
+    "claimed_to_merged_h": {
+     "max": 0.161,
+     "mean": 0.104,
+     "median": 0.104,
+     "min": 0.046,
+     "n": 2,
+     "p25": 0.075,
+     "p75": 0.132
+    },
+    "first_seen_to_merged_h": {
+     "max": 0.229,
+     "mean": 0.172,
+     "median": 0.172,
+     "min": 0.114,
+     "n": 2,
+     "p25": 0.143,
+     "p75": 0.2
+    },
+    "review_to_merged_h": {
+     "max": 0.001,
+     "mean": 0.001,
+     "median": 0.001,
+     "min": 0.0,
+     "n": 2,
+     "p25": 0.0,
+     "p75": 0.001
+    },
+    "todo_to_merged_h": {
+     "max": 0.229,
+     "mean": 0.172,
+     "median": 0.172,
+     "min": 0.114,
+     "n": 2,
+     "p25": 0.143,
+     "p75": 0.2
+    }
+   },
+   "lead_time_hours_values": {
+    "claimed_to_merged_h": [
+     0.046,
+     0.161
+    ],
+    "first_seen_to_merged_h": [
+     0.114,
+     0.229
+    ],
+    "review_to_merged_h": [
+     0.0,
+     0.001
+    ],
+    "todo_to_merged_h": [
+     0.114,
+     0.229
+    ]
+   },
+   "merged_on_first_appearance": 0,
+   "nodes": 3,
+   "per_node": [
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T06:16:09-04:00",
+     "first_state": "todo",
+     "id": "research-n001",
+     "kind": "other",
+     "lead_times": {
+      "claimed_to_merged_h": 0.046,
+      "first_seen_to_merged_h": 0.114,
+      "review_to_merged_h": 0.001,
+      "todo_to_merged_h": 0.114
+     },
+     "reached": {
+      "building": "2026-10-02T06:20:15-04:00",
+      "merged": "2026-10-02T06:23:00-04:00",
+      "review": "2026-10-02T06:22:58-04:00",
+      "todo": "2026-10-02T06:16:09-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T06:16:09-04:00",
+     "first_state": "todo",
+     "id": "research-n002",
+     "kind": "other",
+     "lead_times": {
+      "claimed_to_merged_h": 0.161,
+      "first_seen_to_merged_h": 0.229,
+      "review_to_merged_h": 0.0,
+      "todo_to_merged_h": 0.229
+     },
+     "reached": {
+      "building": "2026-10-02T06:20:14-04:00",
+      "merged": "2026-10-02T06:29:53-04:00",
+      "review": "2026-10-02T06:29:52-04:00",
+      "todo": "2026-10-02T06:16:09-04:00"
+     }
+    },
+    {
+     "final_state": "building",
+     "first_seen": "2026-10-02T06:16:09-04:00",
+     "first_state": "todo",
+     "id": "research-n003",
+     "kind": "other",
+     "reached": {
+      "building": "2026-10-02T06:32:14-04:00",
+      "todo": "2026-10-02T06:16:09-04:00"
+     }
+    }
+   ],
+   "state_regressions_on_trunk": 0,
+   "state_regressions_on_trunk_list": [],
+   "transition_events": 14
+  },
+  "studio": {
+   "board_commits_full_history": 592,
+   "board_ref_sha": "af5aaf24bb47f6e57db8c9d1d92683b0ff48dafc",
+   "ever_dropped": 1,
+   "ever_merged": 100,
+   "final_state_counts": {
+    "deployed": 73,
+    "dropped": 1,
+    "merged": 31,
+    "todo": 8
+   },
+   "first_state_counts": {
+    "building": 22,
+    "built": 5,
+    "deployed": 2,
+    "merged": 1,
+    "ready": 10,
+    "review": 2,
+    "todo": 71
+   },
+   "kind_counts": {
+    "backlog": 26,
+    "fix": 13,
+    "ops": 1,
+    "other": 4,
+    "plan": 69
+   },
+   "lead_time_hours": {
+    "built_to_merged_h": {
+     "max": 2.937,
+     "mean": 0.428,
+     "median": 0.037,
+     "min": 0.002,
+     "n": 35,
+     "p25": 0.022,
+     "p75": 0.865
+    },
+    "claimed_to_merged_h": {
+     "max": 6.624,
+     "mean": 0.987,
+     "median": 0.533,
+     "min": 0.019,
+     "n": 71,
+     "p25": 0.205,
+     "p75": 1.226
+    },
+    "first_seen_to_merged_h": {
+     "max": 31.02,
+     "mean": 3.503,
+     "median": 1.836,
+     "min": 0.0,
+     "n": 100,
+     "p25": 0.204,
+     "p75": 4.583
+    },
+    "merged_to_deployed_h": {
+     "max": 2.605,
+     "mean": 0.199,
+     "median": 0.087,
+     "min": 0.006,
+     "n": 69,
+     "p25": 0.058,
+     "p75": 0.145
+    },
+    "review_to_merged_h": {
+     "max": 3.294,
+     "mean": 0.06,
+     "median": 0.008,
+     "min": 0.001,
+     "n": 92,
+     "p25": 0.006,
+     "p75": 0.016
+    },
+    "todo_to_merged_h": {
+     "max": 31.02,
+     "mean": 5.238,
+     "median": 3.526,
+     "min": 0.092,
+     "n": 62,
+     "p25": 1.377,
+     "p75": 6.042
+    }
+   },
+   "lead_time_hours_values": {
+    "built_to_merged_h": [
+     0.002,
+     0.004,
+     0.005,
+     0.007,
+     0.007,
+     0.008,
+     0.011,
+     0.021,
+     0.022,
+     0.022,
+     0.025,
+     0.025,
+     0.026,
+     0.029,
+     0.034,
+     0.034,
+     0.036,
+     0.037,
+     0.04,
+     0.047,
+     0.116,
+     0.141,
+     0.198,
+     0.299,
+     0.619,
+     0.834,
+     0.896,
+     0.927,
+     1.024,
+     1.048,
+     1.056,
+     1.369,
+     1.436,
+     1.632,
+     2.937
+    ],
+    "claimed_to_merged_h": [
+     0.019,
+     0.026,
+     0.048,
+     0.053,
+     0.054,
+     0.068,
+     0.083,
+     0.09,
+     0.152,
+     0.161,
+     0.164,
+     0.168,
+     0.174,
+     0.176,
+     0.196,
+     0.204,
+     0.204,
+     0.204,
+     0.207,
+     0.214,
+     0.252,
+     0.259,
+     0.261,
+     0.274,
+     0.301,
+     0.313,
+     0.338,
+     0.357,
+     0.359,
+     0.396,
+     0.411,
+     0.438,
+     0.484,
+     0.498,
+     0.521,
+     0.533,
+     0.544,
+     0.545,
+     0.604,
+     0.662,
+     0.698,
+     0.698,
+     0.698,
+     0.698,
+     0.794,
+     0.804,
+     0.848,
+     0.882,
+     0.903,
+     1.012,
+     1.116,
+     1.147,
+     1.187,
+     1.265,
+     1.27,
+     1.316,
+     1.426,
+     1.772,
+     2.089,
+     2.147,
+     2.191,
+     2.191,
+     2.191,
+     2.194,
+     2.207,
+     2.489,
+     2.718,
+     3.288,
+     3.571,
+     6.616,
+     6.624
+    ],
+    "first_seen_to_merged_h": [
+     0.0,
+     0.001,
+     0.001,
+     0.003,
+     0.003,
+     0.004,
+     0.004,
+     0.006,
+     0.007,
+     0.007,
+     0.01,
+     0.026,
+     0.034,
+     0.036,
+     0.048,
+     0.054,
+     0.068,
+     0.071,
+     0.092,
+     0.102,
+     0.141,
+     0.152,
+     0.171,
+     0.176,
+     0.204,
+     0.204,
+     0.214,
+     0.259,
+     0.338,
+     0.342,
+     0.357,
+     0.404,
+     0.46,
+     0.521,
+     0.624,
+     0.657,
+     0.903,
+     0.927,
+     0.941,
+     1.022,
+     1.024,
+     1.044,
+     1.099,
+     1.129,
+     1.147,
+     1.162,
+     1.187,
+     1.268,
+     1.426,
+     1.705,
+     1.967,
+     2.181,
+     2.191,
+     2.191,
+     2.191,
+     2.191,
+     2.194,
+     2.442,
+     2.519,
+     2.676,
+     2.763,
+     2.877,
+     2.927,
+     3.293,
+     3.294,
+     3.302,
+     3.404,
+     3.511,
+     3.541,
+     3.575,
+     3.626,
+     4.239,
+     4.433,
+     4.469,
+     4.485,
+     4.878,
+     5.268,
+     5.288,
+     5.401,
+     5.473,
+     5.574,
+     5.903,
+     5.968,
+     6.066,
+     6.106,
+     6.298,
+     6.298,
+     6.298,
+     6.298,
+     6.575,
+     6.624,
+     7.821,
+     9.399,
+     10.721,
+     16.477,
+     16.748,
+     17.011,
+     17.957,
+     30.553,
+     31.02
+    ],
+    "merged_to_deployed_h": [
+     0.006,
+     0.03,
+     0.03,
+     0.031,
+     0.035,
+     0.04,
+     0.042,
+     0.043,
+     0.044,
+     0.045,
+     0.046,
+     0.047,
+     0.051,
+     0.055,
+     0.055,
+     0.055,
+     0.056,
+     0.058,
+     0.06,
+     0.068,
+     0.068,
+     0.069,
+     0.07,
+     0.071,
+     0.082,
+     0.083,
+     0.083,
+     0.083,
+     0.083,
+     0.083,
+     0.083,
+     0.085,
+     0.087,
+     0.087,
+     0.087,
+     0.089,
+     0.089,
+     0.09,
+     0.09,
+     0.099,
+     0.1,
+     0.103,
+     0.11,
+     0.112,
+     0.119,
+     0.12,
+     0.132,
+     0.132,
+     0.133,
+     0.138,
+     0.145,
+     0.145,
+     0.149,
+     0.155,
+     0.199,
+     0.2,
+     0.215,
+     0.216,
+     0.218,
+     0.256,
+     0.295,
+     0.298,
+     0.467,
+     0.486,
+     0.562,
+     0.605,
+     1.093,
+     1.664,
+     2.605
+    ],
+    "review_to_merged_h": [
+     0.001,
+     0.001,
+     0.002,
+     0.002,
+     0.002,
+     0.003,
+     0.003,
+     0.003,
+     0.003,
+     0.003,
+     0.004,
+     0.004,
+     0.004,
+     0.004,
+     0.004,
+     0.004,
+     0.004,
+     0.004,
+     0.005,
+     0.005,
+     0.005,
+     0.005,
+     0.005,
+     0.006,
+     0.006,
+     0.006,
+     0.006,
+     0.006,
+     0.006,
+     0.007,
+     0.007,
+     0.007,
+     0.007,
+     0.007,
+     0.007,
+     0.007,
+     0.007,
+     0.007,
+     0.007,
+     0.007,
+     0.007,
+     0.008,
+     0.008,
+     0.008,
+     0.008,
+     0.008,
+     0.008,
+     0.009,
+     0.009,
+     0.01,
+     0.01,
+     0.01,
+     0.01,
+     0.011,
+     0.011,
+     0.011,
+     0.012,
+     0.012,
+     0.012,
+     0.012,
+     0.013,
+     0.013,
+     0.013,
+     0.014,
+     0.014,
+     0.015,
+     0.015,
+     0.016,
+     0.016,
+     0.017,
+     0.017,
+     0.02,
+     0.02,
+     0.021,
+     0.022,
+     0.024,
+     0.024,
+     0.025,
+     0.026,
+     0.026,
+     0.031,
+     0.031,
+     0.032,
+     0.032,
+     0.036,
+     0.036,
+     0.04,
+     0.04,
+     0.04,
+     0.071,
+     1.045,
+     3.294
+    ],
+    "todo_to_merged_h": [
+     0.092,
+     0.102,
+     0.171,
+     0.342,
+     0.404,
+     0.46,
+     0.521,
+     0.624,
+     0.657,
+     0.941,
+     1.022,
+     1.044,
+     1.099,
+     1.129,
+     1.162,
+     1.268,
+     1.705,
+     1.967,
+     2.181,
+     2.191,
+     2.194,
+     2.442,
+     2.519,
+     2.676,
+     2.763,
+     2.877,
+     2.927,
+     3.293,
+     3.302,
+     3.404,
+     3.511,
+     3.541,
+     3.575,
+     3.626,
+     4.239,
+     4.433,
+     4.469,
+     4.485,
+     4.878,
+     5.268,
+     5.288,
+     5.401,
+     5.473,
+     5.574,
+     5.903,
+     5.968,
+     6.066,
+     6.106,
+     6.298,
+     6.298,
+     6.298,
+     6.298,
+     6.575,
+     7.821,
+     9.399,
+     10.721,
+     16.477,
+     16.748,
+     17.011,
+     17.957,
+     30.553,
+     31.02
+    ]
+   },
+   "merged_on_first_appearance": 1,
+   "nodes": 113,
+   "per_node": [
+    {
+     "final_state": "merged",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "review",
+     "id": "studio-n001",
+     "kind": "fix",
+     "lead_times": {
+      "first_seen_to_merged_h": 3.294,
+      "review_to_merged_h": 3.294
+     },
+     "reached": {
+      "merged": "2026-09-29T21:37:52-04:00",
+      "review": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "deployed",
+     "id": "studio-n002",
+     "kind": "plan",
+     "reached": {
+      "deployed": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "deployed",
+     "id": "studio-n003",
+     "kind": "plan",
+     "reached": {
+      "deployed": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n004",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.896,
+      "claimed_to_merged_h": 2.089,
+      "first_seen_to_merged_h": 5.401,
+      "review_to_merged_h": 0.003,
+      "todo_to_merged_h": 5.401
+     },
+     "merged_to_deployed_h": 0.083,
+     "reached": {
+      "building": "2026-09-29T21:38:55-04:00",
+      "built": "2026-09-29T22:50:32-04:00",
+      "deployed": "2026-09-29T23:49:15-04:00",
+      "merged": "2026-09-29T23:44:17-04:00",
+      "ready": "2026-09-29T23:44:05-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n005",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 6.298,
+      "todo_to_merged_h": 6.298
+     },
+     "merged_to_deployed_h": 0.083,
+     "reached": {
+      "deployed": "2026-09-30T00:43:07-04:00",
+      "merged": "2026-09-30T00:38:08-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "building",
+     "id": "studio-n006",
+     "kind": "plan",
+     "reached": {
+      "building": "2026-09-29T18:20:14-04:00",
+      "deployed": "2026-09-29T20:05:26-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "merged",
+     "id": "studio-n007",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.0
+     },
+     "reached": {
+      "merged": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n008",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.029,
+      "claimed_to_merged_h": 0.161,
+      "first_seen_to_merged_h": 3.511,
+      "review_to_merged_h": 0.009,
+      "todo_to_merged_h": 3.511
+     },
+     "merged_to_deployed_h": 0.087,
+     "reached": {
+      "building": "2026-09-29T21:41:12-04:00",
+      "built": "2026-09-29T21:49:09-04:00",
+      "deployed": "2026-09-29T21:56:07-04:00",
+      "merged": "2026-09-29T21:50:52-04:00",
+      "ready": "2026-09-29T21:50:19-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n009",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.011,
+      "claimed_to_merged_h": 0.164,
+      "first_seen_to_merged_h": 5.574,
+      "review_to_merged_h": 0.011,
+      "todo_to_merged_h": 5.574
+     },
+     "reached": {
+      "building": "2026-09-29T23:44:47-04:00",
+      "built": "2026-09-29T23:54:01-04:00",
+      "merged": "2026-09-29T23:54:39-04:00",
+      "ready": "2026-09-29T23:54:01-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n010",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.252,
+      "first_seen_to_merged_h": 16.477,
+      "review_to_merged_h": 0.007,
+      "todo_to_merged_h": 16.477
+     },
+     "merged_to_deployed_h": 0.082,
+     "reached": {
+      "building": "2026-09-30T10:33:46-04:00",
+      "deployed": "2026-09-30T10:53:47-04:00",
+      "merged": "2026-09-30T10:48:53-04:00",
+      "ready": "2026-09-30T10:48:28-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "building",
+     "id": "studio-n011",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 2.191,
+      "first_seen_to_merged_h": 2.191,
+      "review_to_merged_h": 0.04
+     },
+     "reached": {
+      "building": "2026-09-29T18:20:14-04:00",
+      "merged": "2026-09-29T20:31:41-04:00",
+      "review": "2026-09-29T20:29:16-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "building",
+     "id": "studio-n012",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 2.191,
+      "first_seen_to_merged_h": 2.191,
+      "review_to_merged_h": 0.04
+     },
+     "reached": {
+      "building": "2026-09-29T18:20:14-04:00",
+      "merged": "2026-09-29T20:31:41-04:00",
+      "review": "2026-09-29T20:29:16-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "building",
+     "id": "studio-n013",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 2.191,
+      "first_seen_to_merged_h": 2.191,
+      "review_to_merged_h": 0.04
+     },
+     "reached": {
+      "building": "2026-09-29T18:20:14-04:00",
+      "merged": "2026-09-29T20:31:41-04:00",
+      "review": "2026-09-29T20:29:16-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n014",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 2.191,
+      "todo_to_merged_h": 2.191
+     },
+     "reached": {
+      "merged": "2026-09-29T20:31:41-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n015",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.005,
+      "claimed_to_merged_h": 0.019,
+      "first_seen_to_merged_h": 3.541,
+      "review_to_merged_h": 0.005,
+      "todo_to_merged_h": 3.541
+     },
+     "reached": {
+      "building": "2026-09-29T21:51:35-04:00",
+      "built": "2026-09-29T21:52:23-04:00",
+      "merged": "2026-09-29T21:52:42-04:00",
+      "ready": "2026-09-29T21:52:24-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n016",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.698,
+      "first_seen_to_merged_h": 6.298,
+      "todo_to_merged_h": 6.298
+     },
+     "merged_to_deployed_h": 0.083,
+     "reached": {
+      "building": "2026-09-29T23:56:14-04:00",
+      "deployed": "2026-09-30T00:43:07-04:00",
+      "merged": "2026-09-30T00:38:08-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n017",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.698,
+      "first_seen_to_merged_h": 6.298,
+      "todo_to_merged_h": 6.298
+     },
+     "merged_to_deployed_h": 0.083,
+     "reached": {
+      "building": "2026-09-29T23:56:14-04:00",
+      "deployed": "2026-09-30T00:43:07-04:00",
+      "merged": "2026-09-30T00:38:08-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n018",
+     "kind": "backlog",
+     "lead_times": {
+      "built_to_merged_h": 0.021,
+      "claimed_to_merged_h": 1.316,
+      "first_seen_to_merged_h": 4.878,
+      "review_to_merged_h": 0.017,
+      "todo_to_merged_h": 4.878
+     },
+     "merged_to_deployed_h": 0.047,
+     "reached": {
+      "building": "2026-09-29T21:54:00-04:00",
+      "built": "2026-09-29T23:11:40-04:00",
+      "deployed": "2026-09-29T23:15:46-04:00",
+      "merged": "2026-09-29T23:12:56-04:00",
+      "ready": "2026-09-29T23:11:54-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n019",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.804,
+      "first_seen_to_merged_h": 3.293,
+      "review_to_merged_h": 0.02,
+      "todo_to_merged_h": 3.293
+     },
+     "merged_to_deployed_h": 0.12,
+     "reached": {
+      "building": "2026-09-29T20:49:34-04:00",
+      "deployed": "2026-09-29T21:45:00-04:00",
+      "merged": "2026-09-29T21:37:48-04:00",
+      "ready": "2026-09-29T21:36:35-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n020",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.438,
+      "first_seen_to_merged_h": 2.927,
+      "review_to_merged_h": 0.012,
+      "todo_to_merged_h": 2.927
+     },
+     "merged_to_deployed_h": 0.486,
+     "reached": {
+      "building": "2026-09-29T20:49:35-04:00",
+      "deployed": "2026-09-29T21:45:00-04:00",
+      "merged": "2026-09-29T21:15:50-04:00",
+      "ready": "2026-09-29T21:15:08-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n021",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.274,
+      "first_seen_to_merged_h": 2.763,
+      "review_to_merged_h": 0.007,
+      "todo_to_merged_h": 2.763
+     },
+     "merged_to_deployed_h": 0.006,
+     "reached": {
+      "building": "2026-09-29T20:49:35-04:00",
+      "deployed": "2026-09-29T21:06:23-04:00",
+      "merged": "2026-09-29T21:06:00-04:00",
+      "ready": "2026-09-29T21:05:34-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n022",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.207,
+      "first_seen_to_merged_h": 17.011,
+      "review_to_merged_h": 0.006,
+      "todo_to_merged_h": 17.011
+     },
+     "merged_to_deployed_h": 0.04,
+     "reached": {
+      "building": "2026-09-30T11:08:31-04:00",
+      "deployed": "2026-09-30T11:23:20-04:00",
+      "merged": "2026-09-30T11:20:55-04:00",
+      "ready": "2026-09-30T11:20:35-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n023",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.261,
+      "first_seen_to_merged_h": 16.748,
+      "review_to_merged_h": 0.005,
+      "todo_to_merged_h": 16.748
+     },
+     "merged_to_deployed_h": 0.087,
+     "reached": {
+      "building": "2026-09-30T10:49:30-04:00",
+      "deployed": "2026-09-30T11:10:20-04:00",
+      "merged": "2026-09-30T11:05:08-04:00",
+      "ready": "2026-09-30T11:04:50-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n024",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.698,
+      "first_seen_to_merged_h": 6.298,
+      "todo_to_merged_h": 6.298
+     },
+     "merged_to_deployed_h": 0.083,
+     "reached": {
+      "building": "2026-09-29T23:56:14-04:00",
+      "deployed": "2026-09-30T00:43:07-04:00",
+      "merged": "2026-09-30T00:38:08-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n025",
+     "kind": "backlog",
+     "reached": {
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T18:20:14-04:00",
+     "first_state": "todo",
+     "id": "studio-n026",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.204,
+      "first_seen_to_merged_h": 17.957,
+      "review_to_merged_h": 0.007,
+      "todo_to_merged_h": 17.957
+     },
+     "merged_to_deployed_h": 0.055,
+     "reached": {
+      "building": "2026-09-30T12:05:22-04:00",
+      "deployed": "2026-09-30T12:20:57-04:00",
+      "merged": "2026-09-30T12:17:38-04:00",
+      "ready": "2026-09-30T12:17:11-04:00",
+      "todo": "2026-09-29T18:20:14-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T20:13:51-04:00",
+     "first_state": "todo",
+     "id": "studio-n027",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.04,
+      "claimed_to_merged_h": 1.27,
+      "first_seen_to_merged_h": 4.433,
+      "review_to_merged_h": 0.032,
+      "todo_to_merged_h": 4.433
+     },
+     "merged_to_deployed_h": 0.055,
+     "reached": {
+      "building": "2026-09-29T23:23:36-04:00",
+      "built": "2026-09-30T00:37:25-04:00",
+      "deployed": "2026-09-30T00:43:07-04:00",
+      "merged": "2026-09-30T00:39:48-04:00",
+      "ready": "2026-09-30T00:37:54-04:00",
+      "todo": "2026-09-29T20:13:51-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T20:13:51-04:00",
+     "first_state": "todo",
+     "id": "studio-n028",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.848,
+      "first_seen_to_merged_h": 5.268,
+      "review_to_merged_h": 0.011,
+      "todo_to_merged_h": 5.268
+     },
+     "merged_to_deployed_h": 0.089,
+     "reached": {
+      "building": "2026-09-30T00:39:03-04:00",
+      "deployed": "2026-09-30T01:35:18-04:00",
+      "merged": "2026-09-30T01:29:57-04:00",
+      "ready": "2026-09-30T01:29:17-04:00",
+      "todo": "2026-09-29T20:13:51-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-09-29T20:13:51-04:00",
+     "first_state": "todo",
+     "id": "studio-n029",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.034,
+      "claimed_to_merged_h": 0.544,
+      "first_seen_to_merged_h": 2.442,
+      "review_to_merged_h": 0.031,
+      "todo_to_merged_h": 2.442
+     },
+     "reached": {
+      "building": "2026-09-29T22:09:44-04:00",
+      "built": "2026-09-29T22:38:20-04:00",
+      "claimed": "2026-09-29T22:07:46-04:00",
+      "merged": "2026-09-29T22:40:23-04:00",
+      "ready": "2026-09-29T22:38:33-04:00",
+      "todo": "2026-09-29T20:13:51-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T20:13:51-04:00",
+     "first_state": "todo",
+     "id": "studio-n030",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 1.116,
+      "first_seen_to_merged_h": 6.575,
+      "review_to_merged_h": 0.004,
+      "todo_to_merged_h": 6.575
+     },
+     "merged_to_deployed_h": 0.051,
+     "reached": {
+      "building": "2026-09-30T01:41:22-04:00",
+      "deployed": "2026-09-30T02:51:26-04:00",
+      "merged": "2026-09-30T02:48:21-04:00",
+      "ready": "2026-09-30T02:48:06-04:00",
+      "todo": "2026-09-29T20:13:51-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T20:13:51-04:00",
+     "first_state": "todo",
+     "id": "studio-n031",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 1.436,
+      "claimed_to_merged_h": 2.207,
+      "first_seen_to_merged_h": 7.821,
+      "review_to_merged_h": 0.004,
+      "todo_to_merged_h": 7.821
+     },
+     "merged_to_deployed_h": 0.056,
+     "reached": {
+      "building": "2026-09-30T01:50:39-04:00",
+      "built": "2026-09-30T02:36:54-04:00",
+      "deployed": "2026-09-30T04:06:25-04:00",
+      "merged": "2026-09-30T04:03:05-04:00",
+      "ready": "2026-09-30T04:02:51-04:00",
+      "todo": "2026-09-29T20:13:51-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T20:16:17-04:00",
+     "first_state": "building",
+     "id": "studio-n032",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 1.147,
+      "first_seen_to_merged_h": 1.147
+     },
+     "merged_to_deployed_h": 0.2,
+     "reached": {
+      "building": "2026-09-29T20:16:17-04:00",
+      "deployed": "2026-09-29T21:37:05-04:00",
+      "merged": "2026-09-29T21:25:05-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T20:16:17-04:00",
+     "first_state": "todo",
+     "id": "studio-n033",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.036,
+      "claimed_to_merged_h": 0.313,
+      "first_seen_to_merged_h": 3.404,
+      "review_to_merged_h": 0.032,
+      "todo_to_merged_h": 3.404
+     },
+     "merged_to_deployed_h": 0.145,
+     "reached": {
+      "building": "2026-09-29T23:21:47-04:00",
+      "built": "2026-09-29T23:38:24-04:00",
+      "deployed": "2026-09-29T23:49:15-04:00",
+      "merged": "2026-09-29T23:40:33-04:00",
+      "ready": "2026-09-29T23:38:37-04:00",
+      "todo": "2026-09-29T20:16:17-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T20:26:09-04:00",
+     "first_state": "building",
+     "id": "studio-n034",
+     "kind": "plan",
+     "reached": {
+      "building": "2026-09-29T20:26:09-04:00",
+      "deployed": "2026-09-29T20:51:57-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T21:10:15-04:00",
+     "first_state": "todo",
+     "id": "studio-n035",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.521,
+      "first_seen_to_merged_h": 0.521,
+      "review_to_merged_h": 0.025,
+      "todo_to_merged_h": 0.521
+     },
+     "merged_to_deployed_h": 0.058,
+     "reached": {
+      "building": "2026-09-29T21:10:16-04:00",
+      "deployed": "2026-09-29T21:45:00-04:00",
+      "merged": "2026-09-29T21:41:30-04:00",
+      "ready": "2026-09-29T21:40:01-04:00",
+      "todo": "2026-09-29T21:10:15-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-09-29T21:22:20-04:00",
+     "first_state": "review",
+     "id": "studio-n036",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.071,
+      "review_to_merged_h": 0.071
+     },
+     "reached": {
+      "merged": "2026-09-29T21:26:34-04:00",
+      "review": "2026-09-29T21:22:20-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T21:57:36-04:00",
+     "first_state": "todo",
+     "id": "studio-n037",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.698,
+      "first_seen_to_merged_h": 2.676,
+      "todo_to_merged_h": 2.676
+     },
+     "merged_to_deployed_h": 0.083,
+     "reached": {
+      "building": "2026-09-29T23:56:14-04:00",
+      "deployed": "2026-09-30T00:43:07-04:00",
+      "merged": "2026-09-30T00:38:08-04:00",
+      "todo": "2026-09-29T21:57:36-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-09-29T21:57:36-04:00",
+     "first_state": "todo",
+     "id": "studio-n038",
+     "kind": "backlog",
+     "reached": {
+      "todo": "2026-09-29T21:57:36-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-09-29T22:12:02-04:00",
+     "first_state": "building",
+     "id": "studio-n039",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.047,
+      "claimed_to_merged_h": 0.214,
+      "first_seen_to_merged_h": 0.214,
+      "review_to_merged_h": 0.008
+     },
+     "reached": {
+      "building": "2026-09-29T22:12:02-04:00",
+      "built": "2026-09-29T22:22:02-04:00",
+      "merged": "2026-09-29T22:24:52-04:00",
+      "ready": "2026-09-29T22:24:22-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-29T23:35:04-04:00",
+     "first_state": "todo",
+     "id": "studio-n040",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.882,
+      "first_seen_to_merged_h": 1.044,
+      "review_to_merged_h": 0.004,
+      "todo_to_merged_h": 1.044
+     },
+     "merged_to_deployed_h": 0.09,
+     "reached": {
+      "building": "2026-09-29T23:44:49-04:00",
+      "deployed": "2026-09-30T00:43:07-04:00",
+      "merged": "2026-09-30T00:37:43-04:00",
+      "ready": "2026-09-30T00:37:30-04:00",
+      "todo": "2026-09-29T23:35:04-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T00:02:33-04:00",
+     "first_state": "todo",
+     "id": "studio-n041",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.037,
+      "first_seen_to_merged_h": 1.705,
+      "review_to_merged_h": 0.036,
+      "todo_to_merged_h": 1.705
+     },
+     "merged_to_deployed_h": 0.045,
+     "reached": {
+      "built": "2026-09-30T01:42:40-04:00",
+      "deployed": "2026-09-30T01:47:33-04:00",
+      "merged": "2026-09-30T01:44:52-04:00",
+      "ready": "2026-09-30T01:42:41-04:00",
+      "todo": "2026-09-30T00:02:33-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T00:02:33-04:00",
+     "first_state": "todo",
+     "id": "studio-n042",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.008,
+      "claimed_to_merged_h": 2.718,
+      "first_seen_to_merged_h": 2.877,
+      "review_to_merged_h": 0.008,
+      "todo_to_merged_h": 2.877
+     },
+     "merged_to_deployed_h": 0.042,
+     "reached": {
+      "building": "2026-09-30T00:12:04-04:00",
+      "built": "2026-09-30T02:54:40-04:00",
+      "deployed": "2026-09-30T02:57:41-04:00",
+      "merged": "2026-09-30T02:55:09-04:00",
+      "ready": "2026-09-30T02:54:40-04:00",
+      "todo": "2026-09-30T00:02:33-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T00:02:33-04:00",
+     "first_state": "todo",
+     "id": "studio-n043",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.025,
+      "claimed_to_merged_h": 0.794,
+      "first_seen_to_merged_h": 2.519,
+      "review_to_merged_h": 0.024,
+      "todo_to_merged_h": 2.519
+     },
+     "merged_to_deployed_h": 0.215,
+     "reached": {
+      "building": "2026-09-30T01:46:04-04:00",
+      "built": "2026-09-30T02:32:12-04:00",
+      "deployed": "2026-09-30T02:46:35-04:00",
+      "merged": "2026-09-30T02:33:41-04:00",
+      "ready": "2026-09-30T02:32:13-04:00",
+      "todo": "2026-09-30T00:02:33-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T00:02:33-04:00",
+     "first_state": "todo",
+     "id": "studio-n044",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.025,
+      "claimed_to_merged_h": 0.301,
+      "first_seen_to_merged_h": 0.46,
+      "review_to_merged_h": 0.024,
+      "todo_to_merged_h": 0.46
+     },
+     "merged_to_deployed_h": 0.216,
+     "reached": {
+      "building": "2026-09-30T00:12:05-04:00",
+      "built": "2026-09-30T00:28:40-04:00",
+      "deployed": "2026-09-30T00:43:07-04:00",
+      "merged": "2026-09-30T00:30:09-04:00",
+      "ready": "2026-09-30T00:28:43-04:00",
+      "todo": "2026-09-30T00:02:33-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T00:02:33-04:00",
+     "first_state": "todo",
+     "id": "studio-n045",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.026,
+      "claimed_to_merged_h": 0.498,
+      "first_seen_to_merged_h": 0.657,
+      "review_to_merged_h": 0.026,
+      "todo_to_merged_h": 0.657
+     },
+     "merged_to_deployed_h": 1.093,
+     "reached": {
+      "building": "2026-09-30T00:12:03-04:00",
+      "built": "2026-09-30T00:40:24-04:00",
+      "deployed": "2026-09-30T01:47:33-04:00",
+      "merged": "2026-09-30T00:41:57-04:00",
+      "ready": "2026-09-30T00:40:25-04:00",
+      "todo": "2026-09-30T00:02:33-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T00:02:33-04:00",
+     "first_state": "todo",
+     "id": "studio-n046",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.022,
+      "claimed_to_merged_h": 6.616,
+      "first_seen_to_merged_h": 10.721,
+      "review_to_merged_h": 0.016,
+      "todo_to_merged_h": 10.721
+     },
+     "merged_to_deployed_h": 0.132,
+     "reached": {
+      "building": "2026-09-30T04:08:50-04:00",
+      "built": "2026-09-30T10:44:28-04:00",
+      "deployed": "2026-09-30T10:53:42-04:00",
+      "merged": "2026-09-30T10:45:47-04:00",
+      "ready": "2026-09-30T10:44:51-04:00",
+      "todo": "2026-09-30T00:02:33-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T00:02:33-04:00",
+     "first_state": "todo",
+     "id": "studio-n047",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.007,
+      "claimed_to_merged_h": 0.411,
+      "first_seen_to_merged_h": 3.302,
+      "review_to_merged_h": 0.007,
+      "todo_to_merged_h": 3.302
+     },
+     "merged_to_deployed_h": 0.06,
+     "reached": {
+      "building": "2026-09-30T02:56:03-04:00",
+      "built": "2026-09-30T03:20:16-04:00",
+      "deployed": "2026-09-30T03:24:16-04:00",
+      "merged": "2026-09-30T03:20:41-04:00",
+      "ready": "2026-09-30T03:20:16-04:00",
+      "todo": "2026-09-30T00:02:33-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T00:41:02-04:00",
+     "first_state": "todo",
+     "id": "studio-n048",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.002,
+      "claimed_to_merged_h": 3.571,
+      "first_seen_to_merged_h": 3.575,
+      "review_to_merged_h": 0.002,
+      "todo_to_merged_h": 3.575
+     },
+     "merged_to_deployed_h": 0.031,
+     "reached": {
+      "building": "2026-09-30T00:41:17-04:00",
+      "built": "2026-09-30T04:15:27-04:00",
+      "deployed": "2026-09-30T04:17:26-04:00",
+      "merged": "2026-09-30T04:15:33-04:00",
+      "ready": "2026-09-30T04:15:27-04:00",
+      "todo": "2026-09-30T00:41:02-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T01:42:11-04:00",
+     "first_state": "building",
+     "id": "studio-n049",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 1.187,
+      "first_seen_to_merged_h": 1.187,
+      "review_to_merged_h": 0.013
+     },
+     "merged_to_deployed_h": 0.071,
+     "reached": {
+      "building": "2026-09-30T01:42:11-04:00",
+      "deployed": "2026-09-30T02:57:41-04:00",
+      "merged": "2026-09-30T02:53:25-04:00",
+      "ready": "2026-09-30T02:52:37-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T01:50:37-04:00",
+     "first_state": "todo",
+     "id": "studio-n050",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.007,
+      "claimed_to_merged_h": 2.194,
+      "first_seen_to_merged_h": 2.194,
+      "review_to_merged_h": 0.007,
+      "todo_to_merged_h": 2.194
+     },
+     "merged_to_deployed_h": 0.069,
+     "reached": {
+      "building": "2026-09-30T01:50:38-04:00",
+      "built": "2026-09-30T04:01:48-04:00",
+      "deployed": "2026-09-30T04:06:25-04:00",
+      "merged": "2026-09-30T04:02:15-04:00",
+      "ready": "2026-09-30T04:01:49-04:00",
+      "todo": "2026-09-30T01:50:37-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-09-30T02:59:11-04:00",
+     "first_state": "built",
+     "id": "studio-n051",
+     "kind": "backlog",
+     "lead_times": {
+      "built_to_merged_h": 0.004,
+      "first_seen_to_merged_h": 0.004,
+      "review_to_merged_h": 0.004
+     },
+     "reached": {
+      "built": "2026-09-30T02:59:11-04:00",
+      "merged": "2026-09-30T02:59:25-04:00",
+      "ready": "2026-09-30T02:59:11-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T04:04:10-04:00",
+     "first_state": "building",
+     "id": "studio-n052",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.068,
+      "first_seen_to_merged_h": 0.068,
+      "review_to_merged_h": 0.004
+     },
+     "merged_to_deployed_h": 0.055,
+     "reached": {
+      "building": "2026-09-30T04:04:10-04:00",
+      "deployed": "2026-09-30T04:11:35-04:00",
+      "merged": "2026-09-30T04:08:16-04:00",
+      "ready": "2026-09-30T04:08:01-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T04:10:15-04:00",
+     "first_state": "building",
+     "id": "studio-n053",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 6.624,
+      "first_seen_to_merged_h": 6.624,
+      "review_to_merged_h": 0.01
+     },
+     "merged_to_deployed_h": 0.1,
+     "reached": {
+      "building": "2026-09-30T04:10:15-04:00",
+      "deployed": "2026-09-30T10:53:42-04:00",
+      "merged": "2026-09-30T10:47:42-04:00",
+      "ready": "2026-09-30T10:47:06-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-09-30T11:21:17-04:00",
+     "first_state": "todo",
+     "id": "studio-n054",
+     "kind": "backlog",
+     "reached": {
+      "todo": "2026-09-30T11:21:17-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T12:04:43-04:00",
+     "first_state": "building",
+     "id": "studio-n055",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.357,
+      "first_seen_to_merged_h": 0.357,
+      "review_to_merged_h": 0.007
+     },
+     "merged_to_deployed_h": 0.119,
+     "reached": {
+      "building": "2026-09-30T12:04:43-04:00",
+      "deployed": "2026-09-30T12:33:17-04:00",
+      "merged": "2026-09-30T12:26:10-04:00",
+      "ready": "2026-09-30T12:25:43-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T12:08:35-04:00",
+     "first_state": "todo",
+     "id": "studio-n056",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.359,
+      "first_seen_to_merged_h": 5.288,
+      "review_to_merged_h": 0.016,
+      "todo_to_merged_h": 5.288
+     },
+     "merged_to_deployed_h": 0.112,
+     "reached": {
+      "building": "2026-09-30T17:04:17-04:00",
+      "deployed": "2026-09-30T17:32:34-04:00",
+      "merged": "2026-09-30T17:25:51-04:00",
+      "ready": "2026-09-30T17:24:55-04:00",
+      "todo": "2026-09-30T12:08:35-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T12:08:35-04:00",
+     "first_state": "todo",
+     "id": "studio-n057",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.174,
+      "first_seen_to_merged_h": 5.473,
+      "review_to_merged_h": 0.008,
+      "todo_to_merged_h": 5.473
+     },
+     "merged_to_deployed_h": 0.03,
+     "reached": {
+      "building": "2026-09-30T17:26:33-04:00",
+      "deployed": "2026-09-30T17:38:47-04:00",
+      "merged": "2026-09-30T17:36:58-04:00",
+      "ready": "2026-09-30T17:36:28-04:00",
+      "todo": "2026-09-30T12:08:35-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T12:08:35-04:00",
+     "first_state": "todo",
+     "id": "studio-n058",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.662,
+      "first_seen_to_merged_h": 5.968,
+      "review_to_merged_h": 0.007,
+      "todo_to_merged_h": 5.968
+     },
+     "merged_to_deployed_h": 0.068,
+     "reached": {
+      "building": "2026-09-30T17:26:53-04:00",
+      "deployed": "2026-09-30T18:10:44-04:00",
+      "merged": "2026-09-30T18:06:38-04:00",
+      "ready": "2026-09-30T18:06:12-04:00",
+      "todo": "2026-09-30T12:08:35-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T12:08:35-04:00",
+     "first_state": "todo",
+     "id": "studio-n059",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.299,
+      "claimed_to_merged_h": 0.604,
+      "first_seen_to_merged_h": 5.903,
+      "review_to_merged_h": 0.01,
+      "todo_to_merged_h": 5.903
+     },
+     "merged_to_deployed_h": 0.133,
+     "reached": {
+      "building": "2026-09-30T17:26:33-04:00",
+      "built": "2026-09-30T17:44:52-04:00",
+      "deployed": "2026-09-30T18:10:44-04:00",
+      "merged": "2026-09-30T18:02:47-04:00",
+      "ready": "2026-09-30T18:02:10-04:00",
+      "todo": "2026-09-30T12:08:35-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T12:08:35-04:00",
+     "first_state": "todo",
+     "id": "studio-n060",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.196,
+      "first_seen_to_merged_h": 6.106,
+      "review_to_merged_h": 0.008,
+      "todo_to_merged_h": 6.106
+     },
+     "merged_to_deployed_h": 0.03,
+     "reached": {
+      "building": "2026-09-30T18:03:12-04:00",
+      "deployed": "2026-09-30T18:16:43-04:00",
+      "merged": "2026-09-30T18:14:56-04:00",
+      "ready": "2026-09-30T18:14:26-04:00",
+      "todo": "2026-09-30T12:08:35-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T12:08:35-04:00",
+     "first_state": "todo",
+     "id": "studio-n061",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 2.937,
+      "claimed_to_merged_h": 3.288,
+      "first_seen_to_merged_h": 9.399,
+      "review_to_merged_h": 0.02,
+      "todo_to_merged_h": 9.399
+     },
+     "merged_to_deployed_h": 0.155,
+     "reached": {
+      "building": "2026-09-30T18:15:17-04:00",
+      "built": "2026-09-30T18:36:21-04:00",
+      "deployed": "2026-09-30T21:41:51-04:00",
+      "merged": "2026-09-30T21:32:33-04:00",
+      "ready": "2026-09-30T21:31:22-04:00",
+      "todo": "2026-09-30T12:08:35-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T12:08:35-04:00",
+     "first_state": "todo",
+     "id": "studio-n062",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.083,
+      "first_seen_to_merged_h": 6.066,
+      "review_to_merged_h": 0.008,
+      "todo_to_merged_h": 6.066
+     },
+     "merged_to_deployed_h": 0.07,
+     "reached": {
+      "building": "2026-09-30T18:07:34-04:00",
+      "deployed": "2026-09-30T18:16:43-04:00",
+      "merged": "2026-09-30T18:12:31-04:00",
+      "ready": "2026-09-30T18:12:03-04:00",
+      "todo": "2026-09-30T12:08:35-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T12:35:15-04:00",
+     "first_state": "building",
+     "id": "studio-n063",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.152,
+      "first_seen_to_merged_h": 0.152,
+      "review_to_merged_h": 0.004
+     },
+     "merged_to_deployed_h": 0.089,
+     "reached": {
+      "building": "2026-09-30T12:35:15-04:00",
+      "deployed": "2026-09-30T12:49:45-04:00",
+      "merged": "2026-09-30T12:44:23-04:00",
+      "ready": "2026-09-30T12:44:09-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T13:27:42-04:00",
+     "first_state": "building",
+     "id": "studio-n064",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.026,
+      "first_seen_to_merged_h": 0.026,
+      "review_to_merged_h": 0.006
+     },
+     "merged_to_deployed_h": 0.467,
+     "reached": {
+      "building": "2026-09-30T13:27:42-04:00",
+      "deployed": "2026-09-30T13:57:18-04:00",
+      "merged": "2026-09-30T13:29:16-04:00",
+      "ready": "2026-09-30T13:28:56-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T13:47:50-04:00",
+     "first_state": "building",
+     "id": "studio-n065",
+     "kind": "fix",
+     "lead_times": {
+      "claimed_to_merged_h": 0.048,
+      "first_seen_to_merged_h": 0.048,
+      "review_to_merged_h": 0.002
+     },
+     "merged_to_deployed_h": 0.11,
+     "reached": {
+      "building": "2026-09-30T13:47:50-04:00",
+      "deployed": "2026-09-30T13:57:18-04:00",
+      "merged": "2026-09-30T13:50:42-04:00",
+      "ready": "2026-09-30T13:50:36-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T14:19:40-04:00",
+     "first_state": "todo",
+     "id": "studio-n066",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 1.012,
+      "first_seen_to_merged_h": 31.02,
+      "review_to_merged_h": 0.012,
+      "todo_to_merged_h": 31.02
+     },
+     "merged_to_deployed_h": 0.138,
+     "reached": {
+      "building": "2026-10-01T20:20:08-04:00",
+      "deployed": "2026-10-01T21:29:09-04:00",
+      "merged": "2026-10-01T21:20:53-04:00",
+      "ready": "2026-10-01T21:20:10-04:00",
+      "todo": "2026-09-30T14:19:40-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T14:19:40-04:00",
+     "first_state": "todo",
+     "id": "studio-n067",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.545,
+      "first_seen_to_merged_h": 30.553,
+      "review_to_merged_h": 0.004,
+      "todo_to_merged_h": 30.553
+     },
+     "merged_to_deployed_h": 0.605,
+     "reached": {
+      "building": "2026-10-01T20:20:08-04:00",
+      "deployed": "2026-10-01T21:29:09-04:00",
+      "merged": "2026-10-01T20:52:51-04:00",
+      "ready": "2026-10-01T20:52:38-04:00",
+      "todo": "2026-09-30T14:19:40-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-09-30T14:19:40-04:00",
+     "first_state": "todo",
+     "id": "studio-n068",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-09-30T14:19:40-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T14:29:57-04:00",
+     "first_state": "ready",
+     "id": "studio-n069",
+     "kind": "fix",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.001,
+      "review_to_merged_h": 0.001
+     },
+     "merged_to_deployed_h": 0.09,
+     "reached": {
+      "deployed": "2026-09-30T14:35:26-04:00",
+      "merged": "2026-09-30T14:30:01-04:00",
+      "ready": "2026-09-30T14:29:57-04:00"
+     }
+    },
+    {
+     "final_state": "dropped",
+     "first_seen": "2026-09-30T16:58:31-04:00",
+     "first_state": "todo",
+     "id": "studio-n070",
+     "kind": "backlog",
+     "reached": {
+      "dropped": "2026-09-30T19:03:33-04:00",
+      "todo": "2026-09-30T16:58:31-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T17:17:25-04:00",
+     "first_state": "ready",
+     "id": "studio-n071",
+     "kind": "fix",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.007,
+      "review_to_merged_h": 0.007
+     },
+     "merged_to_deployed_h": 0.044,
+     "reached": {
+      "deployed": "2026-09-30T17:20:29-04:00",
+      "merged": "2026-09-30T17:17:50-04:00",
+      "ready": "2026-09-30T17:17:25-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T19:03:33-04:00",
+     "first_state": "todo",
+     "id": "studio-n072",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.022,
+      "claimed_to_merged_h": 0.053,
+      "first_seen_to_merged_h": 1.967,
+      "review_to_merged_h": 0.022,
+      "todo_to_merged_h": 1.967
+     },
+     "merged_to_deployed_h": 2.605,
+     "reached": {
+      "building": "2026-09-30T20:58:22-04:00",
+      "built": "2026-09-30T21:00:12-04:00",
+      "deployed": "2026-09-30T23:37:51-04:00",
+      "merged": "2026-09-30T21:01:33-04:00",
+      "ready": "2026-09-30T21:00:14-04:00",
+      "todo": "2026-09-30T19:03:33-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T19:03:33-04:00",
+     "first_state": "todo",
+     "id": "studio-n073",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 1.632,
+      "claimed_to_merged_h": 2.489,
+      "first_seen_to_merged_h": 4.469,
+      "review_to_merged_h": 0.031,
+      "todo_to_merged_h": 4.469
+     },
+     "merged_to_deployed_h": 0.103,
+     "reached": {
+      "building": "2026-09-30T21:02:19-04:00",
+      "built": "2026-09-30T21:53:45-04:00",
+      "deployed": "2026-09-30T23:37:51-04:00",
+      "merged": "2026-09-30T23:31:40-04:00",
+      "ready": "2026-09-30T23:29:48-04:00",
+      "todo": "2026-09-30T19:03:33-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T19:03:33-04:00",
+     "first_state": "todo",
+     "id": "studio-n074",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 1.056,
+      "claimed_to_merged_h": 2.147,
+      "first_seen_to_merged_h": 4.239,
+      "review_to_merged_h": 1.045,
+      "todo_to_merged_h": 4.239
+     },
+     "merged_to_deployed_h": 0.099,
+     "reached": {
+      "building": "2026-09-30T21:09:03-04:00",
+      "built": "2026-09-30T22:14:29-04:00",
+      "deployed": "2026-09-30T23:23:48-04:00",
+      "merged": "2026-09-30T23:17:52-04:00",
+      "ready": "2026-09-30T22:15:10-04:00",
+      "todo": "2026-09-30T19:03:33-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T19:03:33-04:00",
+     "first_state": "todo",
+     "id": "studio-n075",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 4.485,
+      "review_to_merged_h": 0.012,
+      "todo_to_merged_h": 4.485
+     },
+     "merged_to_deployed_h": 0.087,
+     "reached": {
+      "deployed": "2026-09-30T23:37:51-04:00",
+      "merged": "2026-09-30T23:32:39-04:00",
+      "ready": "2026-09-30T23:31:55-04:00",
+      "todo": "2026-09-30T19:03:33-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T20:13:44-04:00",
+     "first_state": "building",
+     "id": "studio-n076",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 1.369,
+      "claimed_to_merged_h": 1.426,
+      "first_seen_to_merged_h": 1.426,
+      "review_to_merged_h": 0.017
+     },
+     "merged_to_deployed_h": 0.043,
+     "reached": {
+      "building": "2026-09-30T20:13:44-04:00",
+      "built": "2026-09-30T20:17:08-04:00",
+      "deployed": "2026-09-30T21:41:51-04:00",
+      "merged": "2026-09-30T21:39:18-04:00",
+      "ready": "2026-09-30T21:38:17-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T21:08:58-04:00",
+     "first_state": "ready",
+     "id": "studio-n077",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.036,
+      "review_to_merged_h": 0.036
+     },
+     "merged_to_deployed_h": 0.218,
+     "reached": {
+      "deployed": "2026-09-30T21:24:13-04:00",
+      "merged": "2026-09-30T21:11:09-04:00",
+      "ready": "2026-09-30T21:08:58-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-09-30T21:15:28-04:00",
+     "first_state": "built",
+     "id": "studio-n078",
+     "kind": "fix",
+     "lead_times": {
+      "built_to_merged_h": 0.141,
+      "first_seen_to_merged_h": 0.141,
+      "review_to_merged_h": 0.011
+     },
+     "merged_to_deployed_h": 0.298,
+     "reached": {
+      "built": "2026-09-30T21:15:28-04:00",
+      "deployed": "2026-09-30T21:41:51-04:00",
+      "merged": "2026-09-30T21:23:57-04:00",
+      "ready": "2026-09-30T21:23:18-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-10-01T09:55:36-04:00",
+     "first_state": "building",
+     "id": "studio-n079",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.204,
+      "first_seen_to_merged_h": 0.204,
+      "review_to_merged_h": 0.003
+     },
+     "merged_to_deployed_h": 0.132,
+     "reached": {
+      "building": "2026-10-01T09:55:36-04:00",
+      "deployed": "2026-10-01T10:15:46-04:00",
+      "merged": "2026-10-01T10:07:50-04:00",
+      "ready": "2026-10-01T10:07:39-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-10-01T10:16:06-04:00",
+     "first_state": "building",
+     "id": "studio-n080",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.054,
+      "first_seen_to_merged_h": 0.054,
+      "review_to_merged_h": 0.006
+     },
+     "merged_to_deployed_h": 0.046,
+     "reached": {
+      "building": "2026-10-01T10:16:06-04:00",
+      "deployed": "2026-10-01T10:22:05-04:00",
+      "merged": "2026-10-01T10:19:21-04:00",
+      "ready": "2026-10-01T10:19:00-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-10-01T11:44:27-04:00",
+     "first_state": "ready",
+     "id": "studio-n081",
+     "kind": "fix",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.006,
+      "review_to_merged_h": 0.006
+     },
+     "merged_to_deployed_h": 0.256,
+     "reached": {
+      "deployed": "2026-10-01T12:00:12-04:00",
+      "merged": "2026-10-01T11:44:49-04:00",
+      "ready": "2026-10-01T11:44:27-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-10-01T11:49:27-04:00",
+     "first_state": "built",
+     "id": "studio-n082",
+     "kind": "fix",
+     "lead_times": {
+      "built_to_merged_h": 0.034,
+      "first_seen_to_merged_h": 0.034,
+      "review_to_merged_h": 0.013
+     },
+     "merged_to_deployed_h": 0.145,
+     "reached": {
+      "built": "2026-10-01T11:49:27-04:00",
+      "deployed": "2026-10-01T12:00:12-04:00",
+      "merged": "2026-10-01T11:51:31-04:00",
+      "ready": "2026-10-01T11:50:44-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-10-01T11:54:31-04:00",
+     "first_state": "ready",
+     "id": "studio-n083",
+     "kind": "fix",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.01,
+      "review_to_merged_h": 0.01
+     },
+     "merged_to_deployed_h": 0.085,
+     "reached": {
+      "deployed": "2026-10-01T12:00:12-04:00",
+      "merged": "2026-10-01T11:55:07-04:00",
+      "ready": "2026-10-01T11:54:31-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-10-01T14:31:07-04:00",
+     "first_state": "todo",
+     "id": "studio-n084",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.09,
+      "first_seen_to_merged_h": 0.092,
+      "review_to_merged_h": 0.015,
+      "todo_to_merged_h": 0.092
+     },
+     "merged_to_deployed_h": 0.035,
+     "reached": {
+      "building": "2026-10-01T14:31:15-04:00",
+      "deployed": "2026-10-01T14:38:45-04:00",
+      "merged": "2026-10-01T14:36:38-04:00",
+      "ready": "2026-10-01T14:35:44-04:00",
+      "todo": "2026-10-01T14:31:07-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-10-01T19:20:04-04:00",
+     "first_state": "building",
+     "id": "studio-n085",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.259,
+      "first_seen_to_merged_h": 0.259,
+      "review_to_merged_h": 0.008
+     },
+     "merged_to_deployed_h": 0.149,
+     "reached": {
+      "building": "2026-10-01T19:20:04-04:00",
+      "deployed": "2026-10-01T19:44:30-04:00",
+      "merged": "2026-10-01T19:35:35-04:00",
+      "ready": "2026-10-01T19:35:06-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T19:36:24-04:00",
+     "first_state": "todo",
+     "id": "studio-n086",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.396,
+      "first_seen_to_merged_h": 0.404,
+      "review_to_merged_h": 0.007,
+      "todo_to_merged_h": 0.404
+     },
+     "reached": {
+      "building": "2026-10-01T19:36:53-04:00",
+      "merged": "2026-10-01T20:00:37-04:00",
+      "ready": "2026-10-01T20:00:11-04:00",
+      "todo": "2026-10-01T19:36:24-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T19:36:24-04:00",
+     "first_state": "todo",
+     "id": "studio-n087",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.533,
+      "first_seen_to_merged_h": 0.941,
+      "review_to_merged_h": 0.01,
+      "todo_to_merged_h": 0.941
+     },
+     "reached": {
+      "building": "2026-10-01T20:00:55-04:00",
+      "merged": "2026-10-01T20:32:53-04:00",
+      "ready": "2026-10-01T20:32:17-04:00",
+      "todo": "2026-10-01T19:36:24-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T19:36:24-04:00",
+     "first_state": "todo",
+     "id": "studio-n088",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.619,
+      "claimed_to_merged_h": 1.772,
+      "first_seen_to_merged_h": 2.181,
+      "review_to_merged_h": 0.013,
+      "todo_to_merged_h": 2.181
+     },
+     "reached": {
+      "building": "2026-10-01T20:00:55-04:00",
+      "built": "2026-10-01T21:10:04-04:00",
+      "merged": "2026-10-01T21:47:14-04:00",
+      "ready": "2026-10-01T21:46:28-04:00",
+      "todo": "2026-10-01T19:36:24-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-10-01T20:20:03-04:00",
+     "first_state": "building",
+     "id": "studio-n089",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.204,
+      "first_seen_to_merged_h": 0.204,
+      "review_to_merged_h": 0.007
+     },
+     "merged_to_deployed_h": 0.068,
+     "reached": {
+      "building": "2026-10-01T20:20:03-04:00",
+      "deployed": "2026-10-01T20:36:22-04:00",
+      "merged": "2026-10-01T20:32:17-04:00",
+      "ready": "2026-10-01T20:31:52-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T20:20:08-04:00",
+     "first_state": "todo",
+     "id": "studio-n090",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.484,
+      "first_seen_to_merged_h": 3.626,
+      "review_to_merged_h": 0.009,
+      "todo_to_merged_h": 3.626
+     },
+     "reached": {
+      "building": "2026-10-01T23:28:40-04:00",
+      "merged": "2026-10-01T23:57:42-04:00",
+      "ready": "2026-10-01T23:57:10-04:00",
+      "todo": "2026-10-01T20:20:08-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T20:20:42-04:00",
+     "first_state": "todo",
+     "id": "studio-n091",
+     "kind": "plan",
+     "lead_times": {
+      "claimed_to_merged_h": 0.168,
+      "first_seen_to_merged_h": 0.171,
+      "review_to_merged_h": 0.021,
+      "todo_to_merged_h": 0.171
+     },
+     "reached": {
+      "building": "2026-10-01T20:20:53-04:00",
+      "merged": "2026-10-01T20:30:56-04:00",
+      "ready": "2026-10-01T20:29:39-04:00",
+      "todo": "2026-10-01T20:20:42-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T20:20:42-04:00",
+     "first_state": "todo",
+     "id": "studio-n092",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.198,
+      "claimed_to_merged_h": 1.265,
+      "first_seen_to_merged_h": 1.268,
+      "review_to_merged_h": 0.015,
+      "todo_to_merged_h": 1.268
+     },
+     "reached": {
+      "building": "2026-10-01T20:20:53-04:00",
+      "built": "2026-10-01T21:24:55-04:00",
+      "merged": "2026-10-01T21:36:46-04:00",
+      "ready": "2026-10-01T21:35:52-04:00",
+      "todo": "2026-10-01T20:20:42-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T20:20:42-04:00",
+     "first_state": "todo",
+     "id": "studio-n093",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.624,
+      "review_to_merged_h": 0.014,
+      "todo_to_merged_h": 0.624
+     },
+     "reached": {
+      "merged": "2026-10-01T20:58:08-04:00",
+      "ready": "2026-10-01T20:57:18-04:00",
+      "todo": "2026-10-01T20:20:42-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T20:20:42-04:00",
+     "first_state": "todo",
+     "id": "studio-n094",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 1.162,
+      "review_to_merged_h": 0.026,
+      "todo_to_merged_h": 1.162
+     },
+     "reached": {
+      "merged": "2026-10-01T21:30:25-04:00",
+      "ready": "2026-10-01T21:28:53-04:00",
+      "todo": "2026-10-01T20:20:42-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-01T20:20:42-04:00",
+     "first_state": "todo",
+     "id": "studio-n095",
+     "kind": "plan",
+     "reached": {
+      "todo": "2026-10-01T20:20:42-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-10-01T20:54:46-04:00",
+     "first_state": "building",
+     "id": "studio-n096",
+     "kind": "backlog",
+     "lead_times": {
+      "claimed_to_merged_h": 0.338,
+      "first_seen_to_merged_h": 0.338,
+      "review_to_merged_h": 0.003
+     },
+     "merged_to_deployed_h": 0.199,
+     "reached": {
+      "building": "2026-10-01T20:54:46-04:00",
+      "deployed": "2026-10-01T21:26:59-04:00",
+      "merged": "2026-10-01T21:15:03-04:00",
+      "ready": "2026-10-01T21:14:51-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T20:57:18-04:00",
+     "first_state": "todo",
+     "id": "studio-n097",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 1.022,
+      "review_to_merged_h": 0.007,
+      "todo_to_merged_h": 1.022
+     },
+     "reached": {
+      "merged": "2026-10-01T21:58:36-04:00",
+      "ready": "2026-10-01T21:58:11-04:00",
+      "todo": "2026-10-01T20:57:18-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T21:14:38-04:00",
+     "first_state": "ready",
+     "id": "studio-n098",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.004,
+      "review_to_merged_h": 0.004
+     },
+     "reached": {
+      "merged": "2026-10-01T21:14:51-04:00",
+      "ready": "2026-10-01T21:14:38-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T21:20:10-04:00",
+     "first_state": "todo",
+     "id": "studio-n099",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.102,
+      "review_to_merged_h": 0.005,
+      "todo_to_merged_h": 0.102
+     },
+     "reached": {
+      "merged": "2026-10-01T21:26:19-04:00",
+      "ready": "2026-10-01T21:26:00-04:00",
+      "todo": "2026-10-01T21:20:10-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T21:34:44-04:00",
+     "first_state": "ready",
+     "id": "studio-n100",
+     "kind": "fix",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.007,
+      "review_to_merged_h": 0.007
+     },
+     "reached": {
+      "merged": "2026-10-01T21:35:10-04:00",
+      "ready": "2026-10-01T21:34:44-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T21:38:41-04:00",
+     "first_state": "todo",
+     "id": "studio-n101",
+     "kind": "plan",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.342,
+      "review_to_merged_h": 0.005,
+      "todo_to_merged_h": 0.342
+     },
+     "reached": {
+      "merged": "2026-10-01T21:59:12-04:00",
+      "ready": "2026-10-01T21:58:54-04:00",
+      "todo": "2026-10-01T21:38:41-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-10-01T22:10:40-04:00",
+     "first_state": "building",
+     "id": "studio-n102",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.116,
+      "claimed_to_merged_h": 0.176,
+      "first_seen_to_merged_h": 0.176,
+      "review_to_merged_h": 0.006
+     },
+     "merged_to_deployed_h": 1.664,
+     "reached": {
+      "building": "2026-10-01T22:10:40-04:00",
+      "built": "2026-10-01T22:14:15-04:00",
+      "deployed": "2026-10-02T00:01:05-04:00",
+      "merged": "2026-10-01T22:21:14-04:00",
+      "ready": "2026-10-01T22:20:52-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T22:20:27-04:00",
+     "first_state": "todo",
+     "id": "studio-n103",
+     "kind": "ops",
+     "lead_times": {
+      "first_seen_to_merged_h": 1.099,
+      "review_to_merged_h": 0.002,
+      "todo_to_merged_h": 1.099
+     },
+     "reached": {
+      "merged": "2026-10-01T23:26:23-04:00",
+      "ready": "2026-10-01T23:26:15-04:00",
+      "todo": "2026-10-01T22:20:27-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-10-01T22:25:53-04:00",
+     "first_state": "built",
+     "id": "studio-n104",
+     "kind": "fix",
+     "lead_times": {
+      "built_to_merged_h": 1.024,
+      "first_seen_to_merged_h": 1.024,
+      "review_to_merged_h": 0.005
+     },
+     "merged_to_deployed_h": 0.562,
+     "reached": {
+      "built": "2026-10-01T22:25:53-04:00",
+      "deployed": "2026-10-02T00:01:05-04:00",
+      "merged": "2026-10-01T23:27:21-04:00",
+      "ready": "2026-10-01T23:27:02-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T22:32:20-04:00",
+     "first_state": "built",
+     "id": "studio-n105",
+     "kind": "fix",
+     "lead_times": {
+      "built_to_merged_h": 0.927,
+      "first_seen_to_merged_h": 0.927,
+      "review_to_merged_h": 0.006
+     },
+     "reached": {
+      "built": "2026-10-01T22:32:20-04:00",
+      "merged": "2026-10-01T23:27:58-04:00",
+      "ready": "2026-10-01T23:27:38-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T22:34:20-04:00",
+     "first_state": "todo",
+     "id": "studio-n106",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 1.048,
+      "first_seen_to_merged_h": 1.129,
+      "review_to_merged_h": 0.012,
+      "todo_to_merged_h": 1.129
+     },
+     "reached": {
+      "built": "2026-10-01T22:39:13-04:00",
+      "merged": "2026-10-01T23:42:04-04:00",
+      "ready": "2026-10-01T23:41:21-04:00",
+      "todo": "2026-10-01T22:34:20-04:00"
+     }
+    },
+    {
+     "final_state": "deployed",
+     "first_seen": "2026-10-01T22:49:13-04:00",
+     "first_state": "building",
+     "id": "studio-n107",
+     "kind": "plan",
+     "lead_times": {
+      "built_to_merged_h": 0.834,
+      "claimed_to_merged_h": 0.903,
+      "first_seen_to_merged_h": 0.903,
+      "review_to_merged_h": 0.014
+     },
+     "merged_to_deployed_h": 0.295,
+     "reached": {
+      "building": "2026-10-01T22:49:13-04:00",
+      "built": "2026-10-01T22:53:22-04:00",
+      "deployed": "2026-10-02T00:01:05-04:00",
+      "merged": "2026-10-01T23:43:24-04:00",
+      "ready": "2026-10-01T23:42:34-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-01T23:49:25-04:00",
+     "first_state": "ready",
+     "id": "studio-n108",
+     "kind": "fix",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.003,
+      "review_to_merged_h": 0.003
+     },
+     "reached": {
+      "merged": "2026-10-01T23:49:36-04:00",
+      "ready": "2026-10-01T23:49:25-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T01:07:10-04:00",
+     "first_state": "ready",
+     "id": "studio-n109",
+     "kind": "fix",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.003,
+      "review_to_merged_h": 0.003
+     },
+     "reached": {
+      "merged": "2026-10-02T01:07:19-04:00",
+      "ready": "2026-10-02T01:07:10-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T05:40:09-04:00",
+     "first_state": "todo",
+     "id": "studio-n110",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T05:40:09-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T05:40:09-04:00",
+     "first_state": "todo",
+     "id": "studio-n111",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T05:40:09-04:00"
+     }
+    },
+    {
+     "final_state": "merged",
+     "first_seen": "2026-10-02T06:22:49-04:00",
+     "first_state": "ready",
+     "id": "studio-n112",
+     "kind": "other",
+     "lead_times": {
+      "first_seen_to_merged_h": 0.001,
+      "review_to_merged_h": 0.001
+     },
+     "reached": {
+      "merged": "2026-10-02T06:22:52-04:00",
+      "ready": "2026-10-02T06:22:49-04:00"
+     }
+    },
+    {
+     "final_state": "todo",
+     "first_seen": "2026-10-02T06:22:49-04:00",
+     "first_state": "todo",
+     "id": "studio-n113",
+     "kind": "other",
+     "reached": {
+      "todo": "2026-10-02T06:22:49-04:00"
+     }
+    }
+   ],
+   "state_regressions_on_trunk": 1,
+   "state_regressions_on_trunk_list": [
+    {
+     "date": "2026-09-30T22:44:14-04:00",
+     "from": "ready",
+     "node": "studio-n074",
+     "sha": "3c0affc5b",
+     "to": "building"
+    }
+   ],
+   "transition_events": 1069
+  }
+ }
+}

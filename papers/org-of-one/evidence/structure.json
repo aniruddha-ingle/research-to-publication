@@ -1,0 +1,265 @@
+{
+ "_note": "files present at the pinned SHA; lessons counted as dated bullets in the lead playbook's Lessons section",
+ "dated_lessons_own_total": 49,
+ "dated_lessons_total": 61,
+ "repos": {
+  "copy-in-product-picture": {
+   "agents_defined": [
+    "ads-scientist",
+    "composer-dev",
+    "creative-evaluator",
+    "vision-dev"
+   ],
+   "board_file": "claude-plans/graph.yaml",
+   "board_ref": "main",
+   "has_lead_kit": true,
+   "kit_files_present": {
+    "scripts/lead/claim.sh": true,
+    "scripts/lead/graph.py": true,
+    "scripts/lead/hooks/pre-push": true,
+    "scripts/lead/integrate.sh": true,
+    "scripts/lead/with-lock.sh": true
+   },
+   "lead_playbook": ".claude/skills/copy-lead/SKILL.md",
+   "lessons": {
+    "by_date": {
+     "2026-10-01": 1,
+     "2026-10-02": 4
+    },
+    "dated_lessons": 5,
+    "from_the_user": 0,
+    "has_lessons_section": true,
+    "inherited_from_another_repo": 2,
+    "own": 3
+   }
+  },
+  "design-manufacture-interface": {
+   "agents_defined": [
+    "client-dev",
+    "factory-reviewer",
+    "spec-dev",
+    "techpack-dev"
+   ],
+   "board_file": "claude-plans/graph.yaml",
+   "board_ref": "main",
+   "has_lead_kit": true,
+   "kit_files_present": {
+    "scripts/lead/claim.sh": true,
+    "scripts/lead/graph.py": true,
+    "scripts/lead/hooks/pre-push": true,
+    "scripts/lead/integrate.sh": true,
+    "scripts/lead/with-lock.sh": true
+   },
+   "lead_playbook": ".claude/skills/factory-lead/SKILL.md",
+   "lessons": {
+    "by_date": {
+     "2026-10-01": 1,
+     "2026-10-02": 2
+    },
+    "dated_lessons": 3,
+    "from_the_user": 0,
+    "has_lessons_section": true,
+    "inherited_from_another_repo": 2,
+    "own": 1
+   }
+  },
+  "gateway": {
+   "agents_defined": [],
+   "board_file": null,
+   "board_ref": null,
+   "has_lead_kit": false,
+   "kit_files_present": {
+    "scripts/lead/claim.sh": false,
+    "scripts/lead/graph.py": false,
+    "scripts/lead/hooks/pre-push": false,
+    "scripts/lead/integrate.sh": false,
+    "scripts/lead/with-lock.sh": false
+   },
+   "lead_playbook": ".claude/skills/gateway-lead/SKILL.md",
+   "lessons": {
+    "by_date": {
+     "2026-10-02": 2
+    },
+    "dated_lessons": 2,
+    "from_the_user": 0,
+    "has_lessons_section": true,
+    "inherited_from_another_repo": 0,
+    "own": 2
+   }
+  },
+  "mir-triage": {
+   "agents_defined": [
+    "engine-ops",
+    "mir-evaluator",
+    "render-dev",
+    "stage-dev"
+   ],
+   "board_file": "claude-plans/graph.yaml",
+   "board_ref": "board",
+   "has_lead_kit": true,
+   "kit_files_present": {
+    "scripts/lead/claim.sh": true,
+    "scripts/lead/graph.py": true,
+    "scripts/lead/hooks/pre-push": true,
+    "scripts/lead/integrate.sh": true,
+    "scripts/lead/with-lock.sh": true
+   },
+   "lead_playbook": ".claude/skills/mir-research/SKILL.md",
+   "lessons": {
+    "by_date": {
+     "2026-09-28": 4,
+     "2026-10-01": 5,
+     "2026-10-02": 1
+    },
+    "dated_lessons": 10,
+    "from_the_user": 0,
+    "has_lessons_section": true,
+    "inherited_from_another_repo": 2,
+    "own": 8
+   }
+  },
+  "product-in-picture": {
+   "agents_defined": [
+    "ads-scientist",
+    "composer-dev",
+    "creative-evaluator",
+    "vision-dev"
+   ],
+   "board_file": null,
+   "board_ref": null,
+   "has_lead_kit": false,
+   "kit_files_present": {
+    "scripts/lead/claim.sh": false,
+    "scripts/lead/graph.py": false,
+    "scripts/lead/hooks/pre-push": false,
+    "scripts/lead/integrate.sh": false,
+    "scripts/lead/with-lock.sh": false
+   },
+   "lead_playbook": ".claude/skills/pip-lead/SKILL.md",
+   "lessons": {
+    "by_date": {
+     "2026-10-02": 9
+    },
+    "dated_lessons": 9,
+    "from_the_user": 0,
+    "has_lessons_section": true,
+    "inherited_from_another_repo": 0,
+    "own": 9
+   }
+  },
+  "product-in-video": {
+   "agents_defined": [
+    "ads-scientist",
+    "edit-dev",
+    "video-evaluator",
+    "video-vision-dev"
+   ],
+   "board_file": "claude-plans/graph.yaml",
+   "board_ref": "main",
+   "has_lead_kit": true,
+   "kit_files_present": {
+    "scripts/lead/claim.sh": true,
+    "scripts/lead/graph.py": true,
+    "scripts/lead/hooks/pre-push": true,
+    "scripts/lead/integrate.sh": true,
+    "scripts/lead/with-lock.sh": true
+   },
+   "lead_playbook": ".claude/skills/piv-lead/SKILL.md",
+   "lessons": {
+    "by_date": {
+     "2026-10-01": 1,
+     "2026-10-02": 4
+    },
+    "dated_lessons": 5,
+    "from_the_user": 1,
+    "has_lessons_section": true,
+    "inherited_from_another_repo": 4,
+    "own": 1
+   }
+  },
+  "research-to-publication": {
+   "agents_defined": [
+    "paper-writer",
+    "peer-reviewer",
+    "reproducer",
+    "research-scout"
+   ],
+   "board_file": "claude-plans/graph.yaml",
+   "board_ref": "main",
+   "has_lead_kit": true,
+   "kit_files_present": {
+    "scripts/lead/claim.sh": true,
+    "scripts/lead/graph.py": true,
+    "scripts/lead/hooks/pre-push": true,
+    "scripts/lead/integrate.sh": true,
+    "scripts/lead/with-lock.sh": true
+   },
+   "lead_playbook": ".claude/skills/research-lead/SKILL.md",
+   "lessons": {
+    "by_date": {
+     "2026-10-01": 1,
+     "2026-10-02": 1
+    },
+    "dated_lessons": 2,
+    "from_the_user": 0,
+    "has_lessons_section": true,
+    "inherited_from_another_repo": 2,
+    "own": 0
+   }
+  },
+  "studio": {
+   "agents_defined": [
+    "audio-backend-dev",
+    "react-ui-dev",
+    "studio-ops",
+    "ui-reviewer"
+   ],
+   "board_file": "claude-plans/graph.yaml",
+   "board_ref": "main",
+   "handoff_kits": [
+    "2026-10-02-design-manufacture-interface",
+    "2026-10-02-mir-research-kit",
+    "2026-10-02-product-in-picture-kit",
+    "2026-10-02-product-in-video-kit"
+   ],
+   "has_lead_kit": true,
+   "kit_files_present": {
+    "scripts/lead/claim.sh": true,
+    "scripts/lead/graph.py": true,
+    "scripts/lead/hooks/pre-push": true,
+    "scripts/lead/integrate.sh": true,
+    "scripts/lead/with-lock.sh": true
+   },
+   "lead_playbook": ".claude/skills/lead-playbook/SKILL.md",
+   "lessons": {
+    "by_date": {
+     "2026-09-29": 8,
+     "2026-09-30": 13,
+     "2026-10-01": 1,
+     "2026-10-02": 3
+    },
+    "dated_lessons": 25,
+    "from_the_user": 0,
+    "has_lessons_section": true,
+    "inherited_from_another_repo": 0,
+    "own": 25
+   }
+  }
+ },
+ "repos_with_board": [
+  "copy-in-product-picture",
+  "design-manufacture-interface",
+  "mir-triage",
+  "product-in-video",
+  "research-to-publication",
+  "studio"
+ ],
+ "repos_with_lead_kit": [
+  "copy-in-product-picture",
+  "design-manufacture-interface",
+  "mir-triage",
+  "product-in-video",
+  "research-to-publication",
+  "studio"
+ ]
+}
