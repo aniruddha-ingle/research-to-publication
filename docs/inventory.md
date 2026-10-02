@@ -279,6 +279,9 @@ synthetic tests), design-manufacture-interface (plan only, no results yet).
   notes `2927bd2`; WAV grouping unchanged). If the paper covers no-master or submix
   downloads, pin the commit after their plan 24 (fix-no-master-submix) merges; lead-1 will
   give the SHA.
+  **Update (mir-triage-lead-1, 2026-10-02): plan 24 merged at `2a91696`. Pin `2a91696` for
+  the stem-set paper** (a full mix holding a part no member has becomes the master by content;
+  a bounce of several members stays in its set flagged `mix`, never summed). Public data only.
 
 **studio** (lead-9):
 - (a) `graph.yaml` history (320 commits, all branches) has node **states** only. Claims,
