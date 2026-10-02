@@ -188,15 +188,6 @@ def scale_for(name: str, cs: list[dict], fp: set[str]) -> dict:
 
 # ---- lead sessions ------------------------------------------------------------------------
 
-def classify_lead(prefix: str, repo: str) -> str | None:
-    """Which department a lead name belongs to, or None when it's ambiguous."""
-    if prefix in PREFIX_TO_DEPT and prefix != "lead":
-        return PREFIX_TO_DEPT[prefix]
-    if prefix == "lead":  # bare lead-N is studio's convention; elsewhere it's ambiguous
-        return "studio"
-    return None
-
-
 def lead_names(text: str) -> list[tuple[str, str]]:
     """(prefix, name) for every lead session name in the text."""
     found = []
