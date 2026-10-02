@@ -68,11 +68,12 @@ many sessions share one machine and one human, and how the human keeps authority
 
 \paragraph{Contributions.}
 \begin{itemize}
-  \item A git-native coordination design for concurrent LLM lead sessions: a plan-first
-    feature graph with \code{touches} globs, atomic filesystem claims, one locked
-    integration gate, reviewers that never edit, deployment of \emph{built} work, kits
-    that bootstrap new departments, and a written split between \emph{direction} and
-    \emph{approval} (\S\ref{sec:design}).
+  \item A documented instance of a git-native coordination design for concurrent LLM lead
+    sessions, assembled from standard parts (declared write sets, filesystem locks, a
+    local merge queue) plus reviewers that never edit, deployment of \emph{built} work,
+    kits that bootstrap new departments, and a written split between \emph{direction}
+    and \emph{approval} (\S\ref{sec:design}). We do not claim the parts are new; we
+    describe how they behaved together in real use.
   \item Measurements mined from all eight repositories at pinned commits: scale, node
     lifecycles, merge conflicts, and a re-count of the one recorded multi-lead trial,
     after which the department corrected its own record (\S\ref{sec:results}).
@@ -545,18 +546,42 @@ al.~\citep{he2024llmmas} survey the area. SWE-agent~\citep{yang2024sweagent} stu
 interface one agent needs to work in a repository. Our system has roles too, but the unit
 of study is a live organisation over days, not a run on a task.
 
-\paragraph{Coordination and failures of agent teams.}
-Destefanis and Aste~\citep{destefanis2026coordinate} measure coordination in 1,902 runs
-of multi-agent coding teams, varying team size, structure and file policy. Cemri et
-al.~\citep{cemri2025mast} derive 14 failure modes from annotated traces of multi-agent
-systems. De Oliveira et al.~\citep{oliveira2026masexperience} report on building with
-open-source multi-agent frameworks for a software engineering task, and
-EvoGit~\citep{huang2025evogit} uses git's history to coordinate decentralised agents.
-Our incidents differ in kind from failures inside a trace: most concern the shared
-machine, dying sessions, deployment and the human's gates. Being observational and from
-one organisation, they complement these studies rather than test them. Practitioners
-describe running many agents in parallel worktrees under a human
-orchestrator~\citep{mason2026agents}; we add a measured account of one such setup.
+\paragraph{Coordination of agent teams.}
+Two studies are closest to the design. EvoGit~\citep{huang2025evogit} also coordinates
+agents only through git, but in the opposite way: there is no trunk, no lock and no task
+board; each agent branches from a frontier of versions, versions are combined by a
+three-way ``crossover'' with randomised conflict resolution, a version is kept if it
+improves on its parents, and a human prunes branches every 10--20 iterations. Our leads
+instead serialise every change into one trunk through a locked gate, claim work before
+starting it, and leave conflicts to a lead rather than to chance. Destefanis and
+Aste~\citep{destefanis2026coordinate} run 1,902 Claude Code team runs on synthetic Python
+tasks, varying team size, structure and a \emph{file policy}: whether agents may, must or
+must not coordinate through shared files. That policy governs files as a communication
+channel; \code{touches} governs which source files a node may write, which is closer to
+declared write sets in human teams~\citep{kasi2013cassandra}. Their runs involve no git
+and report no merge conflicts, so our main conflict finding, that the shared coordination
+file in git is the most conflicted file, has no counterpart there; their finding that
+mandated files cut tokens on message-heavy work is about a cost we did not measure. Cemri
+et al.~\citep{cemri2025mast} derive 14 failure modes from annotated traces of multi-agent
+systems; our incidents differ in kind, being mostly about the shared machine, dying
+sessions, deployment and the human's gates. De Oliveira et al.~\citep{oliveira2026masexperience}
+report on building with open-source multi-agent frameworks for a software engineering
+task, and practitioners describe many agents in parallel worktrees under a human
+orchestrator~\citep{mason2026agents}.
+
+\paragraph{Mining agent activity in real repositories.}
+The closest prior work in method mines what coding agents leave in real repositories. The
+AIDev dataset~\citep{li2025aiteammates,li2026aidev} collects hundreds of thousands of
+agent-authored pull requests from five agents across tens of thousands of GitHub
+repositories, and Watanabe et al.~\citep{watanabe2025agentic} study 567 Claude Code pull
+requests in 157 open-source projects, of which most were merged. Both treat the agent as a
+contributor to a human-run project and measure outcomes at the pull request: acceptance,
+revisions, review. We mine the opposite case at a much smaller scale: one organisation in
+which agents write nearly all commits and also plan, review and integrate, with no pull
+requests at all. Our units are board nodes, merges and lessons, so we mine the board's
+state history and re-merge every merge (\code{--remerge-diff}) rather than pull request
+metadata. The method gives depth on one system and no breadth; it says nothing about how
+common such organisations are.
 
 \paragraph{Merge conflicts.}
 For human teams, merge conflicts are common and costly: Brindescu et
