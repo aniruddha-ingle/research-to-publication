@@ -44,4 +44,4 @@
   state: todo
   branch: paper-1
   gate: full
-  blocked: "the user picks the first paper from the inventory"
+  blocked: null
