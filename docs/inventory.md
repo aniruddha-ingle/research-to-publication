@@ -70,6 +70,15 @@ failure modes are concrete, recurring and fixable by rules recorded in the repo.
   (spend, deletion, publishing, the people gate) — a written authority split.
 - Argued, not measured: speed-ups vs a single session, cost in tokens, quality vs review gates.
 
+**Checked by the reproducer (2026-10-02, paper-1 branch, `papers/org-of-one/evidence/`).**
+Reproduced: studio 1,355 commits / 351 merges / 1,257 Claude co-author lines; lead-1…13; the
+per-repo commit counts. **Corrections:** the full `scripts/lead/` kit is in 6 repos (studio,
+mir-triage, copy, piv, dmi, research-to-publication); pip and gateway have a playbook but no
+tooling. The trial had **no blocking conflicts**, not "no collisions": 2 hand-resolved merges
+and 1 lost board update in a 1.26 h window, and three leads overlapped for about a minute
+(otherwise two). "0 CI minutes" can't be checked from git (quoted from the record). "25
+lessons" is studio's; org-wide there are 61 dated lessons, 46 distinct.
+
 **Missing.** Per-node lead time, review rounds and rework, collision/near-miss rates over the
 whole history (minable from `graph.yaml` git history and merge commits); token/time cost;
 any comparison baseline (single lead vs N leads on comparable nodes).
