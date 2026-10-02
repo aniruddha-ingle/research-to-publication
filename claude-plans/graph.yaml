@@ -11,7 +11,7 @@
   touches: ["papers/_template/**", "docs/typesetting.md"]
   agents: [lead]
   checkpoint: false
-  state: building
+  state: review
   branch: typesetting
   gate: light
 
